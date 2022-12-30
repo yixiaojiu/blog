@@ -7,4 +7,9 @@ export default defineConfig({
   description: '翊小久の个人博客',
   lastUpdated: true,
   themeConfig,
+  head: [['link', { rel: 'icon', href: '/avatar-transparent.png' }]],
+  markdown: {
+    // linkify: true,
+    // typographer: true,
+  },
 })

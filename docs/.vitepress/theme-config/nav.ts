@@ -17,7 +17,7 @@ export const nav: DefaultTheme.NavItem[] = [
       {
         text: 'html css',
         items: [
-          { text: 'BFC', link: '/bagu-note/html-css/CSS继承属性' },
+          { text: 'BFC', link: '/bagu-note/html-css/BFC' },
           { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
           { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
           { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },

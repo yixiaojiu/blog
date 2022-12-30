@@ -61,3 +61,5 @@ add scripts into `package.json`
 ````
 
 - 尽量不写标签，因为缺少结束标签会报错，`Element is missing end tag`[issues1590](https://github.com/vuejs/vitepress/issues/1590)
+
+- `**bold something**`需要与后面的内容有一个空格的间距，否则不渲染
