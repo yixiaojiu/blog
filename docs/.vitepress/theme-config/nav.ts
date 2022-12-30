@@ -4,11 +4,20 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: '小记',
     items: [
-      { text: '杂乱笔记', link: '/note/杂乱笔记' },
-      { text: '项目配置', link: '/note/项目配置' },
-      { text: 'archlinux安装', link: '/note/archlinux安装' },
-      { text: 'linux笔记', link: '/note/linux笔记' },
-      { text: 'vim-vscode', link: '/note/vim-vscode' },
+      {
+        text: '学习相关',
+        items: [
+          { text: '杂乱笔记', link: '/note/study/杂乱笔记' },
+          { text: '项目配置', link: '/note/study/项目配置' },
+          { text: 'archlinux安装', link: '/note/study/archlinux安装' },
+          { text: 'linux笔记', link: '/note/study/linux笔记' },
+          { text: 'vim-vscode', link: '/note/study/vim-vscode' },
+        ],
+      },
+      {
+        text: '其他',
+        items: [{ text: '2022年终总结', link: '/note/other/2022年终总结' }],
+      },
     ],
   },
   {
