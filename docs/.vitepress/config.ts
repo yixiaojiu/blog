@@ -12,4 +12,5 @@ export default defineConfig({
     // linkify: true,
     // typographer: true,
   },
+  outDir: '../dist',
 })
