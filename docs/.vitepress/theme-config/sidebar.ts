@@ -38,6 +38,17 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: true,
       items: [{ text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' }],
     },
+    {
+      text: '包管理工具',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          text: 'pnpm 优势',
+          link: '/bagu-note/package-management-tool/pnpm优势.md',
+        },
+      ],
+    },
   ],
   '/technology-learn/': [
     {

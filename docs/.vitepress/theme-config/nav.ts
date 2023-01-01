@@ -36,10 +36,25 @@ export const nav: DefaultTheme.NavItem[] = [
         text: '计算机网络',
         items: [{ text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' }],
       },
+      {
+        text: '包管理工具',
+        items: [
+          {
+            text: 'pnpm 优势',
+            link: '/bagu-note/package-management-tool/pnpm优势.md',
+          },
+        ],
+      },
     ],
   },
   {
     text: '技术学习',
-    items: [{ text: 'vitepress', link: '/technology-learn/vitepress' }],
+    items: [
+      { text: 'vitepress', link: '/technology-learn/vitepress' },
+      {
+        text: 'pnpm',
+        link: '/technology-learn/pnpm',
+      },
+    ],
   },
 ]

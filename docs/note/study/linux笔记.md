@@ -102,6 +102,18 @@ mv dir1 new_dir							重命名或移动一个目录
 tar -xvf archive.tar				释放一个包
 ```
 
+## ssh
+
+### 配置别名
+
+修改 `~/.ssh/config` 文件
+
+```
+Host alias
+  HostName [Ip address]
+  User root
+```
+
 ## ubuntu 初始化
 
 ### 更换镜像源

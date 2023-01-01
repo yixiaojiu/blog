@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /note/杂乱笔记
+      link: /note/study/杂乱笔记
     - theme: alt
       text: View on GitHub
       link: https://github.com/yixiaojiu/blog
