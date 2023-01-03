@@ -33,6 +33,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
     {
+      text: 'js',
+      collapsed: true,
+      collapsible: true,
+      items: [{ text: 'FormData', link: '/bagu-note/js/FormData' }],
+    },
+    {
       text: '计算机网络',
       collapsible: true,
       collapsed: true,

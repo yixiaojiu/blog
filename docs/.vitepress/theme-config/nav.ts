@@ -33,6 +33,10 @@ export const nav: DefaultTheme.NavItem[] = [
         ],
       },
       {
+        text: 'js',
+        items: [{ text: 'FormData', link: '/bagu-note/js/FormData' }],
+      },
+      {
         text: '计算机网络',
         items: [{ text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' }],
       },
