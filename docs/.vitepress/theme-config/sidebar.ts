@@ -30,6 +30,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
         { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
         { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
+        { text: '垂直水平居中', link: '/bagu-note/html-css/垂直水平居中' },
       ],
     },
     {
@@ -52,6 +53,10 @@ export const sidebar: DefaultTheme.Sidebar = {
         {
           text: 'pnpm 优势',
           link: '/bagu-note/package-management-tool/pnpm优势.md',
+        },
+        {
+          text: 'npm run xxx 和 npm link',
+          link: '/bagu-note/package-management-tool/npmrun和link',
         },
       ],
     },
