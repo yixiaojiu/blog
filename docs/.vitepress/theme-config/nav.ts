@@ -22,39 +22,40 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: '八股笔记',
-    items: [
-      {
-        text: 'html css',
-        items: [
-          { text: 'BFC', link: '/bagu-note/html-css/BFC' },
-          { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
-          { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
-          { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
-          { text: '垂直水平居中', link: '/bagu-note/html-css/垂直水平居中' },
-        ],
-      },
-      {
-        text: 'js',
-        items: [{ text: 'FormData', link: '/bagu-note/js/FormData' }],
-      },
-      {
-        text: '计算机网络',
-        items: [{ text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' }],
-      },
-      {
-        text: '包管理工具',
-        items: [
-          {
-            text: 'pnpm 优势',
-            link: '/bagu-note/package-management-tool/pnpm优势',
-          },
-          {
-            text: 'npm run xxx 和 npm link',
-            link: '/bagu-note/package-management-tool/npmrun和link',
-          },
-        ],
-      },
-    ],
+    link: '/bagu-note/html-css/BFC',
+    // items: [
+    //   {
+    //     text: 'html css',
+    //     items: [
+    //       { text: 'BFC', link: '/bagu-note/html-css/BFC' },
+    //       { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
+    //       { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
+    //       { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
+    //       { text: '垂直水平居中', link: '/bagu-note/html-css/垂直水平居中' },
+    //     ],
+    //   },
+    //   {
+    //     text: 'js',
+    //     items: [{ text: 'FormData', link: '/bagu-note/js/FormData' }],
+    //   },
+    //   {
+    //     text: '计算机网络',
+    //     items: [{ text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' }],
+    //   },
+    //   {
+    //     text: '包管理工具',
+    //     items: [
+    //       {
+    //         text: 'pnpm 优势',
+    //         link: '/bagu-note/package-management-tool/pnpm优势',
+    //       },
+    //       {
+    //         text: 'npm run xxx 和 npm link',
+    //         link: '/bagu-note/package-management-tool/npmrun和link',
+    //       },
+    //     ],
+    //   },
+    // ],
   },
   {
     text: '技术学习',

@@ -24,7 +24,6 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: 'html css',
       collapsible: true,
-      collapsed: true,
       items: [
         { text: 'BFC', link: '/bagu-note/html-css/CSS继承属性' },
         { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
@@ -37,7 +36,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: 'js',
       collapsed: true,
       collapsible: true,
-      items: [{ text: 'FormData', link: '/bagu-note/js/FormData' }],
+
+      items: [
+        { text: 'FormData', link: '/bagu-note/js/FormData' },
+        {
+          text: 'Event Loop',
+          link: '/bagu-note/js/EventLoop',
+        },
+      ],
     },
     {
       text: '计算机网络',
