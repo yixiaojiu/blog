@@ -31,6 +31,9 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
         { text: '垂直水平居中', link: '/bagu-note/html-css/垂直水平居中' },
         { text: 'flex', link: '/bagu-note/html-css/flex' },
+        { text: 'HTML5 语义化', link: '/bagu-note/html-css/HTML5语义化' },
+        { text: '重排重绘', link: '/bagu-note/html-css/重排重绘' },
+        { text: '实体编码', link: '/bagu-note/html-css/实体编码' },
       ],
     },
     {
