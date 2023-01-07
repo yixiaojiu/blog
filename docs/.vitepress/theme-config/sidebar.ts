@@ -30,6 +30,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
         { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
         { text: '垂直水平居中', link: '/bagu-note/html-css/垂直水平居中' },
+        { text: 'flex', link: '/bagu-note/html-css/flex' },
       ],
     },
     {

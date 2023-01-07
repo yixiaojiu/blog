@@ -1,6 +1,8 @@
 # CSS 选择器权重
 
-> 参考[vue3js.cn](https://vue3js.cn/interview/css/selector.html)
+> 参考[vue3js.cn](https://vue3js.cn/interview/css/selector.html) [掘金](https://juejin.cn/post/7143203466893066270)
+
+## 权重
 
 - important 无穷大
 - 行内样式 style 1000
@@ -14,3 +16,23 @@
 - 从左往右依次进行比较 ，较大者优先级更高
 - 如果相等，则继续往右移动一位进行比较
 - 如果 4 位全部相等，则后面的会覆盖前面的
+
+## @layer
+
+@layer 声明了一个 级联层，同一层内的规则将级联在一起，不属于任何一级联层的样式将被集中到同一匿名层，并置于所有层的后部
+
+@layer 可以让 CSS 声明的优先级下降一整个级联级别
+
+### 使用场景
+
+1. 覆盖第三方组件库样式
+2. 有些组件的 CSS reset 污染了全局
+
+**@layer 的解决方法**
+
+1. 组件的 CSS 全部写入@layer 规则中，把自身的优先级降到底部
+2. 对于第三方的 CSS 文件,可以在传统的 @import 语法后面再添加个 layer(layer-name)
+
+```css
+@import './lib.css' layer(lib);
+```
