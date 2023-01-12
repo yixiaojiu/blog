@@ -34,6 +34,7 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'HTML5 语义化', link: '/bagu-note/html-css/HTML5语义化' },
         { text: '重排重绘', link: '/bagu-note/html-css/重排重绘' },
         { text: '实体编码', link: '/bagu-note/html-css/实体编码' },
+        { text: '层叠上下文', link: '/bagu-note/html-css/层叠上下文' },
       ],
     },
     {
