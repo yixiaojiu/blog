@@ -48,6 +48,7 @@ export const sidebar: DefaultTheme.Sidebar = {
           text: 'Event Loop',
           link: '/bagu-note/js/EventLoop',
         },
+        { text: '防抖节流', link: '/bagu-note/js/防抖节流' },
       ],
     },
     {
