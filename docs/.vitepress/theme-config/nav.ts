@@ -16,7 +16,13 @@ export const nav: DefaultTheme.NavItem[] = [
       },
       {
         text: '其他',
-        items: [{ text: '2022年终总结', link: '/note/other/2022年终总结' }],
+        items: [
+          { text: '2022年终总结', link: '/note/other/2022年终总结' },
+          {
+            text: '踩坑',
+            link: '/note/other/踩坑',
+          },
+        ],
       },
     ],
   },

@@ -17,7 +17,13 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '其他',
       collapsed: true,
       collapsible: true,
-      items: [{ text: '2022年终总结', link: '/note/other/2022年终总结' }],
+      items: [
+        { text: '2022年终总结', link: '/note/other/2022年终总结' },
+        {
+          text: '踩坑',
+          link: '/note/other/踩坑',
+        },
+      ],
     },
   ],
   '/bagu-note/': [
