@@ -22,3 +22,13 @@ link-module 需要软链的包，project-A 想要使用 link-module 的包
 1. 在 link-module 中`npm link`，创建全局软链
 2. 在 project-A 中`npm link link-module`
 3. 使用完后`npm unlink link-module`,`npm unlink link-module -g `或在 link-module 中`npm unlink`
+
+## pnpm link 使用
+
+1. 在 link-module 中 `pnpm link --global`,创建全局软链接
+2. 在 project-A 中`pnpm link --global link-module`
+
+### 其他
+
+- npm yarn pnpm 之间 link 不能混用，它们各自维护自己的全局 link(猜测)
+- link 的骚操作[stackoverflow](https://stackoverflow.com/questions/72032028/can-pnpm-replace-npm-link-yarn-link)
