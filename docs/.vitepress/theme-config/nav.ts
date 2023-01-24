@@ -12,6 +12,7 @@ export const nav: DefaultTheme.NavItem[] = [
           { text: 'archlinux安装', link: '/note/study/archlinux安装' },
           { text: 'linux笔记', link: '/note/study/linux笔记' },
           { text: 'vim-vscode', link: '/note/study/vim-vscode' },
+          { text: 'react小技巧', link: '/note/study/react' },
         ],
       },
       {
