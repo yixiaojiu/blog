@@ -48,6 +48,22 @@ add scripts into `package.json`
 - `lastUpdated` is git-based and it will work only if the file is committed.[issues1495](https://github.com/vuejs/vitepress/issues/1495)
 - 搜索[issues1078](https://github.com/vuejs/vitepress/issues/1078)
 
+## 修改主题
+
+[vitepress doc](https://vitepress.vuejs.org/guide/theme-introduction#customizing-css)
+
+```ts
+// docs/.vitepress/theme/index.ts
+import DefaultTheme from 'vitepress/theme'
+
+// 在css中覆盖默认样式
+import './css/custom.css'
+
+export default {
+  ...DefaultTheme,
+}
+```
+
 ## 踩坑
 
 - 代码块的语言要写对，要不然就不写，不然 markdown 语法编译不通过
