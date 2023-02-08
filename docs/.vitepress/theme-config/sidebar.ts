@@ -3,7 +3,7 @@ export const sidebar: DefaultTheme.Sidebar = {
   '/note/': [
     {
       text: '小记',
-      collapsed: true,
+      collapsed: false,
       collapsible: true,
       items: [
         { text: '杂乱笔记', link: '/note/study/杂乱笔记' },

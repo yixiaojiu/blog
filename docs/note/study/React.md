@@ -16,4 +16,4 @@ const App = () => {
 }
 ```
 
-**注意:**不能使用 createRef,因为 createRef 的 current 是只读属性不能修改
+**注意:** 不能使用 createRef,因为 createRef 的 current 是只读属性不能修改
