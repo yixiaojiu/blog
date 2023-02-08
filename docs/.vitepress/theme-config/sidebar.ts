@@ -3,7 +3,6 @@ export const sidebar: DefaultTheme.Sidebar = {
   '/note/': [
     {
       text: '小记',
-      collapsed: false,
       collapsible: true,
       items: [
         { text: '杂乱笔记', link: '/note/study/杂乱笔记' },
@@ -56,7 +55,7 @@ export const sidebar: DefaultTheme.Sidebar = {
           link: '/bagu-note/js/EventLoop',
         },
         { text: '防抖节流', link: '/bagu-note/js/防抖节流' },
-        {text: '为什么0.1 + 0.2 不等于0.3', link: '/bagu-note/js/浮点数精度'}
+        { text: '为什么0.1 + 0.2 不等于0.3', link: '/bagu-note/js/浮点数精度' },
       ],
     },
     {
@@ -84,9 +83,12 @@ export const sidebar: DefaultTheme.Sidebar = {
   '/technology-learn/': [
     {
       text: '技术学习',
-      collapsed: true,
       collapsible: true,
-      items: [{ text: 'vitepress', link: '/technology-learn/vitepress' }],
+      items: [
+        { text: 'vitepress', link: '/technology-learn/vitepress' },
+        { text: 'pnpm', link: '/technology-learn/pnpm' },
+        { text: 'eslint', link: '/technology-learn/eslint' },
+      ],
     },
   ],
 }

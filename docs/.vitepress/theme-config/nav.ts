@@ -73,6 +73,7 @@ export const nav: DefaultTheme.NavItem[] = [
         text: 'pnpm',
         link: '/technology-learn/pnpm',
       },
+      { text: 'eslint', link: '/technology-learn/eslint' },
     ],
   },
 ]
