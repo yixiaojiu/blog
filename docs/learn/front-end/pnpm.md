@@ -67,6 +67,11 @@ total 0
 - `.pnpm`下的包硬链接到全局的 store
 - `.pnpm`下的包的依赖有的硬链接有的软链接`.pnpm`下的包
 
+## pnpm link 使用
+
+1. 在 link-module 中 `pnpm link --global`,创建全局软链接
+2. 在 project-A 中`pnpm link --global link-module`
+
 ## monorepo
 
 待更新...
