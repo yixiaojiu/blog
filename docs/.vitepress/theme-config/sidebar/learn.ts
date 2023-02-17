@@ -10,6 +10,7 @@ export const learn: DefaultTheme.SidebarMulti = {
         { text: 'pnpm', link: '/learn/front-end/pnpm' },
         { text: 'eslint', link: '/learn/front-end/eslint' },
         { text: 'typescript', link: '/learn/front-end/typescript' },
+        { text: 'vite', link: '/learn/front-end/vite' },
       ],
     },
   ],
