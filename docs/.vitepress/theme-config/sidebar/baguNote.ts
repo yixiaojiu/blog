@@ -45,10 +45,6 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       collapsible: true,
       items: [
         {
-          text: 'pnpm 优势',
-          link: '/bagu-note/package-management-tool/pnpm优势.md',
-        },
-        {
           text: 'npm run xxx 和 npm link',
           link: '/bagu-note/package-management-tool/npmrun和link',
         },
