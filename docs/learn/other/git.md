@@ -42,12 +42,27 @@ git rm --cached file
 ### 常用命令
 
 ```bash
+# 配置用户信息
+git config --global user.name ""
+git config --global user.email ""
+
 # 状态简览: 以简洁的方式查看更改
 git status -s
 
 # 将所作的更改的 diff 输出呈现在编辑器中
 git commit -v
-
 # 跳过git add 步骤
 git commit -a
+
+# 列出配置
+git config --list
+
+# 查看历史提交
+git log
+# 简略统计修改信息
+git log --stat
+# 展示最近n次
+git log -n
+# 将每个提交放在一行展示
+git log --pretty=oneline
 ```

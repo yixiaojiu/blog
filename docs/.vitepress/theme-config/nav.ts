@@ -6,7 +6,7 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/note/study/vscode',
   },
   {
-    text: '📙八股笔记',
+    text: '📙每天一个小知识',
     link: '/bagu-note/html-css/BFC',
   },
   {

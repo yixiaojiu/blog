@@ -50,8 +50,11 @@
   height: 200px;
   outline: 2px solid skyblue;
   background-repeat: no-repeat;
-  background-image: linear-gradient(32deg, orangered 50%, rgba(255, 255, 255, 0) 50%), linear-gradient(148deg, orangered
-        50%, rgba(255, 255, 255, 0) 50%);
+  background-image: linear-gradient(
+      32deg,
+      orangered 50%,
+      rgba(255, 255, 255, 0) 50%
+    ), linear-gradient(148deg, orangered 50%, rgba(255, 255, 255, 0) 50%);
   background-size: 100% 50%;
   background-position: top left, bottom left;
 }
