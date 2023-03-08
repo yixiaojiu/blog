@@ -39,6 +39,30 @@ git rm --cached file
 
 使用场景，忘记把文件添加进`.gitignore`，把文件从暂存区中删除，但仍然保留在工作目录中
 
+### 撤销操作
+
+- 重新提交
+
+有时候我们提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。
+
+```bash
+git commit --amend -m "message"
+```
+
+- 取消暂存的文件
+
+```bash
+git restore --staged <file>
+```
+
+- 撤销对文件的修改
+
+将文件还原成上次提交时的样子
+
+```bash
+git checkout -- <file>
+```
+
 ### 常用命令
 
 ```bash
@@ -66,3 +90,5 @@ git log -n
 # 将每个提交放在一行展示
 git log --pretty=oneline
 ```
+
+## 远程仓库

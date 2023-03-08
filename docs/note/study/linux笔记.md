@@ -38,18 +38,12 @@ screen -ls  查看当前会话
 screen -r name  恢复指定name的会话
 screen -S name  创建一个会话并命名为name
 screen -R [pid/Name] -X quit 删除一个会话
-screen -d name 处理There is no screen to be resumed matching ****
+screen -d name 处理There is no screen to be resumed matching
 ```
 
 `ctrl`+ `a`+`d` 退出当前会话
 
 ---
-
-## docker
-
-```bash
-
-```
 
 ## yum
 
@@ -95,11 +89,16 @@ location / {
 ## 常用命令
 
 ```bash
-rm -f file1									删除一个`file1`文件
-rmdir dir1									删除`dir1`目录
-rm -rf dir1									删除`dir1`目录，同时删除其内容
-mv dir1 new_dir							重命名或移动一个目录
-tar -xvf archive.tar				释放一个包
+# 删除一个`file1`文件
+rm -f <file>
+# 删除`dir1`目录
+rmdir <dir>
+# 删除`dir1`目录，同时删除其内容
+rm -rf <dir>
+# 重命名或移动一个目录
+mv <orign> <target>
+# 释放一个包
+tar -xvf archive.tar
 ```
 
 ## ssh

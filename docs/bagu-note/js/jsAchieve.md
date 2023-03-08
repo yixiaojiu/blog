@@ -1,5 +1,7 @@
 # 手写
 
+> 参考[前端学习文档](https://kiraraty.github.io/fe-doc/#/interview/%E4%BB%A3%E7%A0%81%E9%A2%98)
+
 ## 数组去重
 
 ```ts
@@ -135,5 +137,153 @@ const quickSort = (array) => {
   }
   sort(0, array.length - 1)
   return array
+}
+```
+
+## myInstanceof
+
+```js
+function myInstanceof(left, right) {
+  let proto = Object.getPrototypeOf(left)
+  const prototype = right.prototype
+  while (true) {
+    if (!proto) return false
+    if (proto === prototype) return true
+    proto = Object.getPrototypeOf(proto)
+  }
+}
+```
+
+## 浅拷贝与深拷贝
+
+### 浅拷贝
+
+浅拷贝是指，一个新的对象对原始对象的属性值进行精确地拷贝，如果拷贝的是基本数据类型，拷贝的就是基本数据类型的值，如果是引用数据类型，拷贝的就是内存地址。如果其中一个对象的引用内存地址发生改变，另一个对象也会发生变化。
+
+- Object.asssign()，语法：`Object.assign(target, source1, ···)`
+
+- 扩展运算符，语法：`let cloneObj = {...obj };`
+
+- Array.prototype.slice()
+
+- Array.prototype.concat()
+
+- 手写浅拷贝
+
+```js
+function shallowCopy(object) {
+  if (!object || typeof object !== 'object') return
+  const newObject = Array.isArray(object) ? [] : {}
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      newObject[key] = object[key]
+    }
+  }
+  return newObject
+}
+```
+
+### 深拷贝
+
+- JSON.stringify()，拷贝的对象中如果有函数，undefined， symbol，当使用过 JSON.stringify() 进行处理之后，都会消失
+
+- 手写深拷贝
+
+```js
+function deepClone(target) {
+  if (target === null || typeof target !== 'object') return target
+  if (target instanceof Date) return new Date(target)
+  if (target instanceof RegExp) return new RegExp(target)
+  const cloneTarget = Array.isArray(target) ? [] : {}
+  for (const key in target) {
+    if (target.hasOwnProperty(key)) {
+      cloneTarget[key] = deepClone(target[key])
+    }
+  }
+  return cloneTarget
+}
+```
+
+## 使用 promise 实现 ajax
+
+```js
+function request(option) {
+  const { url, method, data } = option
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest()
+    xhr.open(method.toUpperCase(), url, true)
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== 4) return
+      const res = {
+        code: xhr.status,
+        body: xhr.response,
+      }
+      if (xhr.status >= 200 && xhr.status < 300) {
+        resolve(res)
+      } else {
+        reject(res)
+      }
+    }
+    xhr.onerror = () => {
+      reject(new Error(xhr.statusText))
+    }
+    xhr.responseType = 'json'
+    xhr.setRequestHeader('Accept', 'application/json')
+    xhr.send(JSON.stringify(data))
+  })
+}
+```
+
+## 手写 apply call bind
+
+### apply
+
+```js
+Function.prototype.myApply = function (context, args) {
+  if (args && !(args instanceof Array)) {
+    throw new TypeError('args is not a array')
+  }
+  context = context || window
+  const func = Symbol('func')
+  context[func] = this
+  let res = undefined
+  if (args) {
+    res = context[func](...args)
+  } else {
+    res = context[func]()
+  }
+  delete context[func]
+  return res
+}
+```
+
+### call
+
+```js
+Function.prototype.myCall = function (context, ...args) {
+  context = context || window
+  const func = Symbol('func')
+  context[func] = this
+  const res = context[func](...args)
+  delete context[func]
+  return res
+}
+```
+
+### bind
+
+```js
+Function.prototype.Mybind = function (context, ...args) {
+  context = context || window
+  const func = this
+  return function (...fnArgs) {
+    let res = undefined
+    if (this instanceof func) {
+      res = new func(args, fnArgs)
+    } else {
+      res = func.call(context, ...args, ...fnArgs)
+    }
+    return res
+  }
 }
 ```
