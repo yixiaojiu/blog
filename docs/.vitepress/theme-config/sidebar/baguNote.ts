@@ -33,6 +33,7 @@ export const baguNote: DefaultTheme.SidebarMulti = {
         { text: '为什么0.1 + 0.2 不等于0.3', link: '/bagu-note/js/浮点数精度' },
         { text: '手写', link: '/bagu-note/js/jsAchieve' },
         { text: 'JavaScript 基础', link: '/bagu-note/js/javascript-basics' },
+        { text: 'JavaScript 进阶', link: '/bagu-note/js/javascript-advanced' },
       ],
     },
     {

@@ -287,3 +287,40 @@ Function.prototype.Mybind = function (context, ...args) {
   }
 }
 ```
+
+## 洗牌算法
+
+```js
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
+  }
+  return array
+}
+```
+
+## 函数柯里化
+
+### 固定参数
+
+```js
+function curry(func) {
+  const length = func.length // 函数参数
+  return function temp(...args) {
+    if (args.length >= length) {
+      return func(...args)
+    } else {
+      return function () {
+        return temp(...args, ...arguments)
+      }
+    }
+  }
+}
+```
+
+### 不固定参数
+
+```js
+
+```
