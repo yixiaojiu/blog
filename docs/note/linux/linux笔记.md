@@ -101,6 +101,13 @@ mv <orign> <target>
 tar -xvf archive.tar
 ```
 
+## 命令行快捷键
+
+> 参考[Linux 命令行编辑快捷键](https://gist.github.com/zhulianhua/befb8f61db8c72b4763d)
+
+- Ctrl+a 光标回到命令行首
+- Ctrl+e 光标回到命令行尾
+
 ## ssh
 
 ### 配置别名

@@ -32,7 +32,8 @@ export const note: DefaultTheme.SidebarMulti = {
       items: [
         { text: '挂载磁盘', link: '/note/linux/mount-disk' },
         { text: 'linux笔记', link: '/note/linux/linux笔记' },
-        { text: 'archlinux安装', link: '/note/linux/archlinux安装' },
+        { text: 'archlinux', link: '/note/linux/archlinux' },
+        { text: '踩坑', link: '/note/linux/error-resolve' },
       ],
     },
   ],
