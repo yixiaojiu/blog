@@ -117,3 +117,101 @@ tsc --noEmit
 使用`a`模块时需要`a.default`
 
 2. 在`tsconfig.json`中配置`esModuleInterop`和`allowSyntheticDefaultImports`
+
+## 装饰器
+
+> 整理 [掘金](https://juejin.cn/post/7019921363918045192)
+
+装饰器允许向一个现有的对象添加新的功能，同时又不改变其结构。这种模式创建了一个装饰类，用来包装原有的类，并在保持类方法签名完整性的前提下，提供了额外的功能，可以提高代码的复用性，同时减少代码量。
+
+### 类装饰器
+
+[typescript 官方文档](https://www.typescriptlang.org/docs/handbook/decorators.html)
+
+修改 `tsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "experimentalDecorators": true
+  }
+}
+```
+
+**普通装饰器：不能传参**
+
+```ts
+const Url: ClassDecorator = (target) => {
+  // target 为构造函数
+  console.log(target)
+  target.prototype.url = 'http://localhost/api'
+}
+@Url
+class Http {}
+
+const http = new Http() as any
+console.log(http.url)
+
+// output
+// [class Http]
+// http://localhost/api
+```
+
+等效于：
+
+```ts
+const Url: ClassDecorator = (target) => {
+  // target 为构造函数
+  console.log(target)
+  target.prototype.url = 'http://localhost/api'
+}
+
+class Http {}
+
+const http = new Http() as any
+Url(Http)
+console.log(http.url)
+```
+
+**装饰器工厂：可以传参**
+
+```ts
+const Url = (url: string): ClassDecorator => {
+  return (target) => {
+    target.prototype.url = url
+  }
+}
+
+@Url('http://localhost/api')
+class Http {}
+const http = new Http() as any
+console.log(http.url)
+```
+
+### 方法装饰器
+
+它会被应用到方法的属性描述符上，可以用来监视，修改或者替换方法定义。方法装饰会在运行时传入下列个参数:
+
+- 装饰的实例。对于静态成员来说是类的构造函数，对于实例成员是类的原型对象
+- 成员的名字
+- 成员的属性描述符
+
+```ts
+const Get = (url: string): MethodDecorator => {
+  return (target, key, description: PropertyDescriptor) => {
+    description.value({
+      url,
+      code: 200,
+    })
+  }
+}
+
+class Http {
+  @Get('http://localhost/api')
+  getList(data: any) {
+    console.log(data)
+  }
+}
+
+const http = new Http()
+```

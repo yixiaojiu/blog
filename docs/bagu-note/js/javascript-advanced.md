@@ -54,6 +54,15 @@ p1.__proto__.constructor // Person
 Person.prototype.constructor // Person
 ```
 
+## 空值合并运算符（??）
+
+当左侧的操作数为 null 或者 undefined 时，返回其右侧操作数，否则返回左侧操作数。
+
+```js
+0 || 3 // 返回3
+0 ?? 3 // 返回0
+```
+
 ## Generator 函数
 
 Generator 函数可以返回（yield）多个值，在调用函数时，不会运行其代码，返回一个被称为 “generator object” 的特殊对象，可以与 `iterable` 结合使用

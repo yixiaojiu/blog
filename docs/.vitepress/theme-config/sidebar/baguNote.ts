@@ -19,7 +19,7 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       ],
     },
     {
-      text: 'js',
+      text: 'JS',
       collapsed: true,
       collapsible: true,
 
@@ -34,6 +34,22 @@ export const baguNote: DefaultTheme.SidebarMulti = {
         { text: '手写', link: '/bagu-note/js/jsAchieve' },
         { text: 'JavaScript 基础', link: '/bagu-note/js/javascript-basics' },
         { text: 'JavaScript 进阶', link: '/bagu-note/js/javascript-advanced' },
+        { text: '正则', link: '/bagu-note/js/regexp' },
+      ],
+    },
+    {
+      text: 'TS',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          text: '面试题',
+          link: '/bagu-note/ts/understand',
+        },
+        {
+          text: '类型体操',
+          link: '/bagu-note/ts/gymnastics',
+        },
       ],
     },
     {
