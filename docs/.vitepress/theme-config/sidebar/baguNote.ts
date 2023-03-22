@@ -25,10 +25,7 @@ export const baguNote: DefaultTheme.SidebarMulti = {
 
       items: [
         { text: 'FormData', link: '/bagu-note/js/FormData' },
-        {
-          text: 'Event Loop',
-          link: '/bagu-note/js/EventLoop',
-        },
+        { text: 'Event Loop', link: '/bagu-note/js/EventLoop' },
         { text: '防抖节流', link: '/bagu-note/js/防抖节流' },
         { text: '为什么0.1 + 0.2 不等于0.3', link: '/bagu-note/js/浮点数精度' },
         { text: '手写', link: '/bagu-note/js/jsAchieve' },
@@ -38,18 +35,18 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       ],
     },
     {
+      text: 'React',
+      collapsed: true,
+      collapsible: true,
+      items: [{ text: '组件基础', link: '/bagu-note/react/component-base' }],
+    },
+    {
       text: 'TS',
       collapsed: true,
       collapsible: true,
       items: [
-        {
-          text: '面试题',
-          link: '/bagu-note/ts/understand',
-        },
-        {
-          text: '类型体操',
-          link: '/bagu-note/ts/gymnastics',
-        },
+        { text: '面试题', link: '/bagu-note/ts/understand' },
+        { text: '类型体操', link: '/bagu-note/ts/gymnastics' },
       ],
     },
     {
