@@ -1,3 +1,5 @@
+# Vite
+
 ## vite 启动项目初体验
 
 > 本文是学习[bilibili](https://www.bilibili.com/video/BV1GN4y1M7P5)这个视频时的笔记
@@ -195,3 +197,7 @@ vite 插件[vite-plugin-compression](https://www.npmjs.com/package/vite-plugin-c
 将我们依赖的第三方模块全部写成 cdn 的形式，保证自己代码的小体积
 
 vite 插件[vite-plugin-cdn-import](https://www.npmjs.com/package/vite-plugin-cdn-import)
+
+## vite 原理
+
+[深入理解 Vite 核心原理](https://juejin.cn/post/7064853960636989454)

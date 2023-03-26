@@ -38,7 +38,13 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       text: 'React',
       collapsed: true,
       collapsible: true,
-      items: [{ text: '组件基础', link: '/bagu-note/react/component-base' }],
+      items: [
+        { text: '组件基础', link: '/bagu-note/react/component-base' },
+        { text: '状态管理', link: '/bagu-note/react/state-managemnet' },
+        { text: '生命周期', link: '/bagu-note/react/lifecycle' },
+        { text: '路由', link: '/bagu-note/react/router' },
+        { text: 'hooks', link: '/bagu-note/react/hooks' },
+      ],
     },
     {
       text: 'TS',

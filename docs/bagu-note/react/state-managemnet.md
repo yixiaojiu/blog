@@ -1,4 +1,4 @@
-# 数据管理
+# 状态管理
 
 ## setState
 
@@ -18,3 +18,31 @@ react 18 以后，setState 都为异步，可以使用 `flushSync` 方法，使�
 ## React 中 setState 的第二个参数作用是什么
 
 是一个回调函数，在组件重新渲染后执行，可以拿到更新后的 state。等价于在 componentDidUpdate 生命周期内执行
+
+## React 中怎么检验 props
+
+```js
+import PropTypes from 'prop-types'
+
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>
+  }
+}
+
+Greeting.propTypes = {
+  name: PropTypes.string,
+}
+```
+
+## Redux 和 Vuex 异同
+
+### 共同思想
+
+- 单—的数据源
+- 变化可以预测
+
+### 区别
+
+- Vuex 改进了 Redux 中的 Action 和 Reducer 函数，以 mutations 变化函数取代 Reducer，无需 switch，只需在对应的 mutation 函数里改变 state 值即可
+- Vuex 由于 Vue 自动重新渲染的特性，无需订阅重新渲染函数，只要生成新的 State 即可
