@@ -6,7 +6,7 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       text: 'html css',
       collapsible: true,
       items: [
-        { text: 'BFC', link: '/bagu-note/html-css/CSS继承属性' },
+        { text: 'BFC', link: '/bagu-note/html-css/BFC' },
         { text: 'CSS继承属性', link: '/bagu-note/html-css/CSS继承属性' },
         { text: 'CSS实现三角形', link: '/bagu-note/html-css/CSS实现三角形' },
         { text: 'CSS选择器权重', link: '/bagu-note/html-css/CSS选择器权重' },
@@ -35,6 +35,21 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       ],
     },
     {
+      text: 'TS',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: '面试题', link: '/bagu-note/ts/understand' },
+        { text: '类型体操', link: '/bagu-note/ts/gymnastics' },
+      ],
+    },
+    {
+      text: 'VUE',
+      collapsed: true,
+      collapsible: true,
+      items: [{ text: '基础', link: '/bagu-note/vue/base' }],
+    },
+    {
       text: 'React',
       collapsed: true,
       collapsible: true,
@@ -47,35 +62,21 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       ],
     },
     {
-      text: 'TS',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        { text: '面试题', link: '/bagu-note/ts/understand' },
-        { text: '类型体操', link: '/bagu-note/ts/gymnastics' },
-      ],
-    },
-    {
       text: '计算机网络',
       collapsible: true,
       collapsed: true,
       items: [
-        {
-          text: 'HTTPS-RSA-握手解析',
-          link: 'bagu-note/network/HTTPS-RSA-握手解析',
-        },
+        { text: '网络模型', link: 'bagu-note/network/network-model' },
+        { text: 'HTTP', link: 'bagu-note/network/http' },
+        { text: 'HTTPS-RSA-握手解析', link: 'bagu-note/network/HTTPS-RSA-握手解析' },
+        { text: 'TCP', link: 'bagu-note/network/tcp' },
       ],
     },
     {
       text: '包管理工具',
       collapsed: true,
       collapsible: true,
-      items: [
-        {
-          text: 'npm run xxx 和 npm link',
-          link: '/bagu-note/package-management-tool/npmrun和link',
-        },
-      ],
+      items: [{ text: 'npm run xxx 和 npm link', link: '/bagu-note/package-management-tool/npmrun和link' }],
     },
   ],
 }

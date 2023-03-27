@@ -7,8 +7,7 @@
 ```ts
 const deleteRepeat = (array: number[]) => Array.from(new Set(array))
 
-const deleteRepeat = (array: number[]) =>
-  array.filter((item, index) => array.indexOf(item) === index)
+const deleteRepeat = (array: number[]) => array.filter((item, index) => array.indexOf(item) === index)
 
 const deleteRepeat = (array: number[]) => {
   const res: number[] = []
