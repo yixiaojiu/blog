@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /bagu-note/html-css/BFC
+      link: /knowledge/html-css/BFC
     - theme: alt
       text: View on GitHub
       link: https://github.com/yixiaojiu/blog

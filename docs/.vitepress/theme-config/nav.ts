@@ -7,7 +7,7 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: '📙每天一个小知识',
-    link: '/bagu-note/html-css/BFC',
+    link: '/knowledge/html-css/BFC',
   },
   {
     text: '⚙技术学习',
