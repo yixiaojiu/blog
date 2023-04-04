@@ -95,6 +95,32 @@ HTTP 的 URL 使用定位的方式实现的 URI
 - Cache-Control：缓存
 - Pragma: no-cache HTTP/1.0 中规定的通用首部，那时候 HTTP/1.1 协议中的 Cache-Control 还没有出来
 
+## 跨源资源共享（CORS）
+
+[MDN CORS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CORS)
+
+CORS 规范将请求分为简单请求和非简单请求过程（可能对服务器数据产生副作用），目前 Fetch 规范已经不再使用这个词
+
+### 简单请求
+
+简单请求不会触发 CORS 预检请求，用户代理会在请求头中加入 Origin 字段
+若该请求满足以下两个条件，就可以看作是简单请求：
+
+1. 请求方法是以下三种方法之一：HEAD、GET、POST
+2. HTTP 的头信息不超出以下几种字段：Accept、Accept-Language、Content-Language、Last-Event-ID、Content-Type：只限于三个值 application/x-www-form-urlencoded、multipart/form-data、text/plain
+
+### 非简单请求
+
+先发起一个 OPTIONS（预检请求）,可以携带 Access-Control-Request-Method(想要跨域请求的方法)、Access-Control-Request-Headers（想额外携带的请求头） 请求头
+
+### CORS 响应头
+
+- Access-Control-Allow-Origin
+- Access-Control-Allow-Methods
+- Access-Control-Allow-Headers
+- Access-Control-Max-Age 预检请求的缓存时间
+- Access-Control-Allow-Credentials 限定客户端可以携带敏感信息
+
 ## 缓存
 
 ### 强缓存

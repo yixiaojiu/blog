@@ -34,6 +34,7 @@ export const note: DefaultTheme.SidebarMulti = {
         { text: 'linux笔记', link: '/note/linux/linux笔记' },
         { text: 'archlinux', link: '/note/linux/archlinux' },
         { text: '踩坑', link: '/note/linux/error-resolve' },
+        { text: 'MySql', link: '/note/linux/mysql' },
       ],
     },
   ],

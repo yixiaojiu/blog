@@ -1,20 +1,19 @@
 import type { DefaultTheme } from 'vitepress'
 
-export const baguNote: DefaultTheme.SidebarMulti = {
+export const knowledge: DefaultTheme.SidebarMulti = {
   '/knowledge/': [
     {
       text: 'html css',
       collapsible: true,
       items: [
+        { text: 'HTML', link: '/knowledge/html-css/html' },
+        { text: 'CSS', link: '/knowledge/html-css/css' },
         { text: 'BFC', link: '/knowledge/html-css/BFC' },
         { text: 'CSS继承属性', link: '/knowledge/html-css/CSS继承属性' },
         { text: 'CSS实现三角形', link: '/knowledge/html-css/CSS实现三角形' },
         { text: 'CSS选择器权重', link: '/knowledge/html-css/CSS选择器权重' },
         { text: '垂直水平居中', link: '/knowledge/html-css/垂直水平居中' },
-        { text: 'flex', link: '/knowledge/html-css/flex' },
-        { text: 'HTML5 语义化', link: '/knowledge/html-css/HTML5语义化' },
         { text: '重排重绘', link: '/knowledge/html-css/重排重绘' },
-        { text: '实体编码', link: '/knowledge/html-css/实体编码' },
         { text: '层叠上下文', link: '/knowledge/html-css/层叠上下文' },
       ],
     },
@@ -39,7 +38,7 @@ export const baguNote: DefaultTheme.SidebarMulti = {
       collapsed: true,
       collapsible: true,
       items: [
-        { text: '面试题', link: '/knowledge/ts/understand' },
+        { text: '基础', link: '/knowledge/ts/understand' },
         { text: '类型体操', link: '/knowledge/ts/gymnastics' },
       ],
     },
