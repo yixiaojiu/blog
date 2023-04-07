@@ -14,6 +14,8 @@
 - 使用语义化标签
 - 前端网站性能优化：减少 http 请求数量、采用 lazyload、利用浏览器缓存、启用 GZIP 压缩，浏览速度变快，搜索引擎的蜘蛛抓取信息量也会增大
 
+## SPA 怎么进行 SEO 优化
+
 ## HTML5 语义化
 
 > 参考[语雀](https://www.yuque.com/cuggz/interview/gme0bw#2526e56666786604b36e9d839b72bcff)
@@ -27,3 +29,7 @@
 ### 有哪些语义化标签
 
 header、footer、main、aside、article、section、h1/h2、p、strong/italic
+
+## src 与 href 的区别
+
+src 用于替换当前内容，href 用于在当前文档和引用资源之间确立联系

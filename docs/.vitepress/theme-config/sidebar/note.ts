@@ -14,18 +14,6 @@ export const note: DefaultTheme.SidebarMulti = {
       ],
     },
     {
-      text: '其他',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        { text: '2022年终总结', link: '/note/other/2022年终总结' },
-        {
-          text: '踩坑',
-          link: '/note/other/踩坑',
-        },
-      ],
-    },
-    {
       text: 'linux',
       collapsed: true,
       collapsible: true,
@@ -35,6 +23,18 @@ export const note: DefaultTheme.SidebarMulti = {
         { text: 'archlinux', link: '/note/linux/archlinux' },
         { text: '踩坑', link: '/note/linux/error-resolve' },
         { text: 'MySql', link: '/note/linux/mysql' },
+      ],
+    },
+    {
+      text: '其他',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: '2022年终总结', link: '/note/other/2022年终总结' },
+        {
+          text: '踩坑',
+          link: '/note/other/踩坑',
+        },
       ],
     },
   ],
