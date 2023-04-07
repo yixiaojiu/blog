@@ -44,3 +44,7 @@ HTML 实体是一段以连字号（&）开头、以分号（;）结尾的字符�
 - `flex-shrink` 属性规定某个 flex 项目相对于其余 flex 项目将收缩多少,默认值是 0
 - `flex-basis`规定 flex 项目的初始长度
 - `flex：1`含义为, `flex-grow: 1` `flex-shrink: 1` `flex-basix: 0%`
+
+## css 中哪些常见的布局方式
+
+流式布局（Flow Layout）、浮动布局（Float Layout）、定位布局（Positioning Layout）、弹性盒子布局（Flexbox Layout）、网格布局（Grid Layout）

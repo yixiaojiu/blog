@@ -80,5 +80,16 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       collapsible: true,
       items: [{ text: 'npm run xxx 和 npm link', link: '/knowledge/package-management-tool/npmrun和link' }],
     },
+    {
+      text: '面经',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: '实在智能', link: '/knowledge/interview/1' },
+        { text: '佰邦达', link: '/knowledge/interview/2' },
+        { text: '海管家物流科技', link: '/knowledge/interview/3' },
+        { text: 'Mobvista 汇量科技', link: '/knowledge/interview/4' },
+      ],
+    },
   ],
 }
