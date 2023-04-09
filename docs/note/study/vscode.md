@@ -34,5 +34,6 @@
 
 ## 快捷键
 
-- `Fold Level1` ctrl + k + 1 折叠所有第一等级的大括号，用于查看源码，ctrl + k + j 展开所有
-- Alt + 左右方向键，回溯与前进 F12 跳转
+- `ctrl + k + 1` 折叠所有第一等级的大括号，用于查看源码，`ctrl + k + j` 展开所有
+- `Alt + 左右方向键`，回溯与前进 F12 跳转
+- `Ctrl + PageDown` focus 下一个终端，`Ctrl + PageUp` focus 上一个终端

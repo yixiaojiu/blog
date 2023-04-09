@@ -31,6 +31,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: 'JavaScript 基础', link: '/knowledge/js/javascript-basics' },
         { text: 'JavaScript 进阶', link: '/knowledge/js/javascript-advanced' },
         { text: '正则', link: '/knowledge/js/regexp' },
+        { text: 'ES6+ 新特性', link: '/knowledge/js/es6-plus' },
       ],
     },
     {

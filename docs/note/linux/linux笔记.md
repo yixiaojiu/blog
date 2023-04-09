@@ -1,24 +1,4 @@
-# 服务器相关
-
-## QQ 机器人
-
-**重置机器人**
-
-`rm -f /root/xdd-plus/session.token`
-
-**运行**
-
-`./xdd`
-
-**挂机**
-
-`nohup ./xdd 1>/dev/null 2>&1 & #AMD64`
-
-**重置登录次数**
-
-`docker exec -it qinglong ql resetlet`
-
----
+# linux 笔记
 
 **vscode online 运行**
 
@@ -30,39 +10,6 @@ bin/code-server --port 5000 --host 0.0.0.0 --auth password    启动服务
 ```
 
 ---
-
-## screen
-
-```bash
-screen -ls  查看当前会话
-screen -r name  恢复指定name的会话
-screen -S name  创建一个会话并命名为name
-screen -R [pid/Name] -X quit 删除一个会话
-screen -d name 处理There is no screen to be resumed matching
-```
-
-`ctrl`+ `a`+`d` 退出当前会话
-
----
-
-## yum
-
-```bash
-yum install 包名 -y   安装包
-yum update -y        更新所有包
-yum update 包名 -y    更新指定包
-yum remove 包名       卸载包
-```
-
-## pm2
-
-```bash
-pm2 ls   查看列表
-pm2 start app.js --name [name] --watch 启动应用并监视
-pm2 stop [name] 停止
-pm2 restart [name] 重启
-pm2 delete [name] 删除
-```
 
 ## Nginx
 
@@ -84,21 +31,6 @@ location / {
   index index.html index.htm;
   proxy_pass http://127.0.0.1;
 }
-```
-
-## 常用命令
-
-```bash
-# 删除一个`file1`文件
-rm -f <file>
-# 删除`dir1`目录
-rmdir <dir>
-# 删除`dir1`目录，同时删除其内容
-rm -rf <dir>
-# 重命名或移动一个目录
-mv <orign> <target>
-# 释放一个包
-tar -xvf archive.tar
 ```
 
 ## 命令行快捷键

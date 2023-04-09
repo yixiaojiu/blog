@@ -1,6 +1,6 @@
-# vim + vscode
+# Vim
 
-## vim
+## vim 基础
 
 - 进入`insert`模式的两种方式，`a`光标在后，`i`光变在前
 - `v`进入选中模式
@@ -63,7 +63,7 @@
 - `:set hls`设置搜索高亮，`:set nohls`关闭搜索高亮
 - `gu`大写转小写，`gU`小写转大写
 
-## vscode
+## Vim for VS Code
 
 - `ctrl + shift + e` 或 `ctrl + 0`切换资源管理器与编辑区
 - `ctrl + 1`切换到编辑区光标处于编辑区
@@ -78,10 +78,12 @@
   - `ctrl + o`返回
 - 查看函数的描述`gh`
 - `gt`跳到下一个标签页，`gT`跳到上一个标签页
-- `ctrl + \`分屏
+- `Ctrl + \`分屏
 - `gb`选中多个相同的单词
+- `Ctrl + F4` 关闭 Tab 页
+- `Alt + F4` 关闭 VS Code
 
-## vim 插件
+### Vim 插件
 
 - vim-surround
 
@@ -98,3 +100,25 @@
   }
   // v操作选中embeddedLanguageFormatting，S 加上"
   ```
+
+## Vim 配置文件
+
+文件位置 `~/.vimrc`
+
+文件中不能包含注释
+
+```
+# 设置行号
+set number
+# 按下 Tab 键时，Vim 显示的空格数
+set tabstop=2
+# 映射延迟时间
+set timeoutlen=300
+# 语法高亮
+syntax on
+
+# 键位映射
+inoremap jj <esc>
+nnoremap H ^
+nnoremap L g_
+```

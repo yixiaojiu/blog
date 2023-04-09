@@ -9,7 +9,6 @@ export const note: DefaultTheme.SidebarMulti = {
         { text: 'vscode', link: '/note/study/vscode' },
         { text: '杂乱笔记', link: '/note/study/杂乱笔记' },
         { text: '项目配置', link: '/note/study/项目配置' },
-        { text: 'vim-vscode', link: '/note/study/vim-vscode' },
         { text: 'react小技巧', link: '/note/study/react' },
       ],
     },
@@ -18,11 +17,13 @@ export const note: DefaultTheme.SidebarMulti = {
       collapsed: true,
       collapsible: true,
       items: [
-        { text: '挂载磁盘', link: '/note/linux/mount-disk' },
         { text: 'linux笔记', link: '/note/linux/linux笔记' },
+        { text: '常用命令', link: '/note/linux/commands' },
+        { text: 'Vim', link: '/note/linux/vim' },
         { text: 'archlinux', link: '/note/linux/archlinux' },
-        { text: '踩坑', link: '/note/linux/error-resolve' },
         { text: 'MySql', link: '/note/linux/mysql' },
+        { text: '挂载磁盘', link: '/note/linux/mount-disk' },
+        { text: '踩坑', link: '/note/linux/error-resolve' },
       ],
     },
     {
