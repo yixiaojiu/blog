@@ -124,3 +124,24 @@ class PubSub {
 渐进式就是逐渐上手，随着应用规模不断扩大，我们才可能逐渐引入路由、状态管理、vue-cli 等库和工具
 
 声明式就是不需要去关注 dom，只想关注数据，由框架处理数据到视图的渲染。而命令式，例如 jquery，每一步操作都是明确的
+
+## diff
+
+### key 的作用
+
+> [掘金](https://juejin.cn/post/7190726242042118200)
+
+isSameVNodeType 方法用于判断两个 vnode 是否相同
+
+判断的方法是利用 vnode 的 type 和 key 进行对比，如果 type 和 key 都相同，则认为这两个 vnode 相同
+
+### diff 五大步
+
+1. sync from start 自前向后的对比，遇到不同的 vnode 就跳出循环，相同则直接 patch
+2. sync from end 自后向前的对比，遇到不同的 vnode 就跳出循环，相同则直接 patch
+3. common sequence + mount 新节点多于旧节点，需要挂载
+4. common sequence + unmount 旧节点多于新节点，需要卸载
+5. 处理乱序情况，首先确定最长递增子序列，减少移动的次数
+   1. 创建一个 (key（新节点的 key）:index（新节点的位置）) 的 Map 对象 keyToNewIndexMap。通过该对象可知：新的 child（根据 key 判断指定 child） 更新后的位置（根据对应的 index 判断）在哪里
+   2. 循环 oldChildren ，并尝试进行 patch（打补丁）或 unmount（删除）旧节点
+   3. 处理 移动和挂载
