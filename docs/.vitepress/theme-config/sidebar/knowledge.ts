@@ -79,7 +79,9 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       collapsed: true,
       collapsible: true,
       items: [
+        { text: '浏览器安全', link: '/knowledge/browser/browser-security' },
         { text: '事件机制', link: '/knowledge/browser/event-mechanism' },
+        { text: '浏览器缓存', link: '/knowledge/browser/cache' },
         { text: '事件循环', link: '/knowledge/browser/EventLoop' },
       ],
     },

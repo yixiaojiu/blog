@@ -30,7 +30,7 @@
 
 ### async/await
 
-使用 await 时，会从右往左执行，当遇到 await 时，会阻塞函数内部处于它后面的代码，去执行该函数外部的同步代码，当外部同步代码执行完毕，再回到该函数内部执行剩余的代码, 并且当 await 执行完毕之后，会先处理微任务队列的代码
+我们知道 async 隐式返回 Promise 作为结果的函数,那么可以简单理解为，await 后面的函数执行完毕时，await 会产生一个微任务(Promise.then 是微任务)。但是我们要注意这个微任务产生的时机，它是执行完 await 之后，直接跳出 async 函数，执行其他代码(此处就是协程的运作，A 暂停执行，控制权交给 B)。其他代码执行完毕后，再回到 async 函数去执行剩下的代码，然后把 await 后面的代码注册到微任务队列当中。
 
 **示例**
 
@@ -52,6 +52,7 @@ console.log('script end')
 
 // output
 // async1 start -> async2 end -> script end -> async1 end -> promise
+// async1 end 比 promise 先进入微任务队列
 ```
 
 在 async2 中增加点代码
@@ -151,20 +152,17 @@ Promise.resolve()
 
 nextTick 和 Promise
 
-next Tick 先与 Promise 执行
+nextTick 先与 Promise 执行
 
 ### 事件循环
 
-node 的事件循环有 6 个阶段，日常开发中只需要关注 poll、check、timers 这 3 个阶段
+node 的事件循环有 6 个阶段，日常开发中只需要关注 timers、poll、check 这 3 个阶段
 
 每个阶段都有一个 FIFO 队列来执行回调。虽然每个阶段都是特殊的，但通常情况下，当事件循环进入给定的阶段时，它将执行特定于该阶段的任何操作，然后执行该阶段队列中的回调，直到队列用尽或已经执行到最大的回调数。当该队列已用尽或达到回调限制，事件循环将移动到下一阶段，以此类推。
 
 **timers**
 
 timers 阶段会执行 setTimeout 和 setInterval 回调，并且是由 poll 阶段控制的。 在 Node 中定时器指定的时间也不是准确时间(浏览器也是)，只能是尽快执行
-
-**check**
-直接执行 setImmdiate 的回调
 
 **poll**
 
@@ -176,6 +174,9 @@ timers 阶段会执行 setTimeout 和 setInterval 回调，并且是由 poll 阶
 2. 如果 poll 队列为空时，会有两件事发生
    1. 如果有 setImmediate 回调需要执行，poll 阶段会停止并且进入到 check 阶段执行回调
    2. 如果没有 setImmediate 回调需要执行，会等待回调被加入到队列中并立即执行回调，这里同样会有个超时时间设置防止一直等待下去,一段时间后自动进入 check 阶段。
+
+**check**
+直接执行 setImmdiate 的回调
 
 ### 记背
 

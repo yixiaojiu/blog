@@ -130,47 +130,6 @@ CORS 规范将请求分为简单请求和非简单请求过程（可能对服务
 - Access-Control-Max-Age 预检请求的缓存时间
 - Access-Control-Allow-Credentials 限定客户端可以携带敏感信息
 
-## 缓存
-
-### 强缓存
-
-> [HTTP 缓存](https://juejin.cn/post/7060876277376352293)
-
-Cache-Control 相对时间，Expires 绝对时间，Cache-Control 的优先级高于 Expires
-
-**Cache-Control 参数：**
-
-可缓存性
-
-- `public` 表明响应可以被任何对象（包括：发送请求的客户端，代理服务器，等等）缓存
-- `private` 表明响应只能被单个用户缓存，不能作为共享缓存（即代理服务器不能缓存它）
-- `no-cache` 不使用强缓存，需要与服务器验协商缓存验证
-- `no-store` 不使用任何缓存
-
-过期
-
-- `max-age=<seconds>` 缓存存储的最大周期，超过这个周期被认为过期
-
-重新验证和重新加载
-
-- `must-revalidate` 如页面过期，则去服务器进行获取
-
-其他
-
-- `only-if-cached` 不进行网络请求，完全只使用缓存
-
-### 协商缓存
-
-**Last-Modified、If-Modified-Since**
-
-GMT 格式的时间字符串，代表的是文件的最后修改时间
-
-1. 响应头 Last-Modified 告诉浏览器资源的最后修改时间
-2. 请求时 If-Modified-Since 带上 Last-Modified 的时间
-3. 服务端进行对比，如果一致，则返回 304；如果已经修改，则返回资源和 200
-
-**Etag、If-None-Match**
-
 过程与上面一致
 
 ## HTTP/1.1 特性
