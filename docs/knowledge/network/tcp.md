@@ -1,9 +1,78 @@
 # TCP
 
+> 内容来自 [小林 coding](https://xiaolincoding.com/network/3_tcp/tcp_interview.html)
+
+## TCP 基本认识
+
+TCP 是面向连接的、可靠的、基于字节流的传输层通信协议
+
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230534096.png)
+
+TCP 四元组：源地址、源端口、目的地址、目的端口
+
+**控制位：**
+
+- `ACK`：该位为 1 时，「确认应答」的字段变为有效，TCP 规定除了最初建立连接时的 SYN 包之外该位必须设置为 1 。
+- `RST`：该位为 1 时，表示 TCP 连接中出现异常必须强制断开连接。
+- `SYN`：该位为 1 时，表示希望建立连接，并在其「序列号」的字段进行序列号初始值的设定。
+- `FIN`：该位为 1 时，表示今后不会再有数据发送，希望断开连接。当通信结束希望断开连接时，通信双方的主机之间就可以相互交换 FIN 位为 1 的 TCP 段。
+
 ## 三次握手
 
-[小林 coding](https://xiaolincoding.com/network/3_tcp/tcp_interview.html#tcp-%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E8%BF%87%E7%A8%8B%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84)
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4/%E7%BD%91%E7%BB%9C/TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.drawio.png)
 
-## TCP 四次挥手
+第三次握手是可以携带数据的，前两次握手是不可以携带数据的
 
-[小林 coding](https://xiaolincoding.com/network/3_tcp/tcp_interview.html#tcp-%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B%E8%BF%87%E7%A8%8B%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84)
+## 为什么是三次握手？
+
+常见回答：因为三次握手才能保证双方具有接收和发送的能力
+
+1. 三次握手才可以阻止重复历史连接的初始化（主要原因）
+
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230525514.png)
+
+在两次握手的情况下，服务端没有中间状态给客户端来阻止历史连接，导致服务端可能建立一个历史连接，造成资源浪费。
+
+![](https://cdn.xiaolincoding.com//mysql/other/fe898053d2e93abac950b1637645943f.png)
+
+2. 三次握手才可以同步双方的初始序列号
+
+**序列号的作用：**
+
+- 接收方可以去除重复的数据；
+- 接收方可以根据数据包的序列号按序接收；
+- 可以标识发送出去的数据包中， 哪些是已经被对方收到的（通过 ACK 报文中的序列号知道）
+
+3. 三次握手才可以避免资源浪费
+
+## 为什么每次建立 TCP 连接时，初始化的序列号都要求不一样呢？
+
+为了防止历史报文被下一个相同四元组的连接接收（主要方面）；
+
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/network/tcp/isn%E7%9B%B8%E5%90%8C.png)
+
+## 握手丢失会发生什么
+
+- 第一次握手：客户端会触发超时重传，重传 SYN 报文，而且重传的 SYN 报文的序列号都是一样的。每次超时的时间是上一次的 2 倍
+- 第二次握手：客户端和服务端都会重传
+- 第三次握手：服务端重传 SYN-ACK 报文。ACK 报文是不会有重传的，当 ACK 丢失了，就由对方重传对应的报文
+
+## 四次挥手
+
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230614791.png)
+
+每个方向都需要一个 FIN 和一个 ACK，因此通常被称为四次挥手。
+
+主动关闭连接的，才有 TIME_WAIT 状态。
+
+## 为什么挥手需要四次？
+
+- 关闭连接时，客户端向服务端发送 FIN 时，仅仅表示客户端不再发送数据了但是还能接收数据。
+- 服务端收到客户端的 FIN 报文时，先回一个 ACK 应答报文，而服务端可能还有数据需要处理和发送，等服务端不再发送数据时，才发送 FIN 报文给客户端来表示同意现在关闭连接。
+
+## 挥手丢失会发生什么
+
+- 第一次挥手：客服端重传 FIN 报文，当超过最大重传次数时
+- 第二次挥手：由于 ACK 报文是不会重传的，所以由客户端触发超时重传机制，重传 FIN 报文
+- 第三次挥手：服务端超时重传 FIN 报文
+- 第四次挥手：服务端超时重传 FIN 报文

@@ -24,7 +24,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
 
       items: [
         { text: 'FormData', link: '/knowledge/js/FormData' },
-        { text: 'Event Loop', link: '/knowledge/js/EventLoop' },
         { text: '防抖节流', link: '/knowledge/js/防抖节流' },
         { text: '为什么0.1 + 0.2 不等于0.3', link: '/knowledge/js/浮点数精度' },
         { text: '手写', link: '/knowledge/js/jsAchieve' },
@@ -44,7 +43,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       ],
     },
     {
-      text: 'VUE',
+      text: 'Vue',
       collapsed: true,
       collapsible: true,
       items: [
@@ -71,8 +70,17 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       items: [
         { text: '网络模型', link: 'knowledge/network/network-model' },
         { text: 'HTTP', link: 'knowledge/network/http' },
-        { text: 'HTTPS-RSA-握手解析', link: 'knowledge/network/HTTPS-RSA-握手解析' },
+        { text: 'HTTPS', link: 'knowledge/network/https' },
         { text: 'TCP', link: 'knowledge/network/tcp' },
+      ],
+    },
+    {
+      text: '浏览器',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: '事件机制', link: '/knowledge/browser/event-mechanism' },
+        { text: '事件循环', link: '/knowledge/browser/EventLoop' },
       ],
     },
     {
