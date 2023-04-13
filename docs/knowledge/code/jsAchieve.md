@@ -142,14 +142,17 @@ const quickSort = (array) => {
 ## myInstanceof
 
 ```js
-function myInstanceof(left, right) {
+function myInstanceOf(left, right) {
   let proto = Object.getPrototypeOf(left)
   const prototype = right.prototype
-  while (true) {
-    if (!proto) return false
-    if (proto === prototype) return true
-    proto = Object.getPrototypeOf(proto)
+  while (proto) {
+    if (proto === prototype) {
+      return true
+    } else {
+      proto = Object.getPrototypeOf(proto)
+    }
   }
+  return false
 }
 ```
 
@@ -240,7 +243,7 @@ function request(option) {
 ```js
 Function.prototype.myApply = function (context, args) {
   if (args && !(args instanceof Array)) {
-    throw new TypeError('args is not a array')
+    throw new TypeError('args is not an array')
   }
   context = context || window
   const func = Symbol('func')
@@ -304,14 +307,13 @@ function shuffleArray(array) {
 ### 固定参数
 
 ```js
-function curry(func) {
-  const length = func.length // 函数参数
-  return function temp(...args) {
-    if (args.length >= length) {
-      return func(...args)
+function curry(fn) {
+  return function curried(...args) {
+    if (args.length >= fn.length) {
+      return fn.apply(this, args)
     } else {
-      return function () {
-        return temp(...args, ...arguments)
+      return function (...args2) {
+        return curried.apply(this, args.concat(args2))
       }
     }
   }
@@ -321,5 +323,39 @@ function curry(func) {
 ### 不固定参数
 
 ```js
+function currying(fnc) {
+  // 存储参数
+  let args = []
+  return function temp(...newArgs) {
+    if (newArgs.length) {
+      args.push(...newArgs)
+      return temp
+    } else {
+      // 当最后一次调用，没有参数时，执行函数
+      const res = fnc.apply(this, args)
+      args = []
+      return res
+    }
+  }
+}
+```
 
+## new
+
+```js
+function myNew(fn, ...args) {
+  const obj = Object.create(fn.prototype)
+  const result = fn.apply(obj, args)
+  return result instanceof Object ? result : obj
+}
+```
+
+## Object.create()
+
+```js
+function create(target) {
+  function Fn() {}
+  Fn.prototype = target
+  return new Fn()
+}
 ```

@@ -24,9 +24,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
 
       items: [
         { text: 'FormData', link: '/knowledge/js/FormData' },
-        { text: '防抖节流', link: '/knowledge/js/防抖节流' },
         { text: '为什么0.1 + 0.2 不等于0.3', link: '/knowledge/js/浮点数精度' },
-        { text: '手写', link: '/knowledge/js/jsAchieve' },
         { text: 'JavaScript 基础', link: '/knowledge/js/javascript-basics' },
         { text: 'JavaScript 进阶', link: '/knowledge/js/javascript-advanced' },
         { text: '正则', link: '/knowledge/js/regexp' },
@@ -83,6 +81,16 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '事件机制', link: '/knowledge/browser/event-mechanism' },
         { text: '浏览器缓存', link: '/knowledge/browser/cache' },
         { text: '事件循环', link: '/knowledge/browser/EventLoop' },
+      ],
+    },
+    {
+      text: '代码篇',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: '手写', link: '/knowledge/code/jsAchieve' },
+        { text: '防抖节流', link: '/knowledge/code/debounce-thorttle' },
+        { text: 'Promise', link: '/knowledge/code/promise' },
       ],
     },
     {
