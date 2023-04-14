@@ -23,7 +23,7 @@ const sharedSymbol = Symbol.for('ssn')
 
 // 获取symbol的键
 // 只能获得 Symbol.for 的 key，Symbol() 会返回 undefined，即使传入 description
-Symbol.for(sharedSymbol) // ssn
+Symbol.keyFor(sharedSymbol) // ssn
 
 // Symbol.toStringTag
 let myObj = {}
@@ -93,7 +93,7 @@ controller.abort()
 
 ## js 延迟加载
 
-1. async 属性，异步请求脚本。如果请求完成时，HTML 还没有解析完，会暂定 HTML 解析，执行 JS 代码。多个 defer script 标签，执行顺序不确定
+1. async 属性，异步请求脚本。如果请求完成时，HTML 还没有解析完，会暂停 HTML 解析，执行 JS 代码。多个 async script 标签，执行顺序不确定
 2. defer 属性，异步请求脚本，等待 HTML 解析完毕再执行 JS 代码。多个 defer script 标签，按照 HTML 中出现的顺序执行
 3. 动态创建 DOM 方式
 

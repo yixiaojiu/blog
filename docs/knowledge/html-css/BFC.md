@@ -32,4 +32,4 @@ BFC(Block formatting context)"块级格式化上下文"
 
 - 避免 margin 重叠
 - 自适应两栏布局
-- 清楚浮动
+- 清除浮动

@@ -4,7 +4,7 @@
 
 > [HTTP 缓存](https://juejin.cn/post/7060876277376352293)
 
-Cache-Control 相对时间，Expires 绝对时间，Cache-Control 的优先级高于 Expires
+Cache-Control 相对时间，Expires 绝对时间
 
 **Cache-Control 参数：**
 
@@ -38,6 +38,11 @@ GMT 格式的时间字符串，代表的是文件的最后修改时间
 1. 响应头 Last-Modified 告诉浏览器资源的最后修改时间
 2. 请求时 If-Modified-Since 带上 Last-Modified 的时间
 3. 服务端进行对比，如果一致，则返回 304；如果已经修改，则返回资源和 200
+
+**缺点：**
+
+- 服务器资源可能在秒级内改动，协商缓存就无法生效
+- 服务器与客服端时间可能不一致
 
 **Etag、If-None-Match**
 
