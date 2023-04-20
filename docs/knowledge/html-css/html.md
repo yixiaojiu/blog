@@ -16,6 +16,8 @@
 
 ## SPA 怎么进行 SEO 优化
 
+- 使用 SSR
+
 ## HTML5 语义化
 
 > 参考[语雀](https://www.yuque.com/cuggz/interview/gme0bw#2526e56666786604b36e9d839b72bcff)

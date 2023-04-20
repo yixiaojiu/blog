@@ -10,7 +10,9 @@
 
 ## border
 
-**原理：** 盒模型为`content-box`，宽高都设置成 0，则 div 只与 border 有关
+`box-sizing` 为 `content-box`，宽高都设置成 0，则 div 只与 border 有关
+
+`box-sizing` 为 `border-box`，设置每个边的宽度
 
 实现一个上三角形示例
 

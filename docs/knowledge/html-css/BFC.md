@@ -21,15 +21,42 @@ BFC(Block formatting context)"块级格式化上下文"
 
 ## 如何创建 BFC
 
-满足其一即可
-
+- 根元素：body
 - float 的值不是 none
-- position 的值不是 static 或者 relative
+- position 的值为 absolute、fixed
 - display 为 inline-block、table-cells、flex、inline-flex、table-caption
-- overflow 除了 visible 以外的值（hidden、auto、scroll）
+- overflow 的值为 hidden、auto、scroll
 
 ## BFC 作用
 
-- 避免 margin 重叠
-- 自适应两栏布局
-- 清除浮动
+- **解决 margin 的重叠问题**：由于 BFC 是一个独立的区域，内部的元素和外部的元素互不影响，将两个元素变为两个 BFC，就解决了 margin 重叠的问题
+- **解决高度塌陷的问题**：把父元素变成一个 BFC，常用的办法是给父元素设置 overflow:hidden
+- **创建自适应两栏布局**
+
+```css
+.left {
+  width: 100px;
+  height: 200px;
+  background: red;
+  float: left;
+}
+.right {
+  height: 300px;
+  background: blue;
+  overflow: hidden;
+}
+```
+
+## 清除浮动
+
+```css
+.clear_fix::after {
+  /* 要加的属性 */
+  content: ''; /* 添加内容 */
+  clear: both; /* 清楚两侧浮动 */
+  display: block; /* 转换元素类型为块元素 */
+  height: 0;
+  overflow: hidden; /* 溢出隐藏属性 */
+  visibility: hidden; /* 隐藏属性 */
+}
+```

@@ -1,4 +1,6 @@
-# npm run xxx 和 npm link
+# 包管理工具
+
+## npm run xxx
 
 > 参考 [掘金 洋 z](https://juejin.cn/post/7176963409236197413) 和 [掘金](https://juejin.cn/post/6844904030620090382)
 

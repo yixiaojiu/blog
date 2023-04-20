@@ -25,3 +25,7 @@ hooks 增强了函数式组件的功能，使函数式组件有了状态。
 ## useEffect 与 useLayoutEffect 的区别
 
 useEffect 在 React 的渲染过程中是被**异步调用**的，且在 dom 更新后；而 useLayoutEffect 会在所有的 DOM 更新前**同步调用**，主要用于处理 DOM 操作、调整样式、避免页面闪烁等问题
+
+## useTransition
+
+在 concurrency 模式下，useTransition 可以将某些更新标记为`可中断的`和`非紧急的`

@@ -74,4 +74,44 @@ total 0
 
 ## monorepo
 
-待更新...
+[掘金 monorepo 的组件库搭建](https://juejin.cn/post/7146183222425518093)
+
+### 优点
+
+- 共用基础设置，不用重复配置
+- 有依赖的项目之间调试开发非常方便
+- 第三方库的版本管理更简单
+
+### 创建
+
+新建 `pnpm-workspace.yaml`，声明对应的工作区
+
+```yaml
+packages:
+  - docs
+  - packages/*
+```
+
+### Workspace 协议 (workspace:)
+
+```json
+{
+  "dependencies": {
+    "foo": "workspace:*",
+    "bar": "workspace:~",
+    "qar": "workspace:^"
+  }
+}
+```
+
+当 `workspace` 包打包发布时，将会动态替换这些 `workspace:` 依赖
+
+```json
+{
+  "dependencies": {
+    "foo": "1.5.0",
+    "bar": "~1.5.0",
+    "qar": "^1.5.0"
+  }
+}
+```

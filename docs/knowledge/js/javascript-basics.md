@@ -31,6 +31,12 @@ Object.defineProperty(myObj, Symbol.toStringTag, { value: 'Yuhua' })
 console.log(Object.prototype.toString.call(myObj)) //[object Yuhua]
 ```
 
+## JS 类型隐藏式转换
+
+[你所忽略的 js 隐式转换](https://juejin.cn/post/6844903557968166926)
+
+[MDN Symbol.toPrimitive](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)
+
 ## 检测数据类型的方法
 
 - typeof 只能判断八种类型，在基本数据类型中去掉 `null`，多一个 `function`

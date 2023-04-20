@@ -84,6 +84,15 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       ],
     },
     {
+      text: '前端工程化',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        { text: 'ESlint', link: '/knowledge/engineering/eslint' },
+        { text: '包管理工具', link: '/knowledge/engineering/package-management-tool' },
+      ],
+    },
+    {
       text: '代码篇',
       collapsed: true,
       collapsible: true,
@@ -92,12 +101,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '防抖节流', link: '/knowledge/code/debounce-thorttle' },
         { text: 'Promise', link: '/knowledge/code/promise' },
       ],
-    },
-    {
-      text: '包管理工具',
-      collapsed: true,
-      collapsible: true,
-      items: [{ text: 'npm run xxx 和 npm link', link: '/knowledge/package-management-tool/npmrun和link' }],
     },
     {
       text: '面经',
