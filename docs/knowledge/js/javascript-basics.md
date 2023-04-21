@@ -133,6 +133,15 @@ controller.abort()
 
 Object.keys(obj)、Object.values(obj)、Object.entries(obj)与`for-in`的区别是不会枚举原型链中的属性
 
+## Promise 方法
+
+- `Promise.all(iterable)` 这个方法返回一个新的 promise 对象，等到所有的 promise 对象都成功或有任意一个 promise 失败
+- `Promise.allSettled(iterable)` 等到所有 promise 都已敲定（每个 promise 都已兑现或已拒绝）
+- `Promise.any(iterable)` 接收一个 promise 对象的集合，当其中的任意一个 promise 成功，就返回那个成功的 promise 的值
+- `Promise.race(iterable)` 等到任意一个 promise 的状态变为已敲定
+- `Promise.reject(reason)` 返回一个状态为已拒绝的 Promise 对象
+- `Promise.resolve(value)` 返回一个状态由给定 value 决定的 Promise 对象。如果该值是 thenable（即，带有 then 方法的对象），返回的 Promise 对象的最终状态由 then 方法执行结果决定；否则，返回的 Promise 对象状态为已兑现，并且将该 value 传递给对应的 then 方法。一般用于不知道一个值是不是 promise，使用 `Promise.resolve(value)` 包一下
+
 ## 判断对象是否为空
 
 1. 将 json 对象转化为 json 字符串，再判断该字符串是否为"{}"

@@ -4,16 +4,20 @@
 
 ## ES6
 
+- 块级作用域，Let 与 Const
 - 类
 - 模块化
 - 箭头函数
-- 函数参数默认值
 - 模板字符串
+- 函数参数默认值
+- 剩余参数和延展操作符（只用于数组）
 - 解构赋值
-- 延展操作符，只用于数组
 - 对象属性简写
 - Promise
-- Let 与 Const
+- 迭代器和生成器
+- Proxy 和 Reflect
+- Symbol 和 Symbol.iterator
+- 数组的新方法，如 Array.from()、Array.of()、Array.prototype.find() 和 Array.prototype.findIndex() 等。
 
 ## ES7
 
