@@ -128,3 +128,15 @@ JS 放在底部：
 - inline 元素设置 width、height 属性无效
 - inline 元素的 margin 和 padding 属性，水平方向产生效果，垂直方向无效果
 - vertical-align 用来指定行内元素（inline）或表格单元格（table-cell）元素的垂直对齐方式
+
+## 定位
+
+同时设置 left 和 right 时，left 生效，right 不生效，同样 top 和 bottom，top 生效
+
+### top 参考点
+
+参考 clientWidth 与 clientHeight 围起来的区域
+
+![offset](./images/offset.png)
+
+图片来源 [现代 JavaScript 教程](https://zh.javascript.info/size-and-scroll)
