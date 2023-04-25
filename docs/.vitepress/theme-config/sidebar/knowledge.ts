@@ -90,6 +90,9 @@ export const knowledge: DefaultTheme.SidebarMulti = {
       items: [
         { text: 'ESlint', link: '/knowledge/engineering/eslint' },
         { text: '包管理工具', link: '/knowledge/engineering/package-management-tool' },
+        { text: 'Vite', link: '/knowledge/engineering/vite' },
+        { text: 'Webpack', link: '/knowledge/engineering/webpack' },
+        { text: '微前端', link: '/knowledge/engineering/micro-frontend' },
       ],
     },
     {
