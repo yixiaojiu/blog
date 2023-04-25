@@ -117,6 +117,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '字节跳动 Data 部门', link: '/knowledge/interview/5' },
         { text: '百度 TPG 质量效能部', link: '/knowledge/interview/6' },
         { text: '百度 测试产品研发组', link: '/knowledge/interview/7' },
+        { text: '远去哪', link: '/knowledge/interview/8' },
       ],
     },
   ],
