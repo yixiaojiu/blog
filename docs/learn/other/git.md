@@ -63,12 +63,27 @@ git restore --staged <file>
 git checkout -- <file>
 ```
 
-### 常用命令
+## 配置
 
-```bash
+1. 系统级： `/etc/gitconfig`，使用 `git config` 时带上 `--system` 选项
+2. 用户级：`~/.gitconfig` 或 `~/.config/git/config`，使用时带上 `--global` 选项
+3. 仓库级：仓库目录下 `.git/config`，`--local` 选项
+
+```shell
 # 配置用户信息
 git config --global user.name ""
 git config --global user.email ""
+
+# 列出配置
+git config --list
+
+# 列出配置，以及对应的文件路径
+git config --list --show-origin
+```
+
+## 常用命令
+
+```shell
 
 # 状态简览: 以简洁的方式查看更改
 git status -s
@@ -78,8 +93,6 @@ git commit -v
 # 跳过git add 步骤
 git commit -a
 
-# 列出配置
-git config --list
 
 # 查看历史提交
 git log
@@ -92,3 +105,8 @@ git log --pretty=oneline
 ```
 
 ## 远程仓库
+
+### 在本地新建远程分支
+
+[git book](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF)
+`git checkout -b [branch] <remote>/[branch]`

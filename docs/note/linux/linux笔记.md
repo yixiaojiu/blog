@@ -222,53 +222,7 @@ chmod +x start.sh
 sh ./start.sh
 ```
 
-## zsh
-
-**安装 zsh**
-
-```bash
-apt install zsh
-```
-
-**oh-my-shell**
-
-[github](https://github.com/ohmyzsh/ohmyzsh)
-
-可能会变，以官方文档为准
-
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-**更改 `.zshrc`配置**
-
-```bash
-vi .zshrc
-```
-
-**主题**
-
-```
-kafeitu
-```
-
-**安装第三方插件**
-
-zsh-autosuggestions
-
-```bash
-1. 进入 ~/.oh-my-zsh/plugins
-cd ~/.oh-my-zsh/plugins
-
-2. 克隆插件的仓库
-git clone 地址
-
-3. 加入插件名到配置文件中
-```
-
 ## ubuntu 无法 root 登录
-
-> 来源于腾讯云文档
 
 Ubuntu 系统的默认用户名是 ubuntu，并在安装过程中默认不设置 root 帐户和密码。您如有需要，可在设置中开启允许 root 用户登录。具体操作步骤如下：
 
@@ -304,4 +258,23 @@ sudo vi /etc/ssh/sshd_config
 
 ```bash
 sudo service ssh restart
+```
+
+## 使用数字设置文件权限
+
+4 、2 和 1 表示读 r、写 w、执行权限 x
+
+- rwx = 4 + 2 + 1 = 7
+- rw- = 4 + 2 = 6
+- r-x = 4 + 1 = 5
+
+```shell
+chmod <ugo> <file>
+```
+
+ugo 表示 拥有者、群组、其他组
+
+```shell
+# 为所有组添加执行权限
+chmod +x <file>
 ```

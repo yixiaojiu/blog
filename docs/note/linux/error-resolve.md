@@ -16,3 +16,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 ```
+
+## nvm 版本切换问题
+
+用 nvm 切换 node 版本时，只对当前 shell 生效
+
+[github issue2797](https://github.com/nvm-sh/nvm/issues/2797)

@@ -4,7 +4,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
   '/knowledge/': [
     {
       text: 'html css',
-      collapsible: true,
       items: [
         { text: 'HTML', link: '/knowledge/html-css/html' },
         { text: 'CSS', link: '/knowledge/html-css/css' },
@@ -20,7 +19,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: 'JS',
       collapsed: true,
-      collapsible: true,
 
       items: [
         { text: 'FormData', link: '/knowledge/js/FormData' },
@@ -34,7 +32,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: 'TS',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '基础', link: '/knowledge/ts/understand' },
         { text: '类型体操', link: '/knowledge/ts/gymnastics' },
@@ -43,7 +40,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: 'Vue',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '基础', link: '/knowledge/vue/base' },
         { text: 'Vue3 源码', link: '/knowledge/vue/source-code' },
@@ -52,7 +48,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: 'React',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '组件基础', link: '/knowledge/react/component-base' },
         { text: '状态管理', link: '/knowledge/react/state-managemnet' },
@@ -63,7 +58,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     },
     {
       text: '计算机网络',
-      collapsible: true,
       collapsed: true,
       items: [
         { text: '网络模型', link: 'knowledge/network/network-model' },
@@ -75,7 +69,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: '浏览器',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '浏览器安全', link: '/knowledge/browser/browser-security' },
         { text: '事件机制', link: '/knowledge/browser/event-mechanism' },
@@ -86,7 +79,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: '前端工程化',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: 'ESlint', link: '/knowledge/engineering/eslint' },
         { text: '包管理工具', link: '/knowledge/engineering/package-management-tool' },
@@ -98,7 +90,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: '代码篇',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '手写', link: '/knowledge/code/jsAchieve' },
         { text: '防抖节流', link: '/knowledge/code/debounce-thorttle' },
@@ -108,7 +99,6 @@ export const knowledge: DefaultTheme.SidebarMulti = {
     {
       text: '面经',
       collapsed: true,
-      collapsible: true,
       items: [
         { text: '实在智能', link: '/knowledge/interview/1' },
         { text: '佰邦达', link: '/knowledge/interview/2' },

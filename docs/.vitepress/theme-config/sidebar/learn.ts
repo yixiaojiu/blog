@@ -4,7 +4,6 @@ export const learn: DefaultTheme.SidebarMulti = {
   '/learn/': [
     {
       text: '前端',
-      collapsible: true,
       items: [
         { text: 'vitepress', link: '/learn/front-end/vitepress' },
         { text: 'pnpm', link: '/learn/front-end/pnpm' },
@@ -15,7 +14,6 @@ export const learn: DefaultTheme.SidebarMulti = {
     },
     {
       text: '其他',
-      collapsible: true,
       collapsed: true,
       items: [
         { text: 'ssh', link: '/learn/other/ssh' },
