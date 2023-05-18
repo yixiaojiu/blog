@@ -39,3 +39,9 @@ ssh yixiaojiu
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh 用户名@IP地址 "cat >> ~/.ssh/authorized_keys"
 ```
+
+## 配置多个 ssh key
+
+当有多个 ssh key 连接不同的主机时，需要配置 `~/.ssh/config` 文件
+
+[掘金](https://juejin.cn/post/7085718883079815176)

@@ -4,3 +4,8 @@
 
 - `command + 空格` 聚焦搜索
 - `command + back` 删除文件
+
+## 将 mac 终端的语言设置成英文
+
+- 在 `~/.zshrc` 中添加 `export LANG=en_US.UTF-8`
+- `source ~/.zshrc`

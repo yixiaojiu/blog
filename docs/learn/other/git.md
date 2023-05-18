@@ -110,3 +110,38 @@ git log --pretty=oneline
 
 [git book](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF)
 `git checkout -b [branch] <remote>/[branch]`
+
+## 更改历史提交
+
+> 参考 [git 如何修改某次历史提交的 commit 信息和代码](https://blog.csdn.net/Numb_ZL/article/details/121486632)
+
+假设有以下历史
+
+```
+A---B(有bug)---C
+```
+
+1. 需要确保 B 之前有一次提交
+
+```shell
+git rebase -i HEAD~2
+```
+
+2. 将需要修改的 commit 所在行前面的 pick 修改为 edit。**注意** commit 信息是倒序展示的
+
+```
+edit 0ae807b99c B
+pick 70890e2e86 C
+```
+
+3. 修改代码后 `git add .`
+4. `git commit --amend`
+5. `git rebase --continue`
+
+- 如果 rebase 过程中不想 rebase 了，可以使用
+
+```shell
+git rebase --abort
+```
+
+- rebase 会修改 commitID，push 到仓库可能需要 `--force`
