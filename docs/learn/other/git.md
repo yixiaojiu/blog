@@ -63,6 +63,12 @@ git restore --staged <file>
 git checkout -- <file>
 ```
 
+- 撤销 commit
+
+```shell
+git reset --soft HEAD^
+```
+
 ## 配置
 
 1. 系统级： `/etc/gitconfig`，使用 `git config` 时带上 `--system` 选项

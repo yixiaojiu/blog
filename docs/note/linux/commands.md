@@ -39,7 +39,7 @@ pm2 delete [name] 删除
 
 ## 其他
 
-```bash
+```shell
 # 删除一个`file1`文件
 rm -f <file>
 # 删除`dir1`目录
@@ -50,5 +50,12 @@ rm -rf <dir>
 mv <orign> <target>
 # 释放一个包
 tar -xvf archive.tar
-``
+# 查看PATH，并格式化输出
+echo $PATH | tr : '\n'
+```
+
+## docker
+
+```shell
+docker stats <container_name>
 ```

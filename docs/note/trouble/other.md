@@ -1,0 +1,12 @@
+# 其他
+
+## Delete `␍`eslint(prettier/prettier)
+
+> 参考[掘金](https://juejin.cn/post/6844904069304156168)
+
+解决
+
+```bash
+# 原本值为true
+git config --global core.autocrlf false
+```

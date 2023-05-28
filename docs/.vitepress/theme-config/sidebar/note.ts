@@ -32,6 +32,15 @@ export const note: DefaultTheme.SidebarMulti = {
         { text: 'Mac使用', link: '/note/mac/mac-use' },
         { text: 'Chrome', link: '/note/mac/chrome' },
         { text: 'VS Code', link: '/note/mac/vscode' },
+        { text: '软件', link: '/note/mac/software' },
+      ],
+    },
+    {
+      text: '踩坑',
+      collapsed: true,
+      items: [
+        {text: '带有二进制的npm包', link: '/note/trouble/npm-package-binaries'},
+        {text: '其他', link: '/note/trouble/other'}
       ],
     },
     {
