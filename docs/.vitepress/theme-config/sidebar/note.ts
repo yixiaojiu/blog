@@ -22,6 +22,7 @@ export const note: DefaultTheme.SidebarMulti = {
         { text: 'MySql', link: '/note/linux/mysql' },
         { text: '挂载磁盘', link: '/note/linux/mount-disk' },
         { text: 'zsh', link: '/note/linux/zsh' },
+        { text: '常用工具', link: '/note/linux/tools' },
         { text: '踩坑', link: '/note/linux/error-resolve' },
       ],
     },
