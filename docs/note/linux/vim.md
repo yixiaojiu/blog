@@ -36,13 +36,13 @@
   - `e`向右移动到单词的结尾
   - `b`向左移动到单词的开头
   - `ge`向左移动到单词的结尾
-  - 字串换成大写
 - 当前行跳转
-  - `f{char}`跳到下个{char}位置
-  - `F{char}`跳到上个{char}位置
+  - `f{char}`本行内跳到下个{char}位置
+  - `F{char}`本行内跳到上个{char}位置
   - `;`重复上一次字符查找操作
   - `,`反向查找上次的查找命令
 - `u`撤销
+- `Ctrl + r` 重做，撤销的反向操作
 - `i` inner `a` around 例子：
   - `iw` 或 `aw` 选中单词
   - `i(` 或 `ib`，`a(` 或 `ab` 选中()内的内容，`a`包含()
@@ -60,6 +60,7 @@
   - `N`上一个匹配结果
 
 - `*`，`#`进行当前单词的向后与向前匹配
+- `%` 匹配括号移动，包括 `()[]{}`
 - `:set hls`设置搜索高亮，`:set nohls`关闭搜索高亮
 - `gu`大写转小写，`gU`小写转大写
 
@@ -108,6 +109,12 @@
 文件中不能包含注释
 
 ```
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
 # 设置行号
 set number
 # 按下 Tab 键时，Vim 显示的空格数
@@ -116,9 +123,19 @@ set tabstop=2
 set timeoutlen=300
 # 语法高亮
 syntax on
+# 搜索高亮
+set hls
+# 将系统剪切板与匿名寄存器绑定，不同操作系统不一样
+set clipboard=unnamed
 
 # 键位映射
 inoremap jj <esc>
 nnoremap H ^
 nnoremap L g_
 ```
+
+[Vim 使用系统剪切板](https://harttle.land/2020/09/04/vim-clipboard.html)
+
+## 其他
+
+[我的现代化Neovim配置](https://zhuanlan.zhihu.com/p/382092667)

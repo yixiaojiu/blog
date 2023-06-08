@@ -68,3 +68,5 @@ git clone 地址
 
 - zsh-autosuggestions
 - zsh-syntax-highlighting
+
+**TroubleShooting：** [not being able to see the suggestions](https://github.com/zsh-users/zsh-autosuggestions/issues/416#issuecomment-486516333) 解决 iTerm2 看不见提示

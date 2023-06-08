@@ -4,7 +4,7 @@ layout: home
 title: 首页
 
 hero:
-  name: 翊小久の博客
+  name: 翊小久の小站
   text: 'Study Notes and Documentation Collection'
   tagline: 记录个人学习过程和学习笔记，分享学习心得
   image:
