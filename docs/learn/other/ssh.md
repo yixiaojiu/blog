@@ -30,7 +30,7 @@ ssh yixiaojiu
 
 ### 免密登录：public-key 与 ssh-copy-id
 
-把本地的`~/.ssh/id_rsa.pub`复制到远程服务器中
+把本地的`~/.ssh/id_rsa.pub`复制到远程主机中
 
 > 如果本地没用`~/.ssh/id_rsa.pub`, 用`ssh-keygen`生成
 
@@ -39,6 +39,12 @@ ssh yixiaojiu
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh 用户名@IP地址 "cat >> ~/.ssh/authorized_keys"
 ```
+
+### 远程主机的 id_rsa.pub 认证不通过
+
+- 将本机中 `~/.ssh/known_hosts` 文件中，带远程主机 IP 的那一行删除
+
+重新将 id_rsa.pub 复制到远程主机
 
 ## 配置多个 ssh key
 
