@@ -4,6 +4,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
   '/knowledge/': [
     {
       text: 'html css',
+      collapsed: true,
       items: [
         { text: 'HTML', link: '/knowledge/html-css/html' },
         { text: 'CSS', link: '/knowledge/html-css/css' },
@@ -54,6 +55,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '生命周期', link: '/knowledge/react/lifecycle' },
         { text: '路由', link: '/knowledge/react/router' },
         { text: 'hooks', link: '/knowledge/react/hooks' },
+        { text: 'VDOM', link: '/knowledge/react/virtual-dom.md' },
       ],
     },
     {

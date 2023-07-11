@@ -4,6 +4,7 @@ export const learn: DefaultTheme.SidebarMulti = {
   '/learn/': [
     {
       text: '前端',
+      collapsed: true,
       items: [
         { text: 'vitepress', link: '/learn/front-end/vitepress' },
         { text: 'pnpm', link: '/learn/front-end/pnpm' },

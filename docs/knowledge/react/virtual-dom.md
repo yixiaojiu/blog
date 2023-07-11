@@ -13,6 +13,8 @@ ssr 没有 diff
 
 浏览器下使用 react-dom 的渲染器，会先把 vdom 转成 fiber，找到需要更新 dom 的部分，打上增删改的 effectTag 标记，这个过程叫做 reconcile，可以打断，由 scheducler 调度执行。reconcile 结束之后一次性根据 effectTag 更新 dom，叫做 commit。
 
+diff 发生在 vdom 与 老 fiber 之间
+
 react 的 diff 算法分为两个阶段：
 
 1. 对比，如果可以复用就下一个，不可以复用就结束

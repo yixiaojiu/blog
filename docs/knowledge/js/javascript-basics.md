@@ -130,6 +130,7 @@ controller.abort()
 - `Object.preventExtensions()` 可修改，删除现有属性，不能添加新属性
 - `Object.prototype.isPrototypeOf()` 判断一个对象是否存在于另一个对象的原型链上。
 - `Object.prototype.hasOwnProperty(key)` 判断对象自身属性中是否具有指定的属性
+- `Object.prototype.seal(obj)` 密封对象，不能添加、删除或配置属性
 
 Object.keys(obj)、Object.values(obj)、Object.entries(obj)与`for-in`的区别是不会枚举原型链中的属性
 
@@ -197,3 +198,7 @@ const obj = Object.create(null)
 ### 高阶函数
 
 接受函数作为参数，或者返回一个函数
+
+## 杂项
+
+- `requestAnimationFrame` 是在重绘之前执行，此时还没有更新 Dom；`requestIdleCallback` 是在浏览器空闲时期被调用

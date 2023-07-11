@@ -4,6 +4,7 @@ export const note: DefaultTheme.SidebarMulti = {
   '/note/': [
     {
       text: '小记',
+      collapsed: true,
       items: [
         { text: 'vscode', link: '/note/study/vscode' },
         { text: '杂乱笔记', link: '/note/study/杂乱笔记' },
@@ -40,8 +41,8 @@ export const note: DefaultTheme.SidebarMulti = {
       text: '踩坑',
       collapsed: true,
       items: [
-        {text: '带有二进制的npm包', link: '/note/trouble/npm-package-binaries'},
-        {text: '其他', link: '/note/trouble/other'}
+        { text: '带有二进制的npm包', link: '/note/trouble/npm-package-binaries' },
+        { text: '其他', link: '/note/trouble/other' },
       ],
     },
     {
@@ -53,6 +54,7 @@ export const note: DefaultTheme.SidebarMulti = {
           text: '踩坑',
           link: '/note/other/踩坑',
         },
+        { text: '工具收集', link: '/note/other/tools' },
       ],
     },
   ],
