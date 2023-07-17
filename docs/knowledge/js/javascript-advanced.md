@@ -252,3 +252,12 @@ V8 采用分代式垃圾回收策略，将堆内存分为新生代和老生代�
 ## Proxy 和 Reflect
 
 Proxy 与 Reflect 搭配使用是为了保证正确的 this 指向
+
+### 多标签通信
+
+[掘金](https://juejin.cn/post/7087933110678978573)
+
+- localStorage，通过 `window.addEventListener("storage", () => {})` 监听 localStorage 的变化
+- websocket
+- SharedWorker，与 websocket 类似，可以监听 message 事件
+- cookie + setInterval

@@ -41,104 +41,6 @@ const flat = (array, depth = 1) => {
 }
 ```
 
-## 排序
-
-### 冒泡排序
-
-比较相邻的两个元素，较大的元素放到后面，每遍历一遍，将当前最大数放到最后
-
-```js
-const bubbleSort = (array) => {
-  for (let i = 0; i < array.length; i++) {
-    for (let j = 0; j < array.length - i - 1; j++) {
-      if (array[j] > array[j + 1]) {
-        ;[array[j], array[j + 1]] = [array[j + 1], array[j]]
-      }
-    }
-  }
-  return array
-}
-```
-
-### 选择排序
-
-每遍历一次找到最小元素的下标，与起始位置交换
-
-```js
-const selectionSort = (array) => {
-  let minIndex = 0
-  for (let i = 0; i < array.length - 1; i++) {
-    minIndex = i
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[j] < array[minIndex]) {
-        minIndex = j
-      }
-    }
-    if (minIndex !== i) {
-      ;[array[i], array[minIndex]] = [array[minIndex], array[i]]
-    }
-  }
-  return array
-}
-```
-
-### 快速排序
-
-> 参考 [排序算法:快速排序的理解与实现](https://juejin.cn/post/6844904122274185224)
-
-选取基准值，比基准值小的放到左边数组，比基准值大的放到右边数组，在分别对左右数组进行递归排序
-
-```js
-const quickSort = (array) => {
-  if (array.length < 2) return array
-  const left = []
-  const right = []
-  const pivot = Math.floor(Math.random() * array.length)
-  for (let i = 0; i < array.length; i++) {
-    if (pivot !== i && array[i] >= array[pivot]) {
-      right.push(array[i])
-    }
-    if (pivot !== i && array[i] < array[pivot]) {
-      left.push(array[i])
-    }
-  }
-  return [...quickSort(left), array[pivot], ...quickSort(right)]
-}
-```
-
-原地快排
-
-> 参考 [掘金](https://juejin.cn/post/7203714680316592188)
-
-```js
-const quickSort = (array) => {
-  const sort = (left, right) => {
-    if (left >= right) return
-
-    const pivot = array[left]
-    let i = left
-    let j = right
-    while (i < j) {
-      while (i < j && array[j] >= pivot) j--
-      if (i < j) {
-        array[i] = array[j]
-        i++
-      }
-      while (i < j && array[i] <= pivot) i++
-      if (i < j) {
-        array[j] = array[i]
-        j--
-      }
-    }
-    array[i] = pivot
-    sort(left, i - 1)
-    sort(i + 1, right)
-  }
-  sort(0, array.length - 1)
-  return array
-}
-```
-
 ## myInstanceof
 
 ```js
@@ -192,17 +94,24 @@ function shallowCopy(object) {
 - 手写深拷贝
 
 ```js
-function deepClone(target) {
-  if (target === null || typeof target !== 'object') return target
-  if (target instanceof Date) return new Date(target)
-  if (target instanceof RegExp) return new RegExp(target)
-  const cloneTarget = Array.isArray(target) ? [] : {}
-  for (const key in target) {
-    if (target.hasOwnProperty(key)) {
-      cloneTarget[key] = deepClone(target[key])
+function deepClone(obj, hash = new WeakMap()) {
+  if (obj === null) return obj // 如果是null或者undefined我就不进行拷贝操作
+  if (obj instanceof Date) return new Date(obj)
+  if (obj instanceof RegExp) return new RegExp(obj)
+  // 可能是对象或者普通的值  如果是函数的话是不需要深拷贝
+  if (typeof obj !== 'object') return obj
+  // 是对象的话就要进行深拷贝
+  if (hash.get(obj)) return hash.get(obj)
+  let cloneObj = new obj.constructor()
+  // 找到的是所属类原型上的constructor,而原型上的 constructor指向的是当前类本身
+  hash.set(obj, cloneObj)
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      // 实现一个递归拷贝
+      cloneObj[key] = deepClone(obj[key], hash)
     }
   }
-  return cloneTarget
+  return cloneObj
 }
 ```
 

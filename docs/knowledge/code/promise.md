@@ -251,3 +251,42 @@ function promiseRace(arrayList) {
   })
 }
 ```
+
+## 限制并发数
+
+```js
+function limitConcurrency(tasks, limit) {
+  return new Promise((resolve, reject) => {
+    let results = []
+    let runningCount = 0
+    let currentIndex = 0
+
+    function runTask(index) {
+      if (index >= tasks.length) {
+        resolve(results)
+        return
+      }
+
+      runningCount++
+      tasks[index]()
+        .then((result) => {
+          results[index] = result
+          console.log(result)
+        })
+        .catch((error) => {
+          results[index] = error
+        })
+        .finally(() => {
+          runningCount--
+          runTask(currentIndex++)
+        })
+
+      if (runningCount < limit) {
+        runTask(currentIndex++)
+      }
+    }
+
+    runTask(currentIndex)
+  })
+}
+```

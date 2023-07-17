@@ -27,6 +27,8 @@ Cache-Control 相对时间，Expires 绝对时间
 
 - `only-if-cached` 不进行网络请求，完全只使用缓存
 
+- `immutable` 表示响应的内容是不可变的，即使在过期之后也不能更改
+
 ## 协商缓存
 
 **【注意】** 强缓存没用命中会走协商缓存，直接开启协商缓存的办法是 Cache-Control 设置为 no-cache

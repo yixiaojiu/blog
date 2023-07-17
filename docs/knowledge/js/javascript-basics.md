@@ -6,7 +6,7 @@
 
 ### 八种数据类型
 
-`undefined`、`null`、`Boolean`、`Number`、`String`、`Object`、`Symbol`、`BigInt`
+`undefined`、`null`、`Number`、`String`、`Boolean`、`Object`、`Symbol`、`BigInt`
 
 - 使用 `void` 对表达式求值都返回 `undefined`
 - `typeof null` 结果为 object
@@ -127,10 +127,10 @@ controller.abort()
 - `Object.is()` 判断两个值是否相同
 - `Object.freeze()` 冻结一个对象
 - `Object.isFrozen()` 判断一个对象是否被冻结
+- `Object.seal(obj)` 密封对象，不能添加、删除或配置属性
 - `Object.preventExtensions()` 可修改，删除现有属性，不能添加新属性
 - `Object.prototype.isPrototypeOf()` 判断一个对象是否存在于另一个对象的原型链上。
 - `Object.prototype.hasOwnProperty(key)` 判断对象自身属性中是否具有指定的属性
-- `Object.prototype.seal(obj)` 密封对象，不能添加、删除或配置属性
 
 Object.keys(obj)、Object.values(obj)、Object.entries(obj)与`for-in`的区别是不会枚举原型链中的属性
 

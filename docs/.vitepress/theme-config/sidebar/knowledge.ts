@@ -96,6 +96,7 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '手写', link: '/knowledge/code/jsAchieve' },
         { text: '防抖节流', link: '/knowledge/code/debounce-thorttle' },
         { text: 'Promise', link: '/knowledge/code/promise' },
+        { text: '算法', link: '/knowledge/code/algorithm' },
       ],
     },
     {
@@ -110,6 +111,8 @@ export const knowledge: DefaultTheme.SidebarMulti = {
         { text: '百度 TPG 质量效能部', link: '/knowledge/interview/6' },
         { text: '远去哪', link: '/knowledge/interview/7' },
         { text: 'Momenta', link: '/knowledge/interview/8' },
+        { text: '莉莉丝', link: '/knowledge/interview/9' },
+        { text: '字节跳动 商业化技术', link: '/knowledge/interview/10' },
       ],
     },
   ],
