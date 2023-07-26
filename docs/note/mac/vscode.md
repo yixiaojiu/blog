@@ -3,7 +3,7 @@
 ## 快捷键
 
 - `control + r` 打开最近的文件夹或文件，`enter` 替换当前 Window，`command + enter` 打开新的 Window
-- `` control + `  `` 转换终端的显示
+- ``control + ` `` 转换终端的显示
 - `command + w` 关闭当前 tab
 - `command + shfit + w` 关闭当前 Window
 - `command + i` 触发代码提升
@@ -71,3 +71,9 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
 ## terminal 字体
 
 使用 powerlevel10k 后，在 `font-family` 中新增 `MesloLGS NF` 字体
+
+## space 按键无法连按
+
+mac 输入法的问题
+
+[VSCodeVim issue2108](https://github.com/VSCodeVim/Vim/issues/2108)

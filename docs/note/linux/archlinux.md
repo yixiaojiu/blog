@@ -26,6 +26,7 @@ mkfs -t ext4 /dev/sda
 
 [youtube](https://www.youtube.com/watch?v=s4Un_QpDoRQ)
 
-## i3wm
+## dwm
 
-[ArchLinux 系统 i3wm 配置及体验记录](https://zocoxx.com/archlinux-i3wm.html)
+- Hyprland
+- i3wm [ArchLinux 系统 i3wm 配置及体验记录](https://zocoxx.com/archlinux-i3wm.html)

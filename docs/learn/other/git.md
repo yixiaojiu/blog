@@ -108,6 +108,9 @@ git log --stat
 git log -n
 # 将每个提交放在一行展示
 git log --pretty=oneline
+
+# 忽略历史提交
+git clone --depth 1 <repository_url>
 ```
 
 ## 远程仓库
