@@ -108,6 +108,7 @@ const sidebars = {
         'bagu/interview/8',
         'bagu/interview/9',
         'bagu/interview/10',
+        'bagu/interview/11',
       ],
     },
     {
