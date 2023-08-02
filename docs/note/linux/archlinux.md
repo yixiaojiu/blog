@@ -30,3 +30,7 @@ mkfs -t ext4 /dev/sda
 
 - Hyprland
 - i3wm [ArchLinux 系统 i3wm 配置及体验记录](https://zocoxx.com/archlinux-i3wm.html)
+
+## 网络
+
+[WPA2 802.1X 用户名加密码](https://es2q.com/blog/2020/12/04/nmcli-WPA2-802-1X/)

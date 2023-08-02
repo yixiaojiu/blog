@@ -111,6 +111,9 @@ git log --pretty=oneline
 
 # 忽略历史提交
 git clone --depth 1 <repository_url>
+
+# 更改上一次提交的作者和邮箱
+git commit --amend --reset-author --no-edit
 ```
 
 ## 远程仓库
