@@ -33,4 +33,26 @@ mkfs -t ext4 /dev/sda
 
 ## 网络
 
+### 连接 WPA2 加密的wifi
+
 [WPA2 802.1X 用户名加密码](https://es2q.com/blog/2020/12/04/nmcli-WPA2-802-1X/)
+
+### 代理
+
+在同一个局域网下，开启clash允许局域网连接
+
+设置环境变量 [Linux操作系统下的全局代理配置与实践](https://cloud.tencent.com/developer/article/2129796)
+
+## pacman
+
+### 升级报错
+
+`pacman -Syu`
+
+![Alt text](img/note/linux)
+
+解决办法 [archlinux 论坛](https://bbs.archlinuxcn.org/viewtopic.php?id=4580)
+
+```sh
+sudo pacman -S archlinuxcn-keyring
+```
