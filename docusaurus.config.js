@@ -9,6 +9,7 @@ const config = {
   title: '翊小久',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/avatar-transparent.png',
+  staticDirectories: ['static'],
 
   // Set the production url of your site here
   url: 'https://blog-yixiaojiu.vercel.app/',
