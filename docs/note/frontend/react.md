@@ -1,4 +1,4 @@
-# React 小技巧
+# React
 
 ## 一个 dom 绑定多个 ref
 
