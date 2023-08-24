@@ -34,7 +34,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'TS',
-      items: ['bagu/ts/basis', 'bagu/ts/gymnastics'],
+      items: ['bagu/ts/basis', 'bagu/ts/type-challenges'],
     },
     {
       type: 'category',
