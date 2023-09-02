@@ -14,15 +14,14 @@ interface Props {
   type: CardType
 }
 const Card = ({ type }: Props) => {
-  if (type === 'red') {
-    return <RedCard />
+  switch (type) {
+    case 'red':
+      return <RedCard />
+    case 'blue':
+      return <BlueCard />
+    default:
+      return null
   }
-
-  if (type === 'blue') {
-    return <BlueCard />
-  }
-
-  return null
 }
 
 const App = () => {

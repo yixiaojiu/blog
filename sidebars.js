@@ -77,6 +77,7 @@ const sidebars = {
       type: 'category',
       label: '前端工程化',
       items: [
+        'bagu/engineering/engineering',
         'bagu/engineering/eslint',
         'bagu/engineering/package-management-tool',
         'bagu/engineering/vite',
