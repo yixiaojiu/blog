@@ -31,3 +31,40 @@ webpack 5 新特性
 - Module Federation 是基于 Webpack 实现的，它提供了一系列的 Webpack 插件，可以实现模块的共享、动态加载和远程模块加载等功能。在使用 Module Federation 时，需要在 Webpack 配置文件中添加相应的插件。
 - Module Federation 会生成一个模块映射表，用于记录不同应用之间的模块依赖关系。在加载远程模块时，Module Federation 会根据模块映射表查找模块的依赖关系，然后再加载相应的模块。
 - Module Federation 会缓存已经加载的模块，避免重复加载和网络请求。在加载远程模块时，Module Federation 会先检查本地缓存，如果缓存中已经存在该模块，则直接从缓存中加载，否则再通过网络请求获取模块的代码。
+
+## qiankun 原理
+
+> [手把手教你写一个简易的微前端框架](https://juejin.cn/post/7069535266733555725)
+
+- 监听页面 URL 变化，切换子应用
+- 根据当前 URL、子应用的触发规则来判断是否要加载、卸载子应用
+- 子应用必须向外暴露 bootstrap mount unmount 这三个方法
+  - bootstrap 只会执行一次
+  - 在匹配到URL时执行mount
+
+```js
+import { registerMicroApps, start } from 'qiankun'
+
+// 注册
+registerMicroApps([
+  {
+    name: 'react app', // app name registered
+    entry: '//localhost:7100',
+    container: '#yourContainer',
+    activeRule: '/yourActiveRule',
+  },
+  {
+    name: 'vue app',
+    entry: { scripts: ['//localhost:7100/main.js'] },
+    container: '#yourContainer2',
+    activeRule: '/yourActiveRule2',
+  },
+])
+
+start()
+```
+
+- 拉取子应用 html，提取script 和 style
+- 隔离子应用 window 作用域，用 Proxy 对一个空对象做了代理，然后把这个代理对象作为子应用的 window 对象
+  - 当子应用里的代码访问 window.xxx 属性时，就会被这个代理对象拦截。它会先看看子应用的代理 window 对象有没有这个属性，如果找不到，就会从父应用里找，也就是在真正的 window 对象里找。
+  - 当子应用里的代码修改 window 属性时，会直接在子应用的代理 window 对象上修改。
