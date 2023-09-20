@@ -1,6 +1,6 @@
 # archlinux
 
-## 安装教程
+### 安装
 
 - [csdn](https://blog.csdn.net/weixin_44335269/article/details/115458834)
 
@@ -8,7 +8,7 @@
 
 - [双系统 bilibili](https://www.bilibili.com/video/BV1XY4y1f77S)
 
-## Hyprland
+### Hyprland
 
 [Hyprland 安装配置教程|缩放模糊|输入法](https://www.bilibili.com/video/BV1G14y1d7uK)
 
@@ -24,27 +24,26 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 [ArchLinux下Hyprland配置指北](https://www.bilibili.com/read/cv22707313)
 
-## 格式化磁盘
+### 格式化磁盘
 
 ```
 mkfs -t ext4 /dev/sda
 ```
 
-## i3wm
+### i3wm
 
 [ArchLinux 系统 i3wm 配置及体验记录](https://zocoxx.com/archlinux-i3wm.html)
 
-## 网络
+### 网络
 
-### 代理
 
 在同一个局域网下，开启clash允许局域网连接
 
 设置环境变量 [Linux操作系统下的全局代理配置与实践](https://cloud.tencent.com/developer/article/2129796)
 
-## pacman
+### pacman
 
-### 升级报错
+- 升级报错
 
 `pacman -Syu`
 
@@ -56,7 +55,7 @@ mkfs -t ext4 /dev/sda
 sudo pacman -S archlinuxcn-keyring
 ```
 
-## GRUB引导双系统，恢复成 Windows 引导
+### GRUB引导双系统，恢复成 Windows 引导
 
 [bilibili](https://www.bilibili.com/video/BV14f4y117yH)
 
@@ -66,3 +65,8 @@ sudo pacman -S archlinuxcn-keyring
 2. 进入 `/mnt` 目录下，除了 `EFI` 和 `System Volume Information` 目录，其他全部删除
 3. 再进入 `/EFI` 目录，除了 `Boot` 和 `Microsoft` 目录，其他全部删除
 4. 进入 BIOS 界面，将启动项改成 Windows
+
+## 使用
+
+- `ctrl + shfit + c/v` 终端中复杂粘贴
+- chrome 设置代理
