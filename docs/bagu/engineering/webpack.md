@@ -31,3 +31,11 @@ loader 的执行顺序是从右向左执行的。因为 webpack 选择了 compos
 
 - HappyPack 已经不再维护
 - Thread-loader 由 Webpack 官方提供，目前还处于持续迭代维护状态
+
+## HMR
+
+webpack 只提供文件变更信息，具体的 HMR 实现，由 client 完成
+
+## Tree Shaking
+
+基于 ESM 实现

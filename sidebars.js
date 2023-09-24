@@ -47,10 +47,11 @@ const sidebars = {
       items: [
         'bagu/react/component-base',
         'bagu/react/state-managemnet',
-        'bagu/react/lifecycle',
         'bagu/react/router',
         'bagu/react/hooks',
         'bagu/react/virtual-dom',
+        'bagu/react/react-native',
+        'bagu/react/other',
       ],
     },
     {
@@ -71,6 +72,9 @@ const sidebars = {
         'bagu/browser/event-mechanism',
         'bagu/browser/cache',
         'bagu/browser/event-loop',
+        'bagu/browser/source-load',
+        'bagu/browser/composition',
+        'bagu/browser/vitals',
       ],
     },
     {
