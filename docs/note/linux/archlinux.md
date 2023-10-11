@@ -69,4 +69,5 @@ sudo pacman -S archlinuxcn-keyring
 ## 使用
 
 - `ctrl + shfit + c/v` 终端中复杂粘贴
-- chrome 设置代理
+- chrome 设置代理 `alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'`
+- `ctrl + ;` 打开剪切板
