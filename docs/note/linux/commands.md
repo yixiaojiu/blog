@@ -58,4 +58,10 @@ echo $PATH | tr : '\n'
 
 ```shell
 docker stats <container_name>
+
+# 列出所有容器
+docker container ls -a
+
+# 列出所有正在运行的容器
+docker ps
 ```
