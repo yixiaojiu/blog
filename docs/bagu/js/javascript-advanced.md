@@ -261,3 +261,7 @@ Proxy 与 Reflect 搭配使用是为了保证正确的 this 指向
 - websocket
 - SharedWorker，与 websocket 类似，可以监听 message 事件
 - cookie + setInterval
+
+## WeakMap
+
+因为 WeakMap 的 key 是弱引用，所以在 GC 时不会记做对 key 的引用，结合 [Rust Weak](https://course.rs/advance/circle-self-ref/circle-reference.html#weak-%E4%B8%8E-rc-%E5%AF%B9%E6%AF%94) 进行理解

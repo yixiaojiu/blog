@@ -204,4 +204,4 @@ vite 插件[vite-plugin-cdn-import](https://www.npmjs.com/package/vite-plugin-cd
 
 ## vite hooks 顺序
 
-![vite hooks](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a951108fd62d44f88b1489d7906c9482~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp?)
+![vite hooks](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a951108fd62d44f88b1489d7906c9482~tplv-k3u1fbpfcp-zoom-in-crop-mark:4536:0:0:0.awebp)
