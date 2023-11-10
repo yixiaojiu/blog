@@ -36,7 +36,6 @@ mkfs -t ext4 /dev/sda
 
 ### 网络
 
-
 在同一个局域网下，开启clash允许局域网连接
 
 设置环境变量 [Linux操作系统下的全局代理配置与实践](https://cloud.tencent.com/developer/article/2129796)
@@ -71,3 +70,10 @@ sudo pacman -S archlinuxcn-keyring
 - `ctrl + shfit + c/v` 终端中复杂粘贴
 - chrome 设置代理 `alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'`
 - `ctrl + ;` 打开剪切板
+
+## OBS 捕捉屏幕
+
+参考教程：
+[Screen sharing on Hyprland (Arch Linux)](https://gist.github.com/PowerBall253/2dea6ddf6974ba4e5d26c3139ffb7580#restart-your-session)
+
+[obs-studio录屏从入门到精通（wayland）](https://www.bilibili.com/video/BV1sh4y1U7ug)

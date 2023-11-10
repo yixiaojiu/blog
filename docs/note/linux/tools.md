@@ -1,6 +1,7 @@
 # 常用工具
 
 - 文件管理器：joshuto
+- 适用于 Wayland 的 screenkey：[showmethekey](https://github.com/AlynxZhou/showmethekey)
 
 ## 命令替代品
 
