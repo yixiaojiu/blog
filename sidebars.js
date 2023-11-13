@@ -27,6 +27,7 @@ const sidebars = {
         'bagu/js/浮点数精度',
         'bagu/js/javascript-basis',
         'bagu/js/javascript-advanced',
+        'bagu/js/v8',
         'bagu/js/regexp',
         'bagu/js/es6-plus',
       ],
