@@ -61,12 +61,6 @@ const config = {
             position: 'left',
             label: '📙每天一个小知识',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'learn',
-            position: 'left',
-            label: '⚙技术学习',
-          },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/yixiaojiu/blog',

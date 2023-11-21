@@ -6,6 +6,8 @@ zsh 主题
 
 [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
+配置时记得关闭这个 [Instant prompt](https://github.com/romkatv/powerlevel10k#instant-prompt)
+
 ### 插件
 
 以 zsh-autosuggestions 为例
