@@ -1,12 +1,6 @@
-/**
- *
- * @param {stirng[]} dirs
- * @returns {import('@docusaurus/plugin-content-docs').SidebarsConfig}
- */
-function autogenerateSidebarsConfig(dirs) {}
+import { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const sidebars = {
+export default {
   bagu: [
     {
       type: 'category',
@@ -129,6 +123,4 @@ const sidebars = {
       dirName: 'note',
     },
   ],
-}
-
-module.exports = sidebars
+} satisfies SidebarsConfig
