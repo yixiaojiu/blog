@@ -9,6 +9,7 @@
 - `command + i` 触发代码提升
 - `ctrl + -` 回退 F12 跳转，`ctrl + shfit + -` 前进 F12 跳转
 - `shfit + command + ]` focus 下一个终端，`shfit + command + [` foucs 上一个终端
+- `command + K + 数字` 折叠代码
 
 ### 快捷键配置
 

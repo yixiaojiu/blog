@@ -13,6 +13,11 @@ export default {
   favicon: 'img/avatar-transparent.png',
   staticDirectories: ['static'],
 
+  i18n: {
+    defaultLocale: 'zh-CN',
+    locales: ['zh-CN'],
+  },
+
   url: 'https://blog-yixiaojiu.vercel.app/',
   baseUrl: '/',
 
@@ -39,11 +44,11 @@ export default {
   themeConfig: {
     image: 'img/avatar-transparent.png',
     navbar: {
-      title: '翊小久',
-      logo: {
-        alt: 'logo',
-        src: 'img/avatar-transparent.png',
-      },
+      title: '翊小久的笔记',
+      // logo: {
+      //   alt: 'logo',
+      //   src: 'img/avatar-transparent.png',
+      // },
       items: [
         {
           type: 'docSidebar',
@@ -68,6 +73,7 @@ export default {
     prism: {
       theme: lightTheme,
       darkTheme: darkTheme,
+      additionalLanguages: ['bash', 'diff', 'json'],
     },
     algolia: {
       appId: 'JAAWQG3A68',
