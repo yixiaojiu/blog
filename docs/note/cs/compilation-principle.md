@@ -15,3 +15,5 @@
 ### 为什么需要新的编程语言
 
 - 被广泛使用的语言更改会变得很慢，教育成本很高
+
+[Akara 博客](https://messiahhh.github.io/blog/docs/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86)

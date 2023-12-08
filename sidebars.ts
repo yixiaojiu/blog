@@ -113,8 +113,11 @@ export default {
     },
     {
       type: 'category',
-      label: '其他',
-      items: ['bagu/other/component-design', 'bagu/other/vuera-fullscreen'],
+      label: '杂货箱',
+      items: [
+        'bagu/everything/vuera-fullscreen',
+        'bagu/everything/sound-video.md',
+      ],
     },
   ],
   note: [

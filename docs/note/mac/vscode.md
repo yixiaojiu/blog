@@ -78,3 +78,9 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
 mac 输入法的问题
 
 [VSCodeVim issue2108](https://github.com/VSCodeVim/Vim/issues/2108)
+
+## rust-analyzer 报错 "Request textDocument/formatting failed"
+
+原因：rustfmt 命令行工具没有安装
+
+[github issue](https://github.com/rust-lang/rust-analyzer/issues/5036)
