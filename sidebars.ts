@@ -116,7 +116,7 @@ export default {
       label: '杂货箱',
       items: [
         'bagu/everything/vuera-fullscreen',
-        'bagu/everything/sound-video.md',
+        'bagu/everything/sound-video',
       ],
     },
   ],
