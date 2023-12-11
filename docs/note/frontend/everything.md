@@ -16,3 +16,9 @@
 # 原本值为true
 git config --global core.autocrlf false
 ```
+
+## CSS Module
+
+[< Less >css modules中的使用](https://juejin.cn/post/7089664776682340382)
+
+在 css module 下修改组件库的底层样式，需要用 `:global` 包裹
