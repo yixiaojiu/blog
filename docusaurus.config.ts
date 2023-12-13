@@ -52,15 +52,21 @@ export default {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'bagu',
+          position: 'left',
+          label: '📙每天一个小知识',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'note',
           position: 'left',
           label: '📃小记',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'bagu',
+          sidebarId: 'record',
           position: 'left',
-          label: '📙每天一个小知识',
+          label: '📝记录',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
