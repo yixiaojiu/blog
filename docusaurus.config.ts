@@ -13,6 +13,16 @@ export default {
   favicon: 'img/avatar-transparent.png',
   staticDirectories: ['static'],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-9VQBN5ZTSH',
+        anonymizeIP: true,
+      },
+    ],
+  ],
+
   i18n: {
     defaultLocale: 'zh-CN',
     locales: ['zh-CN'],

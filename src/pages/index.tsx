@@ -1,9 +1,8 @@
-import React, { useEffect, useMemo } from 'react'
+import React, { useEffect } from 'react'
 import clsx from 'clsx'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import useGlobalData from '@docusaurus/useGlobalData'
 import styles from './index.module.css'
 import logo from '../../static/img/avatar-transparent.png'
 import noise from '../../static/img/noise.png'
@@ -108,7 +107,6 @@ function HomepageHeader() {
         {/* <img src={logo} style={{width: 280, borderRadius: '50%'}} />  */}
         <canvas width="300" height="300" style={{ borderRadius: '50%' }} />
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
