@@ -1,12 +1,18 @@
-# 常用命令
+# Linux 基础
 
-## sftp
+## 管道符
+
+`<command1> | <commmand2> | <commmand3>` 第一个命令的输出作为第二个命令的输入，第二个命令的输出作为第三个命令的输出
+
+## 常用命令
+
+### sftp
 
 传输文件
 
 [linux ssh、sftp、scp 命令远程传输文件](https://www.linuxprobe.com/ssh-sftp-scp.html)
 
-## screen
+### screen
 
 ```bash
 screen -ls  查看当前会话
@@ -18,7 +24,7 @@ screen -d name 处理There is no screen to be resumed matching
 
 `ctrl`+ `a`+`d` 退出当前会话，也可以用于断开 ssh 连接
 
-## yum
+### yum
 
 ```bash
 yum install 包名 -y   安装包
@@ -27,7 +33,7 @@ yum update 包名 -y    更新指定包
 yum remove 包名       卸载包
 ```
 
-## pm2
+### pm2
 
 ```bash
 pm2 ls   查看列表
@@ -37,7 +43,7 @@ pm2 restart [name] 重启
 pm2 delete [name] 删除
 ```
 
-## 其他
+### 其他
 
 ```shell
 # 删除一个`file1`文件
@@ -54,7 +60,7 @@ tar -xvf archive.tar
 echo $PATH | tr : '\n'
 ```
 
-## docker
+### docker
 
 ```shell
 docker stats <container_name>
