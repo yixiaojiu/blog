@@ -1,6 +1,5 @@
 import { themes } from 'prism-react-renderer'
 import { resolve } from 'node:path'
-
 import type { Config } from '@docusaurus/types'
 import type { ThemeConfig, Options } from '@docusaurus/preset-classic'
 
@@ -9,19 +8,8 @@ const darkTheme = themes.dracula
 
 export default {
   title: '翊小久',
-  tagline: 'Dinosaurs are cool',
   favicon: 'img/avatar-transparent.png',
   staticDirectories: ['static'],
-
-  plugins: [
-    [
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-9VQBN5ZTSH',
-        anonymizeIP: true,
-      },
-    ],
-  ],
 
   i18n: {
     defaultLocale: 'zh-CN',
@@ -39,6 +27,7 @@ export default {
       'classic',
       {
         docs: {
+          showLastUpdateTime: true,
           sidebarPath: resolve(__dirname, './sidebars.ts'),
         },
         blog: {
@@ -46,6 +35,10 @@ export default {
         },
         theme: {
           customCss: resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
+          anonymizeIP: true,
         },
       } satisfies Options,
     ],

@@ -8,18 +8,21 @@ dependencies:
   '@docusaurus/core':
     specifier: 3.0.1
     version: 3.0.1(@docusaurus/types@3.0.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
-  '@docusaurus/plugin-google-gtag':
-    specifier: ^3.0.1
-    version: 3.0.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@docusaurus/preset-classic':
     specifier: 3.0.1
     version: 3.0.1(@algolia/client-search@4.20.0)(@types/react@18.2.42)(react-dom@18.2.0)(react@18.2.0)(search-insights@2.11.0)(typescript@5.2.2)
+  '@docusaurus/theme-common':
+    specifier: ^3.0.1
+    version: 3.0.1(@docusaurus/types@3.0.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.42)(react@18.2.0)
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
+  copy-text-to-clipboard:
+    specifier: ^3.2.0
+    version: 3.2.0
   prism-react-renderer:
     specifier: ^2.3.0
     version: 2.3.0(react@18.2.0)
