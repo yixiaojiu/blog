@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import clsx from 'clsx'
-import { getRandomNumber } from '../../lib/utils'
-import Button from '../../components/Button'
+import { getRandomNumber } from '@site/src/lib/utils'
+import Button from '@site/src/components/Button'
 import styles from './styles.module.css'
 import { useHistory } from '@docusaurus/router'
 
@@ -16,7 +16,7 @@ const DEFAULT_COMIC_LIST = [
   'http://activity.hdslb.com/zzjs/cartoon/errorPage-manga-7.png',
 ]
 
-export default function DesktopContent({ className }) {
+export default function DesktopContent() {
   const [comicList, setComicList] = useState(DEFAULT_COMIC_LIST)
   const [comicIndex, setComicIndex] = useState(
     getRandomNumber(comicList.length)
@@ -43,7 +43,7 @@ export default function DesktopContent({ className }) {
   }, [])
 
   return (
-    <main className={clsx('container margin-vert--xl', className)}>
+    <main className={clsx('container margin-vert--xl')}>
       <div className="row flex-col justify-center">
         <div className="flex items-center justify-center w-full">
           <img src="http://static.hdslb.com/error/very_sorry.png" />

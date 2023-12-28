@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 import { useHistory } from '@docusaurus/router'
-import Button from '../../components/Button'
+import Button from '@site/src/components/Button'
 
 export default function MobileContent() {
   const history = useHistory()
