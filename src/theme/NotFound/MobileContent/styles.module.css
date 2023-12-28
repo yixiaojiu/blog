@@ -1,0 +1,9 @@
+.img {
+  display: block;
+  width: 300px;
+}
+
+.desc {
+  color: var(--text-gray-color);
+  text-align: center;
+}

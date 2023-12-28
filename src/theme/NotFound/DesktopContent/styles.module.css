@@ -1,0 +1,36 @@
+.btn {
+  line-height: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #00a1d6;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 1.25rem;
+  border-radius: 0.25rem;
+  transition: 0.2s;
+}
+
+.split {
+  height: 2.5rem;
+  background: url('https://static.hdslb.com/images/error/have_rest.png') center
+    no-repeat;
+}
+
+.comic {
+  padding: 30px;
+  text-align: center;
+}
+
+.change_comic_btn {
+  display: block;
+  height: 3rem;
+  width: 150px;
+  margin: 30px auto 0;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.change_comic_btn:hover {
+  transition: none;
+  color: #fff;
+}

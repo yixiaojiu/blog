@@ -1,0 +1,11 @@
+.btn {
+  line-height: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #00a1d6;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 1.25rem;
+  border-radius: 0.25rem;
+  transition: 0.2s;
+}
