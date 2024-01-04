@@ -17,7 +17,7 @@
 
 `pacman -Syu`
 
-![Alt text](/img/note/linux/image.png)
+![Alt text](./images/pacman-pkg.png)
 
 解决办法 [archlinux 论坛](https://bbs.archlinuxcn.org/viewtopic.php?id=4580)
 

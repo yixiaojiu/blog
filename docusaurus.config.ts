@@ -32,6 +32,7 @@ export default {
         },
         blog: {
           showReadingTime: true,
+          postsPerPage: 5,
         },
         theme: {
           customCss: resolve('./src/css/custom.css'),
@@ -82,7 +83,7 @@ export default {
     prism: {
       theme: lightTheme,
       darkTheme: darkTheme,
-      additionalLanguages: ['bash', 'diff', 'json'],
+      additionalLanguages: ['bash', 'diff', 'json', 'toml'],
     },
     algolia: {
       appId: 'JAAWQG3A68',

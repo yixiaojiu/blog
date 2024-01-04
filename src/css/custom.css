@@ -31,6 +31,14 @@
   --text-gray-color: #eee;
 }
 
+.markdown hr {
+  background: url('/img/dividing-line.webp') center no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 132 / 13;
+}
+
 button {
   border: none;
   background: none;
