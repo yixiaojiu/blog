@@ -1,3 +1,6 @@
 pnpm-lock.yaml
-docs/.vitepress/cache/**/*
+.docusaurus
+.vscode
+.husky
+node_modules
 dist
