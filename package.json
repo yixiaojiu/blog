@@ -10,8 +10,7 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve --dir dist",
     "prepare": "husky install",
-    "lint-staged": "lint-staged --allow-empty",
-    "pre-commit": "lint-staged && pnpm build"
+    "pre-commit": "lint-staged --allow-empty && pnpm build"
   },
   "dependencies": {
     "@docusaurus/core": "3.0.1",
