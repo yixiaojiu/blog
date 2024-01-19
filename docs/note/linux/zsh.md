@@ -66,9 +66,15 @@ git clone 地址
 3. 加入插件名到配置文件中
 ```
 
+## starship
+
+[starship](https://starship.rs/)，跨平台，支持多种 shell
+
 ## 常用插件
 
 - zsh-autosuggestions
 - zsh-syntax-highlighting
 
-**TroubleShooting：** [not being able to see the suggestions](https://github.com/zsh-users/zsh-autosuggestions/issues/416#issuecomment-486516333) 解决 iTerm2 看不见提示
+## TroubleShooting：
+
+[not being able to see the suggestions](https://github.com/zsh-users/zsh-autosuggestions/issues/416#issuecomment-486516333) 解决 iTerm2 看不见提示

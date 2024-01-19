@@ -3,8 +3,7 @@
 ## 使用
 
 - `ctrl + shfit + c/v` 终端中复杂粘贴
-- chrome 设置代理 `alias google-chrome-stable='google-chrome-stable --proxy-server="127.0.0.1:7890"'`
-- `ctrl + ;` 打开剪切板
+- chrome 设置代理，在 hyprland 中设置快捷键打开 chrome `google-chrome-stable --proxy-server="127.0.0.1:7890"'`
 
 ## OBS 捕捉屏幕
 
