@@ -23,6 +23,9 @@ dependencies:
   copy-text-to-clipboard:
     specifier: ^3.2.0
     version: 3.2.0
+  docusaurus-plugin-medium-zoom:
+    specifier: ^0.0.1
+    version: 0.0.1
   medium-zoom:
     specifier: ^1.1.0
     version: 1.1.0
@@ -4059,6 +4062,12 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.4
+
+  /docusaurus-plugin-medium-zoom@0.0.1:
+    resolution: {integrity: sha512-I54YoPJ1veiYqai0okOQdFhSJkAyEfM+V9bZIpwpFpxEQ8cTSCYVpDUIWiD6+eqXpyGULsRsNrDAR12QXsTsZQ==}
+    dependencies:
+      medium-zoom: 1.1.0
+    dev: false
 
   /dom-converter@0.2.0:
     resolution: {integrity: sha512-gd3ypIPfOMr9h5jIKq8E3sHOTCjeirnl0WK5ZdS1AW0Odt0b1PaWaHdJ4Qk4klv+YB9aJBS7mESXjFoDQPu6DA==}

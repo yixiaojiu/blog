@@ -22,7 +22,7 @@ export default {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  clientModules: ['./src/clientModules/mediumZoom.ts'],
+  plugins: ['docusaurus-plugin-medium-zoom'],
 
   presets: [
     [
