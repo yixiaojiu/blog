@@ -22,6 +22,8 @@ export default {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  clientModules: ['./src/clientModules/mediumZoom.ts'],
+
   presets: [
     [
       'classic',
