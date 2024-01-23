@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@ctrl/tinycolor':
+    specifier: ^4.0.3
+    version: 4.0.3
   '@docusaurus/core':
     specifier: 3.0.1
     version: 3.0.1(@docusaurus/types@3.0.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
@@ -14,9 +17,15 @@ dependencies:
   '@docusaurus/theme-common':
     specifier: ^3.0.1
     version: 3.0.1(@docusaurus/types@3.0.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
+  '@explosions/fireworks':
+    specifier: ^0.0.2
+    version: 0.0.2
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.42)(react@18.2.0)
+  animejs:
+    specifier: ^3.2.2
+    version: 3.2.2
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -1559,6 +1568,11 @@ packages:
     requiresBuild: true
     optional: true
 
+  /@ctrl/tinycolor@4.0.3:
+    resolution: {integrity: sha512-e9nEVehVJwkymQpkGhdSNzLT2Lr9UTTby+JePq4Z2SxBbOQjY7pLgSouAaXvfaGQVSAaY0U4eJdwfSDmCbItcw==}
+    engines: {node: '>=14'}
+    dev: false
+
   /@discoveryjs/json-ext@0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
@@ -2344,6 +2358,10 @@ packages:
       - uglify-js
       - webpack-cli
 
+  /@explosions/fireworks@0.0.2:
+    resolution: {integrity: sha512-BiF9iWE/8jTmqlxcIhSZlJgUlBJ62Wk9I6jTwfkd0zMn0QS2IxTxypOnV4CSo21bsnmsvJxh9ryepAK+D4OJqA==}
+    dev: false
+
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
 
@@ -3108,6 +3126,10 @@ packages:
       '@algolia/requester-common': 4.19.1
       '@algolia/requester-node-http': 4.19.1
       '@algolia/transporter': 4.19.1
+    dev: false
+
+  /animejs@3.2.2:
+    resolution: {integrity: sha512-Ao95qWLpDPXXM+WrmwcKbl6uNlC5tjnowlaRYtuVDHHoygjtIPfDUoK9NthrlZsQSKjZXlmji2TrBUAVbiH0LQ==}
     dev: false
 
   /ansi-align@3.0.1:

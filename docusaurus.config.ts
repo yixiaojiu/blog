@@ -22,7 +22,10 @@ export default {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  plugins: ['docusaurus-plugin-medium-zoom'],
+  plugins: [
+    'docusaurus-plugin-medium-zoom',
+    './src/plugins/fireworks/index.ts',
+  ],
 
   presets: [
     [

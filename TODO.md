@@ -1,0 +1,1 @@
+- [ ] @explosions/fireworks 需要手动安装 @ctrl/tinycolor 和 animejs 依赖，考虑替换一下
