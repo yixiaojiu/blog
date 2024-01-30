@@ -26,6 +26,9 @@ dependencies:
   animejs:
     specifier: ^3.2.2
     version: 3.2.2
+  bilibili-bangumi-component:
+    specifier: ^0.0.2
+    version: 0.0.2
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -2539,6 +2542,12 @@ packages:
       p-map: 4.0.0
       webpack-sources: 3.2.3
 
+  /@stencil/core@4.12.0:
+    resolution: {integrity: sha512-qAQcfNmp2sdxAh1DlyUhHfDmIUS7mhI+5LAhPphg74zK9sKgFL5vpLzgjs0wohpjlmI4msgJFYiRB8lxVPqjPg==}
+    engines: {node: '>=16.0.0', npm: '>=7.10.0'}
+    hasBin: true
+    dev: false
+
   /@svgr/babel-plugin-add-jsx-attribute@6.5.1(@babel/core@7.23.5):
     resolution: {integrity: sha512-9PYGcXrAxitycIjRmZB+Q0JaN07GZIWaTBIGQzfaZv+qr1n8X1XUEJ5rZ/vx6OVD9RRYlrNnXWExQXcmZeD/BQ==}
     engines: {node: '>=10'}
@@ -3291,6 +3300,12 @@ packages:
 
   /big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
+
+  /bilibili-bangumi-component@0.0.2:
+    resolution: {integrity: sha512-vtyFNx2tK7c3fbper6NUMbR9IkqhHmARY6S8PcmhNoQ1SbrvsPWuiBmUUIlK6ZkbrtYrfmSIvABH0en7FajsaA==}
+    dependencies:
+      '@stencil/core': 4.12.0
+    dev: false
 
   /binary-extensions@2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
