@@ -1,6 +1,7 @@
 # 工具
 
 - [scrcpy](https://github.com/Genymobile/scrcpy)：全平台安卓投屏工具
+- [flameshot](https://github.com/flameshot-org/flameshot)：支持 Hyprland 的截图工具
 
 ## Windows
 
