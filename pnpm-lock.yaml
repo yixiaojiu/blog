@@ -27,8 +27,8 @@ dependencies:
     specifier: ^3.2.2
     version: 3.2.2
   bilibili-bangumi-component:
-    specifier: ^0.0.4
-    version: 0.0.4
+    specifier: ^0.1.1
+    version: 0.1.1
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -2542,8 +2542,8 @@ packages:
       p-map: 4.0.0
       webpack-sources: 3.2.3
 
-  /@stencil/core@4.12.0:
-    resolution: {integrity: sha512-qAQcfNmp2sdxAh1DlyUhHfDmIUS7mhI+5LAhPphg74zK9sKgFL5vpLzgjs0wohpjlmI4msgJFYiRB8lxVPqjPg==}
+  /@stencil/core@4.12.1:
+    resolution: {integrity: sha512-l7UUCEV+4Yr1i6BL2DGSQPAzM3x/V4Fx9n9Z0/gdAgX11I25xY0MnH5jbQ69ug6ms/8KUV6SouS1R7MjjM/JnQ==}
     engines: {node: '>=16.0.0', npm: '>=7.10.0'}
     hasBin: true
     dev: false
@@ -3301,10 +3301,10 @@ packages:
   /big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
-  /bilibili-bangumi-component@0.0.4:
-    resolution: {integrity: sha512-5ihBo1um8/6ihFlKL9ONWD5G7fA3nCxhVwz3tO1hdQDTUOH+4M+GvfbTakB3Wq2XSLbySyabQiL+I+lyymdJcQ==}
+  /bilibili-bangumi-component@0.1.1:
+    resolution: {integrity: sha512-YcuSQzIiTZrn3bYsyVnxxW3461qhVRUpM/BsVWKsXERPGW+NconRAb8V2M1KuO8ot32o4o7+JSFZXWkkihhL7w==}
     dependencies:
-      '@stencil/core': 4.12.0
+      '@stencil/core': 4.12.1
     dev: false
 
   /binary-extensions@2.2.0:

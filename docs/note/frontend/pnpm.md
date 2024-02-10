@@ -1,6 +1,8 @@
 # pnpm
 
 > 参考 [山月](https://q.shanyue.tech/engineering/751.html#pnpm-%E4%B8%BA%E4%BD%95%E8%8A%82%E7%9C%81%E7%A9%BA%E9%97%B4), [掘金](https://juejin.cn/post/7127295203177676837)
+>
+> [pnpm workspace的常用命令](https://juejin.cn/post/7195460903758725176)
 
 ## 包管理工具发展史
 
