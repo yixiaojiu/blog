@@ -20,7 +20,7 @@
     "@explosions/fireworks": "^0.0.2",
     "@mdx-js/react": "^3.0.0",
     "animejs": "^3.2.2",
-    "bilibili-bangumi-component": "^0.1.1",
+    "bilibili-bangumi-component": "^0.1.2",
     "clsx": "^1.2.1",
     "copy-text-to-clipboard": "^3.2.0",
     "docusaurus-plugin-medium-zoom": "^0.0.1",

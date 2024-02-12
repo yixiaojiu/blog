@@ -27,8 +27,8 @@ dependencies:
     specifier: ^3.2.2
     version: 3.2.2
   bilibili-bangumi-component:
-    specifier: ^0.1.1
-    version: 0.1.1
+    specifier: ^0.1.2
+    version: 0.1.2
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -3301,8 +3301,8 @@ packages:
   /big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
-  /bilibili-bangumi-component@0.1.1:
-    resolution: {integrity: sha512-YcuSQzIiTZrn3bYsyVnxxW3461qhVRUpM/BsVWKsXERPGW+NconRAb8V2M1KuO8ot32o4o7+JSFZXWkkihhL7w==}
+  /bilibili-bangumi-component@0.1.2:
+    resolution: {integrity: sha512-v4i3041d3PWvt6X2HMAuCaU3oPI8WKiuxRM8EcRwelOXTQtRcHDn3fxeg7gQP1JoraRFMdwTJqr191erIqyV9w==}
     dependencies:
       '@stencil/core': 4.12.1
     dev: false
