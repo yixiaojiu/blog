@@ -36,8 +36,8 @@ dependencies:
     specifier: ^3.2.0
     version: 3.2.0
   docusaurus-plugin-medium-zoom:
-    specifier: ^0.0.1
-    version: 0.0.1
+    specifier: ^0.0.2
+    version: 0.0.2
   medium-zoom:
     specifier: ^1.1.0
     version: 1.1.0
@@ -4100,8 +4100,8 @@ packages:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.4
 
-  /docusaurus-plugin-medium-zoom@0.0.1:
-    resolution: {integrity: sha512-I54YoPJ1veiYqai0okOQdFhSJkAyEfM+V9bZIpwpFpxEQ8cTSCYVpDUIWiD6+eqXpyGULsRsNrDAR12QXsTsZQ==}
+  /docusaurus-plugin-medium-zoom@0.0.2:
+    resolution: {integrity: sha512-CIK6r8DnzXL+kGrZUDy1tT07qV1R4FM4v/NdJKbJYyqGoH/omwvqWHXwxPy/kQWskQwi6/fDuWppDkjXvpKLkQ==}
     dependencies:
       medium-zoom: 1.1.0
     dev: false
