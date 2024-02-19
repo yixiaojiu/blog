@@ -17,6 +17,7 @@
 ## Linux
 
 - 文件管理器：joshuto
+- 文件管理器：[yazi](https://github.com/sxyazi/yazi)，比 joshuto 更快，而且直接支持图片与 pdf 预览
 - 适用于 Wayland 的 screenkey：[showmethekey](https://github.com/AlynxZhou/showmethekey)
 - [fnm](https://github.com/Schniz/fnm)：node 包管理
 - [tokei](https://github.com/XAMPPRocky/tokei)：代码统计
@@ -30,3 +31,4 @@
 - cat -> [bat](https://github.com/sharkdp/bat)
 - cd -> [autojump](https://github.com/wting/autojump)
 - cp -> [rsync](https://wiki.archlinuxcn.org/wiki/Rsync#As_cp/mv_alternative)
+- ping -> [gping](https://github.com/orf/gping)

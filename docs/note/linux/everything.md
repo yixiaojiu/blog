@@ -198,3 +198,7 @@ chmod +x <file>
 可执行文件的程序加载器声明
 
 [维基百科](https://zh.wikipedia.org/wiki/Shebang)
+
+## ANSI 转义序列 与 CSI 序列
+
+[计算机知识：ANSI转义序列以及输出颜色字符详解](https://www.cnblogs.com/xiaoqiangink/p/12718524.html)

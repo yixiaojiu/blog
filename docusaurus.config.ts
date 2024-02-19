@@ -24,7 +24,7 @@ export default {
 
   plugins: [
     'docusaurus-plugin-medium-zoom',
-    './src/plugins/fireworks/index.ts',
+    // './src/plugins/fireworks/index.ts',
     './src/plugins/busuanzi/index.ts',
   ],
 
