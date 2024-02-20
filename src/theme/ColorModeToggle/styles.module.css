@@ -27,25 +27,29 @@
   cursor: not-allowed;
 }
 
-::view-transition-old(root),
-::view-transition-new(root) {
+:root {
+  view-transition-name: color-mode;
+}
+
+::view-transition-old(color-mode),
+::view-transition-new(color-mode) {
   animation: none;
   mix-blend-mode: normal;
 }
 
 /* 进入dark模式和退出dark模式时，两个图像的位置顺序正好相反 */
-[data-theme='dark']::view-transition-old(root) {
+[data-theme='dark']::view-transition-old(color-mode) {
   z-index: 9999;
 }
 
-[data-theme='dark']::view-transition-new(root) {
+[data-theme='dark']::view-transition-new(color-mode) {
   z-index: 1;
 }
 
-::view-transition-old(root) {
+::view-transition-old(color-mode) {
   z-index: 1;
 }
 
-::view-transition-new(root) {
+::view-transition-new(color-mode) {
   z-index: 9999;
 }

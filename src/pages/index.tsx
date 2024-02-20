@@ -115,11 +115,6 @@ function HomepageHeader() {
             查看笔记 →
           </Link>
         </div>
-        <p className={styles.busuanzi}>
-          <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>人次访问本站
-          </span>
-        </p>
       </div>
     </header>
   )

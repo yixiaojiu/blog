@@ -62,8 +62,8 @@ function ColorModeToggle({ className, buttonClassName, value, onChange }) {
           duration: 300,
           easing: 'ease-in',
           pseudoElement: isLight
-            ? '::view-transition-old(root)'
-            : '::view-transition-new(root)',
+            ? '::view-transition-old(color-mode)'
+            : '::view-transition-new(color-mode)',
         }
       )
     })

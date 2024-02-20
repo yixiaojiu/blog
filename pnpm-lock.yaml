@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@ctrl/tinycolor':
-    specifier: ^4.0.3
-    version: 4.0.3
   '@docusaurus/core':
     specifier: 3.1.1
     version: 3.1.1(@docusaurus/types@3.1.1)(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
@@ -23,9 +20,6 @@ dependencies:
   '@mdx-js/react':
     specifier: ^3.0.0
     version: 3.0.0(@types/react@18.2.42)(react@18.2.0)
-  animejs:
-    specifier: ^3.2.2
-    version: 3.2.2
   bilibili-bangumi-component:
     specifier: ^0.2.0
     version: 0.2.0
@@ -1420,11 +1414,6 @@ packages:
     engines: {node: '>=0.1.90'}
     requiresBuild: true
     optional: true
-
-  /@ctrl/tinycolor@4.0.3:
-    resolution: {integrity: sha512-e9nEVehVJwkymQpkGhdSNzLT2Lr9UTTby+JePq4Z2SxBbOQjY7pLgSouAaXvfaGQVSAaY0U4eJdwfSDmCbItcw==}
-    engines: {node: '>=14'}
-    dev: false
 
   /@discoveryjs/json-ext@0.5.7:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
@@ -3000,10 +2989,6 @@ packages:
       '@algolia/requester-common': 4.22.1
       '@algolia/requester-node-http': 4.22.1
       '@algolia/transporter': 4.22.1
-    dev: false
-
-  /animejs@3.2.2:
-    resolution: {integrity: sha512-Ao95qWLpDPXXM+WrmwcKbl6uNlC5tjnowlaRYtuVDHHoygjtIPfDUoK9NthrlZsQSKjZXlmji2TrBUAVbiH0LQ==}
     dev: false
 
   /ansi-align@3.0.1:

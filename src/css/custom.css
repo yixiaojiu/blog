@@ -56,39 +56,3 @@ button {
   background: none;
   cursor: pointer;
 }
-
-.flex {
-  display: flex;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.mx-auto {
-  margin: 0 auto;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.flex-1 {
-  flex: 1;
-}

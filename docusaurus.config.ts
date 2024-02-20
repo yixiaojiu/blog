@@ -22,11 +22,7 @@ export default {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  plugins: [
-    'docusaurus-plugin-medium-zoom',
-    // './src/plugins/fireworks/index.ts',
-    './src/plugins/busuanzi/index.ts',
-  ],
+  plugins: ['docusaurus-plugin-medium-zoom'],
 
   presets: [
     [
@@ -34,14 +30,14 @@ export default {
       {
         docs: {
           showLastUpdateTime: true,
-          sidebarPath: resolve(__dirname, './sidebars.ts'),
+          sidebarPath: './sidebars.ts',
         },
         blog: {
           showReadingTime: true,
           postsPerPage: 5,
         },
         theme: {
-          customCss: resolve('./src/css/custom.css'),
+          customCss: ['./src/css/custom.css', './src/css/atomic.css'],
         },
         gtag: {
           trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
