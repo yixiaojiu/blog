@@ -27,8 +27,8 @@ dependencies:
     specifier: ^3.2.2
     version: 3.2.2
   bilibili-bangumi-component:
-    specifier: ^0.1.5
-    version: 0.1.5
+    specifier: ^0.2.0
+    version: 0.2.0
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
@@ -3163,8 +3163,8 @@ packages:
   /big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
-  /bilibili-bangumi-component@0.1.5:
-    resolution: {integrity: sha512-/a3OErHCNMZYXmMxb7UYXfzV7uKvIWV8I1EJmsiQViNJpp4WNbmzCreXMu3Z2NfH3ekXbrRQXuXlt0PfP8vHMg==}
+  /bilibili-bangumi-component@0.2.0:
+    resolution: {integrity: sha512-u3JqytIxiVo5tau9hw5sT3Avg+QHfkrCTgYsixFXEVLlA9fLqOsovJ8JRnCN7INp10W6snCxrvap5DZW8pdbWA==}
     dev: false
 
   /binary-extensions@2.2.0:
