@@ -202,3 +202,7 @@ chmod +x <file>
 ## ANSI 转义序列 与 CSI 序列
 
 [计算机知识：ANSI转义序列以及输出颜色字符详解](https://www.cnblogs.com/xiaoqiangink/p/12718524.html)
+
+## PS1 变量
+
+当前的命令提示符设置
