@@ -2,7 +2,7 @@
 
 ## 管道符
 
-`<command1> | <commmand2> | <commmand3>` 第一个命令的输出作为第二个命令的输入，第二个命令的输出作为第三个命令的输出
+`<command1> | <commmand2> | <commmand3>` 第一个命令的标准输出作为第二个命令的标准输入，第二个命令的标准输出作为第三个命令的标准输入
 
 ## 常用命令
 
@@ -203,6 +203,8 @@ chmod +x <file>
 
 [计算机知识：ANSI转义序列以及输出颜色字符详解](https://www.cnblogs.com/xiaoqiangink/p/12718524.html)
 
-## PS1 变量
+## 终端
 
-当前的命令提示符设置
+- `PS1 变量`：当前的命令提示符设置
+- `!!`：上一条命令
+- `truncate -s 20MB <file>`：更改文件大小

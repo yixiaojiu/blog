@@ -7,8 +7,6 @@
 > - [Node.js 标准课程：3.事件循环](https://www.bilibili.com/video/BV13A4y1Q7N5)
 > - [前端程序员｜一次性说清楚「事件循环」是什么？你知道面试官会怎么提问吗？](https://www.bilibili.com/video/BV1864y117PQ)
 
----
-
 ## 浏览器事件循环
 
 |                      | **宏任务（macrotask）**                                                        | **微任务（microtask）**                |
