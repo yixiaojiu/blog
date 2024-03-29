@@ -41,3 +41,9 @@ fn main() {
   println!("cargo:rerun-if-changed=PATH");
 }
 ```
+
+## 详细错误信息
+
+```sh
+RUST_BACKTRACE=1 cargo run
+```
