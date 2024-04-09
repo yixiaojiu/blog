@@ -4,7 +4,7 @@
 
 `<command1> | <commmand2> | <commmand3>` 第一个命令的标准输出作为第二个命令的标准输入，第二个命令的标准输出作为第三个命令的标准输入
 
-## 常用命令
+## 常用工具
 
 ### sftp
 
@@ -43,6 +43,25 @@ pm2 restart [name] 重启
 pm2 delete [name] 删除
 ```
 
+### docker
+
+```shell
+docker stats <container_name>
+
+# 列出所有容器
+docker container ls -a
+
+# 列出所有正在运行的容器
+docker ps
+```
+
+### ffmpeg
+
+```shell
+# 压缩成宽度为 640 像素，并使用 80% 的质量进行压缩
+ffmpeg -i input.jpg -vf scale=640:-1 -quality 80 output.jpg
+```
+
 ### 其他
 
 ```shell
@@ -58,18 +77,6 @@ mv <orign> <target>
 tar -xvf archive.tar
 # 查看PATH，并格式化输出
 echo $PATH | tr : '\n'
-```
-
-### docker
-
-```shell
-docker stats <container_name>
-
-# 列出所有容器
-docker container ls -a
-
-# 列出所有正在运行的容器
-docker ps
 ```
 
 ## 命令行快捷键

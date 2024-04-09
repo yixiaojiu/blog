@@ -109,3 +109,37 @@ println!("{}", s);
 ```
 
 同一作用域不能同时 `borrow_mut` 与 `borrow`
+
+## 泛型
+
+```rust
+trait Foo {
+    type Item;
+    fn foo(&self) -> Self::Item;
+}
+fn bar<T: Foo<Item = i32>>(item: T) {
+    let num = item.foo();
+}
+```
+
+## Copy 与 Clone
+
+[Copy 和 Clone 有什么区别](https://skyao.io/learning-rust/std/marker/copy/std-doc/#copy-%E5%92%8C-clone-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
+
+Copy 是隐形发生的，Clone 是显性发生的，例如 `x.clone()`
+
+只有基本类型可以实现 Copy，例如:
+
+```rust
+#[derive(Copy)]
+struct Point {
+   x: i32,
+   y: i32,
+}
+
+// 这个 struct 不能实现 Copy
+#[derive(Copy)]
+struct Bar {
+    bar: String,
+}
+```
