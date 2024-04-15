@@ -74,7 +74,7 @@ export default {
     },
     {
       type: 'category',
-      label: '前端工程化',
+      label: '工程化',
       items: [
         'bagu/engineering/engineering',
         'bagu/engineering/eslint',

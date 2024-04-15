@@ -77,6 +77,23 @@ mv <orign> <target>
 tar -xvf archive.tar
 # 查看PATH，并格式化输出
 echo $PATH | tr : '\n'
+# 更改文件大小
+truncate -s 20MB <file>
+```
+
+### docker
+
+```shell
+docker stats <container_name>
+
+# 列出所有正在运行的容器
+docker ps
+
+# 列出所有容器
+docker ps -a
+
+# 以交互式的方式进入容器
+docker exec -it <name> bash
 ```
 
 ## 命令行快捷键
@@ -214,4 +231,3 @@ chmod +x <file>
 
 - `PS1 变量`：当前的命令提示符设置
 - `!!`：上一条命令
-- `truncate -s 20MB <file>`：更改文件大小
