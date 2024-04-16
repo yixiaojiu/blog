@@ -81,6 +81,7 @@ export default {
         'bagu/engineering/package-management-tool',
         'bagu/engineering/vite',
         'bagu/engineering/webpack',
+        'bagu/engineering/esbuild',
         'bagu/engineering/micro-frontend',
       ],
     },
@@ -92,6 +93,15 @@ export default {
         'bagu/code/debounce-thorttle',
         'bagu/code/promise',
         'bagu/code/algorithm',
+      ],
+    },
+    {
+      type: 'category',
+      label: '杂货箱',
+      items: [
+        'bagu/everything/vuera',
+        'bagu/everything/sound-video',
+        'bagu/everything/design-patterns',
       ],
     },
     {
@@ -110,11 +120,6 @@ export default {
         'bagu/interview/10',
         'bagu/interview/11',
       ],
-    },
-    {
-      type: 'category',
-      label: '杂货箱',
-      items: ['bagu/everything/vuera', 'bagu/everything/sound-video'],
     },
   ],
   note: [
