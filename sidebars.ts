@@ -87,6 +87,15 @@ export default {
     },
     {
       type: 'category',
+      label: 'Node.js',
+      items: [
+        'bagu/nodejs/basic',
+        'bagu/nodejs/nest',
+        'bagu/nodejs/principles',
+      ],
+    },
+    {
+      type: 'category',
       label: '代码篇',
       items: [
         'bagu/code/jsAchieve',
