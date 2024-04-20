@@ -40,13 +40,9 @@ export default {
       type: 'category',
       label: 'React',
       items: [
-        'bagu/react/component-base',
-        'bagu/react/state-managemnet',
-        'bagu/react/router',
-        'bagu/react/hooks',
-        'bagu/react/virtual-dom',
+        'bagu/react/base',
+        'bagu/react/principle',
         'bagu/react/react-native',
-        'bagu/react/other',
       ],
     },
     {
