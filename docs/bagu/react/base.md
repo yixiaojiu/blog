@@ -53,23 +53,6 @@ useEffect 在 React 的渲染过程中是被**异步调用**的，且在 dom 更
 - 对虚拟 DOM 将 DOM 抽象成 JS 对象，配合不同渲染工具，使跨平台渲染成为可能。
 - 通过事务处理机制，将多次 DOM 修改的结果一次性的更新到页面上，从而有效的减少页面渲染的次数，减少修改 DOM 的重绘重排次数，提高渲染性能
 
-## React diff
-
-[图解 React 的 diff 算法：核心就两个字 —— 复用](https://juejin.cn/post/7131741751152214030)
-
-ssr 没有 diff
-
-浏览器下使用 react-dom 的渲染器，会先把 vdom 转成 fiber，找到需要更新 dom 的部分，打上增删改的 effectTag 标记，这个过程叫做 reconcile，可以打断，由 scheducler 调度执行。reconcile 结束之后一次性根据 effectTag 更新 dom，叫做 commit。
-
-diff 发生在 vdom 与 老 fiber 之间
-
-react 的 diff 算法分为两个阶段：
-
-1. 对比，如果可以复用就下一个，不可以复用就结束
-2. 把剩下的老 fiber 放到 map 里，遍历剩余的 vdom，一一查找 map 中是否有可复用的节点。
-
-最后把剩下的老 fiber 删掉，剩下的新 vdom 新增
-
 ## setState
 
 在代码中调用 setState 函数之后，React 会将传入的参数对象与组件当前的状态合并，然后触发调和过程(Reconciliation)
