@@ -9,8 +9,6 @@ Node 共有四种流
 - Duplex: 可读写的流。例如，net.Socket。
 - Transform: 可以在数据写入和读取时修改或转换数据的流，例如压缩 zlib.crateDeflate()
 
----
-
 可读流和可写流的基本用法
 
 ```ts

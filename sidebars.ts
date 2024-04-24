@@ -53,6 +53,9 @@ export default {
         'bagu/network/http',
         'bagu/network/https',
         'bagu/network/tcp',
+        'bagu/network/udp',
+        'bagu/network/ip',
+        'bagu/network/authentication',
       ],
     },
     {
@@ -60,7 +63,6 @@ export default {
       label: '浏览器',
       items: [
         'bagu/browser/browser-security',
-        'bagu/browser/event-mechanism',
         'bagu/browser/cache',
         'bagu/browser/event-loop',
         'bagu/browser/source-load',

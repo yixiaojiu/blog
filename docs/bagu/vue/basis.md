@@ -1,6 +1,6 @@
 # Vue 基础
 
-## Vue 中封装的数组方法有哪些，其如何实现页面更新
+## Vue 中封装的数组方法
 
 push, pop, shift, unshift, splice, sort, reverse
 
