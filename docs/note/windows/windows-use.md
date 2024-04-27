@@ -7,3 +7,7 @@
 - `win + e` 资源管理器
 - `win + i` 打开设置
 - `win + q` 搜索
+
+## 复制与粘贴命令
+
+`Get-Clipboard` `clip`

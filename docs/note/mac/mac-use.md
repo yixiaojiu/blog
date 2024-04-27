@@ -10,3 +10,7 @@
 
 - 在 `~/.zshrc` 中添加 `export LANG=en_US.UTF-8`
 - `source ~/.zshrc`
+
+## 复制与粘贴命令
+
+`pbcopy` `pbpaste`
