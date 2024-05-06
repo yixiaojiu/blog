@@ -1,5 +1,4 @@
 import { themes } from 'prism-react-renderer'
-import { resolve } from 'node:path'
 import type { Config } from '@docusaurus/types'
 import type { ThemeConfig, Options } from '@docusaurus/preset-classic'
 
@@ -16,7 +15,7 @@ export default {
     locales: ['zh-CN'],
   },
 
-  url: 'https://blog-yixiaojiu.vercel.app/',
+  url: 'https://note.yixiaojiu.top/',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -42,6 +41,18 @@ export default {
         gtag: {
           trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
           anonymizeIP: true,
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const { defaultCreateSitemapItems, ...rest } = params
+            const items = await defaultCreateSitemapItems(rest)
+            return items.filter((item) => !item.url.includes('/page/'))
+          },
         },
       } satisfies Options,
     ],
