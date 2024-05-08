@@ -43,23 +43,35 @@ pm2 restart [name] 重启
 pm2 delete [name] 删除
 ```
 
-### docker
-
-```shell
-docker stats <container_name>
-
-# 列出所有容器
-docker container ls -a
-
-# 列出所有正在运行的容器
-docker ps
-```
-
 ### ffmpeg
 
 ```shell
 # 压缩成宽度为 640 像素，并使用 80% 的质量进行压缩
 ffmpeg -i input.jpg -vf scale=640:-1 -quality 80 output.jpg
+```
+
+### docker
+
+```shell
+docker stats <container_name>
+
+docker run -dit --name <name> -p 3941:3941 <image>
+
+# 列出所有正在运行的容器
+docker ps
+
+# 列出所有容器
+docker ps -a
+
+# 查看镜像
+docker image ls
+
+# 以交互式的方式进入容器
+docker exec -it <name> bash
+
+# 构建镜像
+# 例如： docker build -t kimika-server-ts:latest .
+docker build -t <name:tag> .
 ```
 
 ### 其他
@@ -79,21 +91,8 @@ tar -xvf archive.tar
 echo $PATH | tr : '\n'
 # 更改文件大小
 truncate -s 20MB <file>
-```
-
-### docker
-
-```shell
-docker stats <container_name>
-
-# 列出所有正在运行的容器
-docker ps
-
-# 列出所有容器
-docker ps -a
-
-# 以交互式的方式进入容器
-docker exec -it <name> bash
+# 连接 wifi
+nmcli dev wifi connect 'Redmi Note 10 Pro' password "12345678"
 ```
 
 ## 命令行快捷键
