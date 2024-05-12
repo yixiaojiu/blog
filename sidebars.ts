@@ -105,11 +105,7 @@ export default {
     {
       type: 'category',
       label: '杂货箱',
-      items: [
-        'bagu/everything/vuera',
-        'bagu/everything/sound-video',
-        'bagu/everything/design-patterns',
-      ],
+      items: ['bagu/everything/vuera', 'bagu/everything/design-patterns'],
     },
     {
       type: 'category',
