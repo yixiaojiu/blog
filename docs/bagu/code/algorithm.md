@@ -98,6 +98,68 @@ const quickSort = (array) => {
 }
 ```
 
+### 堆排序
+
+大顶堆（Max Heap）性质：
+
+- 对于任意节点 i，节点 i 的值大于或等于其左右子节点的值。
+- 二叉树的根节点是堆中的最大值。
+
+```js
+function heapSort(arr) {
+  // 构建大顶堆
+  buildHeap(arr)
+
+  // 从最后一个非叶子节点开始进行堆调整
+  for (let i = arr.length - 1; i > 0; i--) {
+    // 将堆顶元素（最大值）与当前未排序部分的最后一个元素交换
+    swap(arr, 0, i)
+
+    // 对交换后的堆进行调整，使其满足大顶堆的性质
+    heapify(arr, 0, i)
+  }
+
+  return arr
+}
+
+// 构建大顶堆
+function buildHeap(arr) {
+  const len = arr.length
+  // 从最后一个非叶子节点开始，依次进行堆调整
+  for (let i = Math.floor(len / 2) - 1; i >= 0; i--) {
+    heapify(arr, i, len)
+  }
+}
+
+// 堆调整
+function heapify(arr, i, len) {
+  const left = 2 * i + 1
+  const right = 2 * i + 2
+  let largest = i
+
+  // 找到左子节点和右子节点中的最大值
+  if (left < len && arr[left] > arr[largest]) {
+    largest = left
+  }
+  if (right < len && arr[right] > arr[largest]) {
+    largest = right
+  }
+
+  // 如果最大值不是当前节点，交换最大值和当前节点的位置，并继续向下调整
+  if (largest !== i) {
+    swap(arr, i, largest)
+    heapify(arr, largest, len)
+  }
+}
+
+// 交换数组中两个元素的位置
+function swap(arr, i, j) {
+  const temp = arr[i]
+  arr[i] = arr[j]
+  arr[j] = temp
+}
+```
+
 ## 二叉树
 
 二叉搜索树的中序遍历有序

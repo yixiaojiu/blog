@@ -69,6 +69,29 @@ subject.addObserver(observer)
 subject.notify()
 ```
 
+## 双向绑定
+
+React 是单项数据绑定，双向数据绑定可以理解为给 input 之类的标签绑定 change 事件，通过 view 更新 model
+
+Vue 采用`数据劫持`结合`发布者-订阅者模式`的方式，实现数据响应式
+
+effect 订阅响应式数据，Proxy 拦截响应式数据的变更，发布事件执行 effect 回调
+
+```js
+const props = defineProps(['modelValue'])
+const emit = defineEmits(['update:modelValue'])
+```
+
+```vue
+<script setup>
+const model = defineModel()
+</script>
+
+<template>
+  <input v-model="model" />
+</template>
+```
+
 ## 发布订阅模式
 
 发布订阅模式中，对于发布者 Publisher 和订阅者 Subscriber 没有特殊的约束，他们好似是匿名活动，借助事件调度中心提供的接口发布和订阅事件，互不了解对方是谁。
