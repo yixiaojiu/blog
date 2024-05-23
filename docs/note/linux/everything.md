@@ -93,6 +93,8 @@ echo $PATH | tr : '\n'
 truncate -s 20MB <file>
 # 连接 wifi
 nmcli dev wifi connect 'Redmi Note 10 Pro' password "12345678"
+# 时间同步，需要 root 权限
+ntpdate cn.pool.ntp.org
 ```
 
 ## 命令行快捷键
