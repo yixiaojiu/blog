@@ -16,7 +16,6 @@
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
     "@docusaurus/theme-common": "^3.3.2",
-    "@explosions/fireworks": "^0.0.2",
     "@mdx-js/react": "^3.0.0",
     "bilibili-bangumi-component": "^0.3.0",
     "clsx": "^1.2.1",

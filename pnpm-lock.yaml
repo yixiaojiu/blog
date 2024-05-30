@@ -17,9 +17,6 @@ importers:
       '@docusaurus/theme-common':
         specifier: ^3.3.2
         version: 3.3.2(@docusaurus/types@3.3.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@5.2.2)
-      '@explosions/fireworks':
-        specifier: ^0.0.2
-        version: 0.0.2
       '@mdx-js/react':
         specifier: ^3.0.0
         version: 3.0.0(@types/react@18.2.42)(react@18.2.0)
@@ -985,9 +982,6 @@ packages:
     peerDependenciesMeta:
       '@docusaurus/types':
         optional: true
-
-  '@explosions/fireworks@0.0.2':
-    resolution: {integrity: sha512-BiF9iWE/8jTmqlxcIhSZlJgUlBJ62Wk9I6jTwfkd0zMn0QS2IxTxypOnV4CSo21bsnmsvJxh9ryepAK+D4OJqA==}
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -6341,8 +6335,6 @@ snapshots:
       - typescript
       - uglify-js
       - webpack-cli
-
-  '@explosions/fireworks@0.0.2': {}
 
   '@hapi/hoek@9.3.0': {}
 
