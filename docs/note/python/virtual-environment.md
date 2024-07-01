@@ -24,7 +24,7 @@ source ~/.zshrc
 # 关闭自动初始化 base 环境，每次会打印一个 (base) ，很烦
 conda config --set auto_activate_base false
 
-conda create --n <name> python=3.11
+conda create -n <name> python=3.11
 
 conda activate <name>
 ```

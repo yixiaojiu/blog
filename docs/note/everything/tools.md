@@ -21,6 +21,7 @@
 - [fnm](https://github.com/Schniz/fnm)：node 包管理
 - [tokei](https://github.com/XAMPPRocky/tokei)：代码统计
 - [nvtop](https://github.com/Syllo/nvtop)：GPU 监控
+- htop
 
 ### 命令替代品
 

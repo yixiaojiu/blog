@@ -74,6 +74,12 @@ docker exec -it <name> bash
 docker build -t <name:tag> .
 ```
 
+### rsync
+
+```shell
+rsync -r <source> <destination>
+```
+
 ### 其他
 
 ```shell
