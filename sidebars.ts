@@ -1,133 +1,146 @@
 import { SidebarsConfig } from '@docusaurus/plugin-content-docs'
 
+const generate = (type: string, items: string[]) =>
+  items.map((item) => `bagu/${type}/${item}`)
+
+const factory = (type: string) => {
+  return (items: string[]) => generate(type, items)
+}
+
+const generateHTMLCategory = factory('html-css')
+const generateJSCategory = factory('js')
+const generateTSCategory = factory('ts')
+const generateVueCategory = factory('vue')
+const generateReactCategory = factory('react')
+const generateNetworkCategory = factory('network')
+const generateOSCategory = factory('os')
+const generateBrowserCategory = factory('browser')
+const generateEngineeringCategory = factory('engineering')
+const generateNodeCategory = factory('nodejs')
+const generateCodeCategory = factory('code')
+const generateInterviewCategory = factory('interview')
+const generateEverythingCategory = factory('everything')
+
 export default {
   bagu: [
     {
       type: 'category',
       label: 'HTML CSS',
-      items: [
-        'bagu/html-css/html',
-        'bagu/html-css/css',
-        'bagu/html-css/bfc',
-        'bagu/html-css/层叠上下文',
-        'bagu/html-css/重排重绘',
-      ],
+      items: generateHTMLCategory([
+        'html',
+        'css',
+        'bfc',
+        '层叠上下文',
+        '重排重绘',
+      ]),
     },
     {
       type: 'category',
       label: 'JS',
-      items: [
-        'bagu/js/FormData',
-        'bagu/js/浮点数精度',
-        'bagu/js/javascript-basis',
-        'bagu/js/javascript-advanced',
-        'bagu/js/v8',
-        'bagu/js/regexp',
-        'bagu/js/es6-plus',
-      ],
+      items: generateJSCategory([
+        'FormData',
+        '浮点数精度',
+        'javascript-basis',
+        'javascript-advanced',
+        'v8',
+        'regexp',
+        'es6-plus',
+      ]),
     },
     {
       type: 'category',
       label: 'TS',
-      items: ['bagu/ts/basis', 'bagu/ts/type-challenges'],
+      items: generateTSCategory(['basis', 'type-challenges']),
     },
     {
       type: 'category',
       label: 'Vue',
-      items: ['bagu/vue/basis', 'bagu/vue/source-code'],
+      items: generateVueCategory(['basis', 'source-code']),
     },
     {
       type: 'category',
       label: 'React',
-      items: [
-        'bagu/react/base',
-        'bagu/react/principle',
-        'bagu/react/react-native',
-      ],
+      items: generateReactCategory(['base', 'principle', 'react-native']),
     },
     {
       type: 'category',
       label: '计算机网络',
-      items: [
-        'bagu/network/network-model',
-        'bagu/network/http',
-        'bagu/network/https',
-        'bagu/network/tcp',
-        'bagu/network/udp',
-        'bagu/network/ip',
-        'bagu/network/authentication',
-      ],
+      items: generateNetworkCategory([
+        'network-model',
+        'http',
+        'https',
+        'tcp',
+        'udp',
+        'ip',
+        'authentication',
+      ]),
     },
     {
       type: 'category',
       label: '操作系统',
-      items: ['bagu/os/hardware'],
+      items: generateOSCategory(['hardware']),
     },
     {
       type: 'category',
       label: '浏览器',
-      items: [
-        'bagu/browser/browser-security',
-        'bagu/browser/cache',
-        'bagu/browser/event-loop',
-        'bagu/browser/source-load',
-        'bagu/browser/composition',
-        'bagu/browser/vitals',
-      ],
+      items: generateBrowserCategory([
+        'browser-security',
+        'cache',
+        'event-loop',
+        'source-load',
+        'composition',
+        'vitals',
+      ]),
     },
     {
       type: 'category',
       label: '工程化',
-      items: [
-        'bagu/engineering/engineering',
-        'bagu/engineering/eslint',
-        'bagu/engineering/package-management-tool',
-        'bagu/engineering/vite',
-        'bagu/engineering/webpack',
-        'bagu/engineering/esbuild',
-        'bagu/engineering/micro-frontend',
-      ],
+      items: generateEngineeringCategory([
+        'engineering',
+        'eslint',
+        'package-management-tool',
+        'vite',
+        'webpack',
+        'esbuild',
+        'micro-frontend',
+      ]),
     },
     {
       type: 'category',
       label: 'Node.js',
-      items: [
-        'bagu/nodejs/basic',
-        'bagu/nodejs/nest',
-        'bagu/nodejs/principles',
-      ],
+      items: generateNodeCategory(['basic', 'nest', 'principles']),
     },
     {
       type: 'category',
       label: '代码篇',
-      items: [
-        'bagu/code/jsAchieve',
-        'bagu/code/debounce-thorttle',
-        'bagu/code/promise',
-        'bagu/code/algorithm',
-      ],
+      items: generateCodeCategory([
+        'jsAchieve',
+        'debounce-thorttle',
+        'promise',
+        'algorithm',
+      ]),
     },
     {
       type: 'category',
       label: '杂货箱',
-      items: ['bagu/everything/vuera', 'bagu/everything/design-patterns'],
+      items: generateEverythingCategory(['vuera', 'design-patterns']),
     },
     {
       type: 'category',
       label: '面经',
-      items: [
-        'bagu/interview/1',
-        'bagu/interview/2',
-        'bagu/interview/3',
-        'bagu/interview/4',
-        'bagu/interview/5',
-        'bagu/interview/6',
-        'bagu/interview/7',
-        'bagu/interview/8',
-        'bagu/interview/9',
-        'bagu/interview/10',
-        'bagu/interview/11',
-      ],
+      items: generateInterviewCategory([
+        '1',
+        '2',
+        '3',
+        '4',
+        '5',
+        '6',
+        '7',
+        '8',
+        '9',
+        '10',
+        '11',
+      ]),
     },
   ],
   note: [
