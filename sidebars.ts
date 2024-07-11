@@ -60,6 +60,11 @@ export default {
     },
     {
       type: 'category',
+      label: '操作系统',
+      items: ['bagu/os/hardware'],
+    },
+    {
+      type: 'category',
       label: '浏览器',
       items: [
         'bagu/browser/browser-security',

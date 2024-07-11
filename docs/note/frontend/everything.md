@@ -23,3 +23,9 @@
 在一个步骤中更改 DOM，同时创建两种状态之间的动画转换。
 
 [chrome for developers](https://developer.chrome.com/docs/web-platform/view-transitions)
+
+## Chrome Devtool 请求排序
+
+在 Name 标签上右键点击，选择最下面的 `Waterfall`，选择 `Start time`
+
+![chrome devtool request sort](images/chrome-devtool-sort.png)

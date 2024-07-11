@@ -84,3 +84,7 @@ mac 输入法的问题
 原因：rustfmt 命令行工具没有安装
 
 [github issue](https://github.com/rust-lang/rust-analyzer/issues/5036)
+
+## code 命令失效
+
+原因是 VS Code 不在系统的应用程序目录夹下，可能在下载目录下，需要将其移动到应用程序目录下，然后在 VS Code 中 `Command + Shift + P` 搜索 code，安装 code 命令
