@@ -331,3 +331,11 @@ LRUCache.prototype.put = function (key, value) {
 有n件物品和一个最多能背重量为w 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品只能用一次，求解将哪些物品装入背包里物品价值总和最大。
 
 递推公式： ` dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i]);`
+
+## 杂货
+
+### 数组填充
+
+对数组填充的问题，一般先对数组扩容，然后从后向前填充
+
+[替换数字](https://programmercarl.com/kamacoder/0054.%E6%9B%BF%E6%8D%A2%E6%95%B0%E5%AD%97.html#%E6%80%9D%E8%B7%AF)

@@ -29,3 +29,9 @@
 在 Name 标签上右键点击，选择最下面的 `Waterfall`，选择 `Start time`
 
 ![chrome devtool request sort](images/chrome-devtool-sort.png)
+
+## Node 包管理工具（pnpm, yarn）的版本管理
+
+[corepack](https://nodejs.org/api/corepack.html)
+
+corepack 可以管理 pnpm 和 yarn 的版本，与 `package.json` 中的 `packageManager` 字段绑定
