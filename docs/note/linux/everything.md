@@ -88,7 +88,7 @@ rm -f <file>
 # 删除`dir1`目录
 rmdir <dir>
 # 删除`dir1`目录，同时删除其内容
-rm -rf <dir>
+rm -r <dir>
 # 重命名或移动一个目录
 mv <orign> <target>
 # 释放一个包
@@ -109,6 +109,8 @@ ntpdate cn.pool.ntp.org
 
 - Ctrl+a 光标回到命令行首
 - Ctrl+e 光标回到命令行尾
+- Ctrl+u 删除光标前的内容
+- Ctrl+w 删除光标前的单词
 
 ## ssh
 
