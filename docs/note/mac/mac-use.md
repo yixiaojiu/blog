@@ -20,3 +20,11 @@
 ### open
 
 可以使用系统默认应用打开文件或 url
+
+## 软件打不开
+
+有一部分原因是没有苹果的认证，跑一下命令
+
+```sh
+sudo xattr -d com.apple.quarantine /Applications/demo.app
+```

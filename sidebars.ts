@@ -78,7 +78,7 @@ export default {
     {
       type: 'category',
       label: '操作系统',
-      items: generateOSCategory(['hardware']),
+      items: generateOSCategory(['hardware', 'structure', 'memory']),
     },
     {
       type: 'category',

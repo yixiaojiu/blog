@@ -159,3 +159,15 @@ git rebase --abort
 ```
 
 - rebase 会修改 commitID，push 到仓库可能需要 `--force`
+
+## 实现原理
+
+git 的核心主要在 `objects` 目录下
+
+`objects` 目录下有三类文件，分别是 `blob`、`tree` 和 `commit`
+
+- `blob` 存储的是文件内容
+- `tree` 相当于目录，存储 blob 和 tree
+- `commit` 包含上一次 commit 的 hash，提交的文件内容，本次提交后的 tree 或 blob
+
+`branch` 相当于一个指针，指向 commit
