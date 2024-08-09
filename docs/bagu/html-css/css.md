@@ -145,6 +145,11 @@
 
 flex 出现剩余空间或溢出空间后如何计算 flex 元素的宽度 [深入理解 flex-grow、flex-shrink、flex-basis](https://juejin.cn/post/6844904016439148551)
 
+剩余或溢出空间：x，元素的 flex-grow 或 flex-shrink：a,b,c
+
+- 元素的扩展空间：a/(a+b+c) \* x
+- 元素的压缩空间：a \* w1 / (a \* w1 + b \* w2 + c \* w3) \* x
+
 **justify-content 注意事项**
 
 item4 和 item5 不会和 item1、item2 在垂直方向上对其

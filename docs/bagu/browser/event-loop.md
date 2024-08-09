@@ -9,11 +9,11 @@
 
 ## 浏览器事件循环
 
-|                      | **宏任务（macrotask）**                                                        | **微任务（microtask）**                |
-| :------------------- | ------------------------------------------------------------------------------ | -------------------------------------- |
-| 具体事件             | script(整体代码) setTimeout setInterval setImmediate(支持非常差) I/O UI render | Promise MutationObserve queueMicrotask |
-| 谁先运行             | 后运行                                                                         | 先运行                                 |
-| 会触发新一轮 Tick 吗 | 会                                                                             | 不会                                   |
+|                      | **宏任务（macrotask）**                               | **微任务（microtask）**                |
+| :------------------- | ----------------------------------------------------- | -------------------------------------- |
+| 具体事件             | script(整体代码) setTimeout setInterval I/O UI render | Promise MutationObserve queueMicrotask |
+| 谁先运行             | 后运行                                                | 先运行                                 |
+| 会触发新一轮 Tick 吗 | 会                                                    | 不会                                   |
 
 ### 执行过程
 

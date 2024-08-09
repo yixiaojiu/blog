@@ -293,3 +293,24 @@ function limitConcurrency(tasks, limit) {
   })
 }
 ```
+
+## promisify
+
+```js
+function promisify(fn) {
+  return function (...args) {
+    return new Promise(function (resolve, reject) {
+      // 将callback放到参数末尾,并执行callback函数
+      args.push(function (err, ...args) {
+        if (err) {
+          reject(err)
+          return
+        }
+        resolve(...args)
+      })
+
+      fn.apply(null, args)
+    })
+  }
+}
+```
