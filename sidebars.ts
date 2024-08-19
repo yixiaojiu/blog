@@ -20,6 +20,7 @@ const generateNodeCategory = factory('nodejs')
 const generateCodeCategory = factory('code')
 const generateInterviewCategory = factory('interview')
 const generateEverythingCategory = factory('everything')
+const generateDatabaseCategory = factory('database')
 
 export default {
   bagu: [
@@ -77,11 +78,6 @@ export default {
     },
     {
       type: 'category',
-      label: '操作系统',
-      items: generateOSCategory(['hardware', 'structure', 'memory']),
-    },
-    {
-      type: 'category',
       label: '浏览器',
       items: generateBrowserCategory([
         'browser-security',
@@ -109,6 +105,16 @@ export default {
       type: 'category',
       label: 'Node.js',
       items: generateNodeCategory(['basic', 'nest', 'principles']),
+    },
+    {
+      type: 'category',
+      label: '操作系统',
+      items: generateOSCategory(['hardware', 'structure', 'memory', 'process']),
+    },
+    {
+      type: 'category',
+      label: '数据库',
+      items: generateDatabaseCategory(['basic']),
     },
     {
       type: 'category',
