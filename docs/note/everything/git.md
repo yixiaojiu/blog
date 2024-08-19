@@ -116,6 +116,9 @@ git clone -b <branch_name> <repository_url>
 
 # 更改上一次提交的作者和邮箱
 git commit --amend --reset-author --no-edit
+
+# 清除当前的更改
+git checkout .
 ```
 
 ## 远程仓库

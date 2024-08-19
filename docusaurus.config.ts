@@ -71,19 +71,19 @@ export default {
           type: 'docSidebar',
           sidebarId: 'bagu',
           position: 'left',
-          label: '📙每天一个小知识',
+          label: '📙八股',
         },
         {
           type: 'docSidebar',
           sidebarId: 'note',
           position: 'left',
-          label: '📃小记',
+          label: '📃技术小记',
         },
         {
           type: 'docSidebar',
           sidebarId: 'record',
           position: 'left',
-          label: '📝记录',
+          label: '📝杂记',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
