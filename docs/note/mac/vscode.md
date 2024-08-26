@@ -88,3 +88,9 @@ mac 输入法的问题
 ## code 命令失效
 
 原因是 VS Code 不在系统的应用程序目录夹下，可能在下载目录下，需要将其移动到应用程序目录下，然后在 VS Code 中 `Command + Shift + P` 搜索 code，安装 code 命令
+
+## git history graph
+
+这个模块比较吃资源，可能会照成 VS Code 卡死
+
+在设置中搜索 `show history graph`

@@ -39,8 +39,6 @@ export default {
       type: 'category',
       label: 'JS',
       items: generateJSCategory([
-        'FormData',
-        '浮点数精度',
         'javascript-basis',
         'javascript-advanced',
         'v8',
