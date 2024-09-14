@@ -72,6 +72,7 @@ export default {
         'udp',
         'ip',
         'authentication',
+        'email-protocol',
       ]),
     },
     {
