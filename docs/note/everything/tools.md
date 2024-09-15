@@ -8,6 +8,7 @@
 - [ScreenToGif](https://www.screentogif.com/)：gif 录制工具
 - [listary](https://www.listarypro.com/)：App launcher + 文件搜索
 - [Refus](https://rufus.ie/zh/) 启动盘制作工具
+- [keyviz](https://github.com/mulaRahul/keyviz) 屏幕实时显示键盘
 
 ## Mac
 
