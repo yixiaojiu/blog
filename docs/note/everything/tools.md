@@ -14,6 +14,8 @@
 
 - [fig](https://github.com/withfig/fig)：命令提示工具
 - [Navicat 16 中文](https://www.imacso.com/navicat-premium.html)
+- `EasyPaste`：剪切板工具，AppStore 可下
+- `AmazonQ`: 命令行提示，`brew install --cask amazon-q`
 
 ## Linux
 
