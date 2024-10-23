@@ -17,3 +17,13 @@
 - 被广泛使用的语言更改会变得很慢，教育成本很高
 
 [Akara 博客](https://messiahhh.github.io/blog/docs/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86)
+
+## C 语言编译流程
+
+hello.c 经过预处理器(cpp) 得到 hello.i
+
+hello.i 经过编译器(cc1) 翻译成汇编程序 hello.s
+
+hello.s 汇编器(as)将文本翻译成机器语言指令，打包成一种叫做可重定位目标程序 hello.o
+
+hello.o 链接器(ld)，将用到的各种标准库函数（如：printf.o）并入文件中

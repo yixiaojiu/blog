@@ -10,10 +10,10 @@
 - [Refus](https://rufus.ie/zh/) 启动盘制作工具
 - [keyviz](https://github.com/mulaRahul/keyviz) 屏幕实时显示键盘
 - [jpegview](https://github.com/sylikc/jpegview) 图片查看器
+- [Lively Wallpaper](https://github.com/rocksdanister/lively) 壁纸引擎。别下最新版，GPU 占用过高，下载2.0.6.5
 
 ## Mac
 
-- [fig](https://github.com/withfig/fig)：命令提示工具
 - [Navicat 16 中文](https://www.imacso.com/navicat-premium.html)
 - `EasyPaste`：剪切板工具，AppStore 可下
 - `AmazonQ`: 命令行提示，`brew install --cask amazon-q`
