@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import Head from '@docusaurus/Head'
 import styles from './index.module.css'
 import logo from '../../static/img/avatar-transparent.png'
 import noise from '../../static/img/noise.png'
@@ -127,6 +128,9 @@ export default function Home() {
       title={siteConfig.title}
       description="Description will go into a meta tag in <head />"
     >
+      <Head>
+        <meta name="algolia-site-verification" content="420B8CF3AB03DCD2" />
+      </Head>
       <HomepageHeader />
     </Layout>
   )

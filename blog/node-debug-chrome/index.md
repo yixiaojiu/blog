@@ -129,3 +129,7 @@ exec node --inspect  "$basedir/../vite/bin/vite.js" "$@"
 ```
 
 然后正常运行 `npm run dev`，使用方法3打开 Devtools for Node.js。
+
+## 调试 Deno 程序
+
+[deno --inspect-wait](https://docs.deno.com/runtime/fundamentals/debugging/#--inspect-wait) 可以等待 inspect 连接后再执行代码，程序不需要阻塞

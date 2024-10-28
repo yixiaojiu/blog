@@ -22,12 +22,11 @@
 
 - 文件管理器：[yazi](https://github.com/sxyazi/yazi)，比 joshuto 更快，而且直接支持图片与 pdf 预览
 - 适用于 Wayland 的 screenkey：[showmethekey](https://github.com/AlynxZhou/showmethekey)
-- [fnm](https://github.com/Schniz/fnm)：node 包管理
 - [tokei](https://github.com/XAMPPRocky/tokei)：代码统计
 - [nvtop](https://github.com/Syllo/nvtop)：GPU 监控
 - htop
 
-### 命令替代品
+## 命令替代品
 
 [Arch Wiki](https://wiki.archlinuxcn.org/wiki/%E6%A0%B8%E5%BF%83%E5%B7%A5%E5%85%B7)
 
@@ -37,3 +36,10 @@
 - cp -> [rsync](https://wiki.archlinuxcn.org/wiki/Rsync#As_cp/mv_alternative)
 - ping -> [gping](https://github.com/orf/gping)
 - find -> [fd](https://github.com/sharkdp/fd)
+
+## 前端
+
+- [volta](https://github.com/volta-cli/volta)：Node.js 包管理
+- [fnm](https://github.com/Schniz/fnm)：node 包管理
+- [biome](https://github.com/biomejs/biome)：format 与 lint 工具
+- [oxc](https://github.com/oxc-project/oxc)：一整套 JS 处理的工具，
