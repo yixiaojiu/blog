@@ -101,7 +101,7 @@ export default {
     algolia: {
       appId: 'U89O3UO43H',
       apiKey: '4873c9c78b5bba9543b388f35018fe54',
-      indexName: 'note_pages',
+      indexName: 'note',
     },
   } satisfies ThemeConfig,
 } as Config
