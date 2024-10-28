@@ -99,9 +99,9 @@ export default {
       additionalLanguages: ['bash', 'diff', 'json', 'toml'],
     },
     algolia: {
-      appId: 'JAAWQG3A68',
-      apiKey: '87e211738846e5f93f13f10cbf360190',
-      indexName: 'yixiaojiu',
+      appId: 'U89O3UO43H',
+      apiKey: '4873c9c78b5bba9543b388f35018fe54',
+      indexName: 'note_pages',
     },
   } satisfies ThemeConfig,
 } as Config
