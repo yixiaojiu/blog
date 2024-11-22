@@ -20,12 +20,6 @@ cargo run -p bar
 bar = "cargo run -p bar --"
 ```
 
-运行 `bar`
-
-```sh
-cargo bar -p ./git
-```
-
 ## build 脚本
 
 [官方文档](https://doc.rust-lang.org/stable/cargo/reference/build-scripts.html)

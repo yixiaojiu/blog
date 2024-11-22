@@ -143,3 +143,40 @@ struct Bar {
     bar: String,
 }
 ```
+
+## 实现 Future
+
+```rust
+use std::{future::Future, pin::Pin, time::Duration};
+use tokio::time::sleep;
+
+struct Task {
+    time: Duration,
+    task: Option<Pin<Box<tokio::time::Sleep>>>,
+}
+
+impl Future for Task {
+    type Output = ();
+
+    fn poll(
+        mut self: std::pin::Pin<&mut Self>,
+        cx: &mut std::task::Context<'_>,
+    ) -> std::task::Poll<Self::Output> {
+        if self.task.is_none() {
+            let task = Box::pin(sleep(self.time));
+            self.task.replace(task);
+        }
+
+        match self.task.as_mut().unwrap().as_mut().poll(cx) {
+            std::task::Poll::Pending => {
+                println!("pending");
+                std::task::Poll::Pending
+            }
+            std::task::Poll::Ready(_) => {
+                println!("ready");
+                std::task::Poll::Ready(())
+            }
+        }
+    }
+}
+```

@@ -10,6 +10,7 @@
 ## Rust
 
 - [reqwest](https://crates.io/crates/reqwest)：请求库
+- [inquire](https://github.com/mikaelmello/inquire)：CLI Prompt
 
 ## 游戏服务端
 

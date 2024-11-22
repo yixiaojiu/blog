@@ -174,3 +174,11 @@ git 的核心主要在 `objects` 目录下
 - `commit` 包含上一次 commit 的 hash，提交的文件内容，本次提交后的 tree 或 blob
 
 `branch` 相当于一个指针，指向 commit
+
+## Github 语言统计
+
+[Customizing how changed files appear on GitHub](https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github)
+
+对于某些路径忽略语言统计
+
+.gitattributes
