@@ -43,3 +43,11 @@
 - [fnm](https://github.com/Schniz/fnm)：node 包管理
 - [biome](https://github.com/biomejs/biome)：format 与 lint 工具
 - [oxc](https://github.com/oxc-project/oxc)：一整套 JS 处理的工具，
+
+## 杂货
+
+### 串流工具
+
+moonlight + sunshine + EVD
+
+[Easy-Virtual-Display](https://github.com/KtzeAbyss/Easy-Virtual-Display) 创建虚拟显示器
