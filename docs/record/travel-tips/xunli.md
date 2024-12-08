@@ -1,12 +1,15 @@
 # 圣地巡礼
 
-## 京吹
-
-京都
-
-## 轻音少女
-
 ## 幸运星
+
+[🚩 清水寺](https://maps.app.goo.gl/mYz2pMd12kZfrHpe6)
+
+全程打开巡礼地图看
+
+- [anitabi](https://image.anitabi.cn/points/276/50d0tfh5y_1672277143038.jpg) 分岔路，打开巡礼地图看
+- [anitabi](https://image.anitabi.cn/points/276/50d94sk5o_1672277640120.jpg) 绘马
+- [anitabi](https://image.anitabi.cn/points/276/50d6eamn2_1672277475638.jpg) 良缘祈顾
+- [anitabi](https://image.anitabi.cn/points/276/50d5yza1n_1672277457301.jpg)
 
 [🚩 京都动画本社](https://maps.app.goo.gl/TuFQvqNJdX7KYRHU8)
 
@@ -44,6 +47,106 @@
 
 - [anitabi](https://image.anitabi.cn/points/90880/m2ni467n6_1720415562495.jpg) 学校门前，直接拍正门吧，这个图不好
 - [anitabi](https://image.anitabi.cn/points/90880/m2mz9delb_1720414427247.jpg) 桥上
+
+## 京吹
+
+そして、次の曲が始まるのです。
+
+次　つぎ
+
+曲　きょく
+
+**注意：** 推荐工作日去，因为要坐巴士到京阪宇治站
+
+京都塔上可能有京吹联动
+
+[📜 【京吹】带你看大吉山名场面的夜景！圣地巡礼 ①](https://www.bilibili.com/video/BV1MJ4m157Er)
+
+[📜 【京吹】久美子椅原来是真的！ 超细致圣地巡礼 ②](https://www.bilibili.com/video/BV16m421M74P)
+
+[🚩 京都駅](https://maps.app.goo.gl/mYFPNERNuuHRfyLh8)
+
+- [goolge drive](https://drive.google.com/file/d/10XfK8rGB_jhYoDUbSovUwrKsBU5TeUHG/view?usp=drive_link) 京都站舞台位置
+- [goolge drive](https://drive.google.com/file/d/1HPqMcwkFODy5TKbdNgi124p-gP8pR3Xt/view?usp=drive_link) 京都站舞台观众位置
+
+[🚩 六地藏（京阪）](https://maps.app.goo.gl/tnJdZeeuRvsxdBsEA)
+
+- [anitabi](https://anitabi.cn/images/points/115908/7ftaufky.jpg?plan=h360) 提示屏 电车来咯
+- [anitabi](https://image.anitabi.cn/points/216372/kqha9xzik_1716640530499.jpg)
+- [anitabi](https://image.anitabi.cn/points/115908/7frjw8ze.jpg) 案内图
+- [anitabi](https://anitabi.cn/images/points/115908/qys7j5.jpg?plan=h360) 马路对面
+
+[🚩 中路ベーカリー](https://maps.app.goo.gl/jLY1LoYAytj86wzN8) 面包店，似乎有联动。黄檗駅（京阪）旁
+
+- [anitabi](https://anitabi.cn/images/points/115908/dea46940f39cda9b2297f3ad2eac6812.png?plan=h360) 店门口
+
+[🚩 セブン-イレブン 宇治黄檗公園店](https://maps.app.goo.gl/tqUHqutZN8NDMVQo9)
+
+- [anitabi](https://image.anitabi.cn/points/115908/7hi0jj88.jpg)
+
+[🚩 羽户山２丁目 公交站](https://maps.app.goo.gl/pYF8oosvHLZUjR72A)
+
+- [goolge drive](https://drive.google.com/file/d/1daKAfKEGUv2w5166SPMK5Piz68h_00Uk/view?usp=drive_link)
+- [anitabi](https://anitabi.cn/images/points/115908/kq2z20rzc_1716609376144.jpg?plan=h360) 走上楼梯向南走
+- [anitabi](https://anitabi.cn/images/user/2099/bangumi/115908/points/nzdvi9526-1725801794117.jpg?plan=h360) 跟上一张位置一样
+- [anitabi](https://image.anitabi.cn/points/115908/qys7i9.jpg) 向北走，然后回头
+
+[🚩 羽戸山第三児童公園](https://maps.app.goo.gl/BnPDiLq63VPKtdwa6)
+
+- [anitabi](https://image.anitabi.cn/points/115908/kq0kjjdg1_1716604144923.jpg)
+- [goolge drive](https://drive.google.com/file/d/14KdVES-9XKyiq3KBV8OplNDsn491eAjU/view?usp=drive_link) 秋千
+
+[🚩 京都府立莵道高等学校](https://maps.app.goo.gl/6492NBQVsteVBrdN9)
+
+- [anitabi](https://image.anitabi.cn/points/152091/kq4v0iuzs_1716613499668.jpg) 学校门口
+
+[🚩 宇治（京阪）站](https://maps.app.goo.gl/opXrBxWEXpC33YM66)
+
+- [anitabi](https://anitabi.cn/images/points/115908/7jfze4bl.jpg?plan=h360) 闸机旁
+- [google drive](https://drive.google.com/file/d/1KrfqOWoWGClJGMnfPldr6hu4DSQSYSKd/view?usp=drive_link) 站口
+
+[🚩 久美子ベンチ](https://maps.app.goo.gl/m5ARrivyjaE6gszy8) 久美子椅
+
+[🚩 宇治市观光中心](https://maps.app.goo.gl/7nrCijdvCH1TaSNr5) 可能有京吹联动与留言簿
+
+[🚩 朝霧橋](https://maps.app.goo.gl/woGniu3huZa6EavQ9)
+
+- [anitabi](https://image.anitabi.cn/points/115908/7ir4s726.jpg) 从桥上向北看
+- [anitabi](https://image.anitabi.cn/points/115908/7itclses.jpg) 上一张图的近景
+
+[🚩 宇治神社](https://maps.app.goo.gl/tPbcbXyFYVM3SGci8)
+
+- [anitabi](https://image.anitabi.cn/points/115908/qys7ii.jpg) 入口的鸟居
+- [anitabi](https://image.anitabi.cn/points/115908/7o7wt12o.jpg) 桐原水
+
+[🚩 宇治上神社](https://maps.app.goo.gl/hJgmbyXnKxugC6kB6)
+
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/115908/points/qys7k2-1697124629986.jpg) 神社前
+
+[🚩 大吉山展望台](https://maps.app.goo.gl/uvcByY8mUXxskyPZ7) 傍晚去，天黑后下山
+
+[🚩 宇治橋](https://maps.app.goo.gl/F5MeExeTCGuEhCo89)，晚上来
+
+悔しい跑是从桥东（京阪车站那边）向桥西跑
+
+- [anitabi](https://image.anitabi.cn/points/115908/kq2km9va8_1716608503584.jpg) 从桥西走过红绿灯的第一个柱子
+- [anitabi](https://image.anitabi.cn/points/115908/kq2i9iegc_1716608362043.jpg) 桥东
+- [anitabi](https://image.anitabi.cn/points/115908/7jj2ywzo.jpg) 桥东的北侧看向南侧
+- [google drive](https://drive.google.com/file/d/1SpahWMTaR8xo6hJ1I4ZHAh9rR1dWM00l/view?usp=drive_link) 桥南侧一个突出的地方
+
+[🚩 サイゼリヤ 宇治里尻店](https://maps.app.goo.gl/1mBv5WtEbNgcLkcx6) 黄前相谈室，可以在这里吃饭
+
+- [anitabi](https://image.anitabi.cn/points/216372/kqi584ddp_1716645478316.jpg) 可能在靠近路面的角落
+
+[🚩 喜撰橋](https://maps.app.goo.gl/EkUDxrBKM3cxwvS57) 告白的地方，晚上来
+
+- [anitabi](https://image.anitabi.cn/points/216372/kqhxk42n1_1716641937346.jpg) 喜撰茶屋 贩卖机旁
+- [anitabi](https://image.anitabi.cn/points/216372/kqg7oelyf_1716638196210.jpg) 桥上
+- [anitabi](https://image.anitabi.cn/points/152091/kq7g6ev4f_1716619118415.jpg) 花火大会时，蹲在桥外
+
+[🚩 JR 宇治站](https://maps.app.goo.gl/TgcfG67NFZeFpS3T6) 站前有 宇治市観光協会，可能可以拿到巡礼图
+
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/115908/points/qys7il-1720438003834.jpg) 车站前
 
 ## 声之形
 
@@ -185,25 +288,62 @@ https://anitabi.cn/map?c=139.4847,35.7069&z=10.7&bangumiId=51
 
 ## 前辈是男孩
 
-镰仓
+[🚩 新横浜駅](https://maps.app.goo.gl/WTL5J3w9AfxWPX69A)
 
-https://anitabi.cn/map?c=136.0219,34.8319&z=9.7&bangumiId=425988
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/425988/points/on3t5o9r4-1727660623556.jpg) 站内
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/425988/points/on3p90pm3-1727660372041.jpg) 站名
 
-## GBC
+[🚩 江ノ島駅](https://maps.app.goo.gl/D8uiZxtrTDuj3gKs8)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8rll8dwz-1726536892028.jpg) 站名
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8rn00ve7-1726536965588.jpg) 一个咖啡店前
+
+[🚩 新江ノ島水族館](https://maps.app.goo.gl/CQriJFwC39qwjWyWA)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8rodkw2j-1726537054436.jpg) 名字
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8sczee5b-1726538559469.jpg) 水族馆的主要商店
+
+[🚩 江の島](https://maps.app.goo.gl/v1AGkrNL3pw4N4ZL8)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o9r9tuba9-1726614532731.jpg)
+
+[🚩 小動神社](https://maps.app.goo.gl/9JbLaKBtvMAwrEfQ8)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/of4w7qr6t-1727036015903.jpg) 没有小咲掉下来的那棵树
+
+[🚩 鎌倉高校前駅](https://maps.app.goo.gl/dSxGb7tkohAks9bP7)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o9h50rc2e-1726592531275.jpg) 站的西边
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8swoe7xc-1726539719549.jpg) 站名
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8mm2cojy-1726526100187.jpg) 站名
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o9h6mwocn-1726592569006.jpg) 鈴木病院
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8mp7fi1x-1726526234611.jpg) 鈴木病院东边
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o9hik8xs7-1726593327108.jpg) 沙滩上
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o9gxsgrah-1726592125440.jpg) 沙滩上
+
+[🚩 原宿駅](https://maps.app.goo.gl/PjPGtDX46r3oBYsv7)
+
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8lxijle5-1726524558753.jpg) 原宿駅竹下口
+- [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8lw0n80v-1726524494351.jpg) 站名
 
 ## 孤独摇滚
 
-## TARI TARI
-
-镰仓
-
 ## 路人女主
 
-东京
+[🚩 のぞき坂](https://maps.app.goo.gl/HnameU5ziHHo9BoQ7)
+
+- [anitabi](https://image.anitabi.cn/points/100403/4ywpm4bwg_1672163264204.jpg)
+- [anitabi](https://image.anitabi.cn/points/100403/4ywppdj05_1672163269610.jpg)
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/100403/points/4ywq6q2gz-1720702670996.jpg)
+- [anitabi](https://image.anitabi.cn/points/100403/4ywqai76v_1672163305247.jpg)
+- [anitabi](https://image.anitabi.cn/points/100403/4ywqsxp89_1672163336296.jpg)
 
 ## 素晴日
 
-东京
+[🚩 多摩センター駅](https://maps.app.goo.gl/sS7KxpxUmmRsrDpj6)
+
+- [anitabi](https://image.anitabi.cn/points/259061/lx718qg4u_1719987878907.jpg) 南口
+- [anitabi](https://image.anitabi.cn/points/259061/lx72z5b5q_1719987982523.jpg)
 
 ## MYGO
 
