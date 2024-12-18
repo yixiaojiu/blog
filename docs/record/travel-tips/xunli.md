@@ -1,5 +1,7 @@
 # 圣地巡礼
 
+[别人的巡礼地图](https://www.google.com/maps/d/u/0/viewer?mid=1rC20VByyHf97YVfRvMSPsre-GGGnieM&ll=35.20130546618496%2C137.42368629999999&z=8)
+
 ## 幸运星
 
 [🚩 清水寺](https://maps.app.goo.gl/mYz2pMd12kZfrHpe6)
@@ -20,6 +22,10 @@
 
 - [anitabi](https://image.anitabi.cn/points/276/50cpom4lc_1672276466346.jpg)
 - [anitabi](https://image.anitabi.cn/points/276/50cq36apn_1672276485353.jpg) 京阪木幡駅前
+
+[🚩 鷲宮神社](https://maps.app.goo.gl/B6L91nvo1botz3DT7)
+
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/276/points/50cjwj4l8-1681302176307.jpg)
 
 ## 玉子市场
 
@@ -282,10 +288,6 @@
 
 - [anitabi](https://image.anitabi.cn/points/464376/mp729quo8_1722182170330.jpg) 大米店前
 
-## CLANNAD
-
-https://anitabi.cn/map?c=139.4847,35.7069&z=10.7&bangumiId=51
-
 ## 前辈是男孩
 
 [🚩 新横浜駅](https://maps.app.goo.gl/WTL5J3w9AfxWPX69A)
@@ -326,9 +328,11 @@ https://anitabi.cn/map?c=139.4847,35.7069&z=10.7&bangumiId=51
 - [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8lxijle5-1726524558753.jpg) 原宿駅竹下口
 - [anitabi](https://image.anitabi.cn/user/1751/bangumi/425988/points/o8lw0n80v-1726524494351.jpg) 站名
 
-## 孤独摇滚
-
 ## 路人女主
+
+[🚩 嵐山竹林の小径](https://maps.app.goo.gl/1s4GVhKyRFPGPtuq7)
+
+- [google drive](https://drive.google.com/file/d/1lNcliVpyRDaryeshLppDosXObMDQhOSX/view?usp=drive_link)
 
 [🚩 のぞき坂](https://maps.app.goo.gl/HnameU5ziHHo9BoQ7)
 
@@ -347,4 +351,27 @@ https://anitabi.cn/map?c=139.4847,35.7069&z=10.7&bangumiId=51
 
 ## MYGO
 
-东京
+[📄 ライの聖地巡礼撮影情報](https://blog.goo.ne.jp/seltiry0kora1a2sy0ka/e/ea5ae248f342e02c0397409bc3e3ba18)
+
+[🚩 飛鳥山公園](https://maps.app.goo.gl/ST4gBTp599JWPwfp7)
+
+- [goo](https://blogimg.goo.ne.jp/user_image/3e/0c/e3073772308eb0e4dc08134b354ce1a3.jpg?1701213848)
+- [goo](https://blogimg.goo.ne.jp/user_image/3d/54/7a44f20dea1c4c50b085ba541fee906a.jpg?1701213848)
+
+[🚩 千登世小橋](https://maps.app.goo.gl/EjwqjG8xYkaN46xKA)
+
+- [anitabi](https://image.anitabi.cn/user/0/bangumi/428735/points/nb7djwe3v-1723906882651.jpg)
+- [goo](https://blogimg.goo.ne.jp/user_image/19/4c/827b5e682374cb802670a0759aadf5b9.jpg?1731418347)
+
+[🚩 千登世歩道橋（人类桥）] 在千登世小橋西北边一点，打开巡礼地图看
+
+- [goo](https://blogimg.goo.ne.jp/user_image/50/87/265bbb3510c0bf0c5e994194ce3f1bed.jpg?1701243638)
+
+[🚩 Sunshine City](https://maps.app.goo.gl/dmhmubHyjet3kyKf6)
+
+- [anitabi](https://image.anitabi.cn/points/428735/idmkglz99_1713214453338.jpg)
+- [anitabi](https://image.anitabi.cn/points/428735/idmkglyzw_1713214469342.jpg) 水族馆
+
+[🚩 池袋駅東口](https://maps.app.goo.gl/dmhmubHyjet3kyKf6)
+
+- [anitabi](https://image.anitabi.cn/points/428735/idmkglyza_1713214485348.jpg) soyorin诞生地

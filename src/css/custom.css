@@ -32,7 +32,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --text-gray-color: #eee;
-  --bbc-custom-text-base-color: #F7F7FA;
+  --bbc-custom-text-base-color: #f7f7fa;
   --bbc-custom-text-primary-color: #f2b94b;
   --bbc-custom-primary-color: #2fd8d8;
 }
@@ -43,13 +43,13 @@ bilibili-bangumi {
   --bbc-primary-color: var(--bbc-custom-primary-color);
 }
 
-.markdown hr {
+/* .markdown hr {
   background: url('/img/dividing-line.webp') center no-repeat;
   background-size: cover;
   height: auto;
   width: 100%;
   aspect-ratio: 132 / 13;
-}
+} */
 
 button {
   border: none;
