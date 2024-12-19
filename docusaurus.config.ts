@@ -81,9 +81,15 @@ export default {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'record',
+          sidebarId: 'mnote',
           position: 'left',
           label: '📝杂记',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'record',
+          position: 'left',
+          label: '🎫记录',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
