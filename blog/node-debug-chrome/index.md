@@ -1,3 +1,7 @@
+---
+date: 2024-01-19
+---
+
 # 使用 Chrome Devtools 调试 Node 程序
 
 在 Node 程序中使用 `console.log` 打印嵌套较深的对象时，无法完全展示该对象，而且终端的可读性较差，因此可以利用 Chrome DevTools 调试 Node 程序。
