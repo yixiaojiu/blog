@@ -6,6 +6,8 @@ date: 2025-01-22
 
 阅读本攻略前可以先看看这篇攻略 [📜 魚の日本自由行攻略(2023Final)](https://blog.sakanano.moe/posts/2024_japan_travel_with_myself)，视频版 [📺 日本1人自由行，40min通关](https://www.bilibili.com/video/BV1dx4y1a7te)，本篇攻略会根据自己的实际旅游体验补充这篇攻略中没有提到的部分。
 
+<!--truncate-->
+
 ## 准备期
 
 ### 杂货箱
@@ -45,9 +47,9 @@ date: 2025-01-22
 
 Google Map 也不可尽信。我遇到了一次 Google Map 给的信息和站内显示屏的信息不一样，导致错过了特急列车。而且也没必要完全按照 Google Map 给的时间乘车，比如这时你已经在车站等车了，你让 Google Map 给你生成一份行程路线，它可能会预留一些时间，给你安排到下一班电车，你完全可以坐就近的一班列车。
 
-<img width="300" src="./images/google-map-1.png" alt="google-map-1" />
+![google-map-1](./images/google-map-1.png)
 
-<img width="300" src="./images/google-map-2.png" alt="google-map-2" />
+![google-map-2](./images/google-map-2.png)
 
 不是所有的特急列车都需要买特急券的，需要买特急券的列车一般都比较高级，而且在站台上有贩卖特急券的机器，如果不放心可以到小红书上搜这条线路的名称，查看一下这条线路的特急列车是不是可以直接坐。
 
@@ -107,4 +109,5 @@ weichat pay、いいですか？ 可以用微信支付吗？
 ## 杂货箱
 
 **行李寄存：** 在车站里寻找 "Coin Locker" 的标识，推荐到 JR 车站找那种能刷 IC 卡的机器，这样取包的时候可以直接刷 IC 卡
+
 **100日元的硬币：** 虽然包里一堆硬币很烦，但是100日元的硬币特别有用，酒店里的洗衣机和 Coin Locker 都只能投 100 的硬币。可以去游戏厅、扭蛋店和抓娃娃的店里用换 100 元的硬币。
