@@ -30,7 +30,7 @@
 
 ## 交通
 
-[b站教程 提到如何使用 Google Maps乘坐地铁](https://www.bilibili.com/video/BV1xT4y1N7vq)
+[📺 日本｜可能是最适合新手的日本自由行电车及巴士搭乘攻略｜关西公交｜东京地铁｜日本自由行攻略](https://www.bilibili.com/video/BV1hHmRYPE3p)
 
 日本电车没有站内换乘，换乘前需要刷卡出站
 
