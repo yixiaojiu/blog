@@ -1,11 +1,12 @@
 import { themes } from 'prism-react-renderer'
+import tailwindcss from '@tailwindcss/postcss'
 import type { Config } from '@docusaurus/types'
-import type { ThemeConfig, Options } from '@docusaurus/preset-classic'
+import type { Options } from '@docusaurus/preset-classic'
 
 const lightTheme = themes.github
 const darkTheme = themes.dracula
 
-export default {
+const config: Config = {
   title: '翊小久',
   favicon: 'img/avatar-transparent.png',
   staticDirectories: ['static'],
@@ -21,7 +22,18 @@ export default {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  plugins: ['docusaurus-plugin-medium-zoom'],
+  plugins: [
+    'docusaurus-plugin-medium-zoom',
+    function tailwindcssPlugin() {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(tailwindcss())
+          return postcssOptions
+        },
+      }
+    },
+  ],
 
   presets: [
     [
@@ -36,7 +48,7 @@ export default {
           postsPerPage: 5,
         },
         theme: {
-          customCss: ['./src/css/custom.css', './src/css/atomic.css'],
+          customCss: ['./src/css/custom.css'],
         },
         gtag: {
           trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
@@ -109,5 +121,7 @@ export default {
       apiKey: '4873c9c78b5bba9543b388f35018fe54',
       indexName: 'note',
     },
-  } satisfies ThemeConfig,
-} as Config
+  },
+}
+
+export default config
