@@ -31,7 +31,6 @@ function ColorModeToggle({ className, buttonClassName, value, onChange }) {
   const handleClick = (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
-    // @ts-expect-error startViewTransition is not defined
     if (!document.startViewTransition) {
       onChange(value === 'dark' ? 'light' : 'dark')
       return
@@ -44,7 +43,6 @@ function ColorModeToggle({ className, buttonClassName, value, onChange }) {
       Math.max(y, innerHeight - y)
     )
 
-    // @ts-expect-error startViewTransition is not defined
     const transition = document.startViewTransition(() => {
       onChange(value === 'dark' ? 'light' : 'dark')
     })

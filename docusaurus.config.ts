@@ -2,6 +2,7 @@ import { themes } from 'prism-react-renderer'
 import tailwindcss from '@tailwindcss/postcss'
 import type { Config } from '@docusaurus/types'
 import type { Options } from '@docusaurus/preset-classic'
+import type { CustomFields } from '@site/src/lib/types/config'
 
 const lightTheme = themes.github
 const darkTheme = themes.dracula
@@ -48,7 +49,7 @@ const config: Config = {
           postsPerPage: 5,
         },
         theme: {
-          customCss: ['./src/css/custom.css'],
+          customCss: ['./src/css/custom.css', './src/css/define.css'],
         },
         gtag: {
           trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
@@ -74,10 +75,6 @@ const config: Config = {
     image: 'img/avatar-transparent.png',
     navbar: {
       title: '翊小久的笔记',
-      // logo: {
-      //   alt: 'logo',
-      //   src: 'img/avatar-transparent.png',
-      // },
       items: [
         {
           type: 'docSidebar',
@@ -104,11 +101,6 @@ const config: Config = {
           label: '🎫记录',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://github.com/yixiaojiu/blog',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     prism: {
@@ -122,6 +114,24 @@ const config: Config = {
       indexName: 'note',
     },
   },
+
+  customFields: {
+    biography: '「あああああああああああああああああああああ！」',
+    externalLinks: [
+      {
+        type: 'github',
+        href: 'https://github.com/yixiaojiu',
+      },
+      {
+        type: 'bilibili',
+        href: 'https://space.bilibili.com/412686493',
+      },
+      {
+        type: 'rednote',
+        href: 'https://www.xiaohongshu.com/user/profile/64570d3d0000000010027733',
+      },
+    ],
+  } satisfies CustomFields,
 }
 
 export default config

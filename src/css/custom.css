@@ -1,81 +1,21 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-@import 'tailwindcss';
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
-/* You can override the default Infima variables here. */
-:root {
-  /* docsaurus default theme */
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --text-gray-color: #a0a0a0;
-  /* bangumi component */
-  --bbc-custom-text-base-color: #4c4948;
-  --bbc-custom-text-primary-color: #2fd8d8;
-  --bbc-custom-primary-color: #425aef;
-  /* tailwind theme */
-  --custom-color-primary: #af7ac5;
-  --custom-color-secondary: #91c4ee;
-  --custom-color-background: #fff6e9;
-  --custom-color-surface: #fafafa;
-  --custom-color-outline: #dadde1;
-  --custom-color-light: #5e6687;
-  --custom-color-normal: #424242;
-  --custom-color-bold: #32325d;
-}
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  /* docsaurus default theme */
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --text-gray-color: #eee;
-  /* bangumi component */
-  --bbc-custom-text-base-color: #f7f7fa;
-  --bbc-custom-text-primary-color: #f2b94b;
-  --bbc-custom-primary-color: #2fd8d8;
-  /* tailwind theme */
-  --custom-color-primary: #9d8cbd;
-  --custom-color-secondary: #bddcf5;
-  --custom-color-background: #1e1e1e;
-  --custom-color-surface: #3c3c3c;
-  --custom-color-outline: #5a5b60;
-  --custom-color-light: #bcaaa4;
-  --custom-color-normal: #eeeeee;
-  --custom-color-bold: #f5f5f5;
-}
-
-@theme {
-  --color-primary: var(--custom-color-primary);
-  --color-secondary: var(--custom-color-secondary);
-  --color-background: var(--custom-color-background);
-  --color-surface: var(--custom-color-surface);
-  --color-outline: var(--custom-color-outline);
-  --color-light: var(--custom-color-light);
-  --color-normal: var(--custom-color-normal);
-  --color-bold: var(--custom-color-bold);
-}
-
 bilibili-bangumi {
   --bbc-text-base-color: var(--bbc-custom-text-base-color);
   --bbc-text-primary-color: var(--bbc-custom-text-primary-color);
   --bbc-primary-color: var(--bbc-custom-primary-color);
+}
+
+/* docusaurus container background */
+#__docusaurus {
+  background-color: var(--custom-color-background);
+}
+
+/* docusaurus navbar background */
+nav.navbar {
+  background-color: color-mix(
+    in oklab,
+    var(--custom-color-surface) 70%,
+    transparent
+  );
+  box-shadow: 0 2px 8px
+    color-mix(in oklab, var(--custom-color-outline) 70%, transparent);
 }

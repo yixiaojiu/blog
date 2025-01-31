@@ -56,8 +56,13 @@ export default function DesktopContent() {
         </div>
         <div id="up" className={clsx(styles.split, 'w-full')} />
         <div className={clsx(styles.comic, 'w-full')}>
-          {/* @ts-expect-error */}
-          <img src={comic} alt="comic" referrerpolicy="no-referrer" />
+          <img
+            className="mx-auto"
+            src={comic}
+            alt="comic"
+            // @ts-expect-error
+            referrerpolicy="no-referrer"
+          />
           <Button
             as="a"
             onClick={changeComic}
