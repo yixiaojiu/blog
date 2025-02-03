@@ -42,14 +42,19 @@ ${JSON.stringify(item, null, 2)}`,
 
 function NavbarContentLayout({
   left,
+  center,
   right,
 }: {
   left: ReactNode
+  center: ReactNode
   right: ReactNode
 }) {
   return (
-    <div className="navbar__inner">
+    <div className="navbar__inner relative px-10">
       <div className="navbar__items">{left}</div>
+      <div className="navbar__items absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        {center}
+      </div>
       <div className="navbar__items navbar__items--right">{right}</div>
     </div>
   )
@@ -70,9 +75,9 @@ export default function NavbarContent(): ReactNode {
         <>
           {!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
           <NavbarLogo />
-          <NavbarItems items={leftItems} />
         </>
       }
+      center={<NavbarItems items={leftItems} />}
       right={
         // TODO stop hardcoding items?
         // Ask the user to add the respective navbar items => more flexible

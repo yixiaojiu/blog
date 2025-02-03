@@ -11,11 +11,12 @@ bilibili-bangumi {
 
 /* docusaurus navbar background */
 nav.navbar {
-  background-color: color-mix(
+  /* background-color: color-mix(
     in oklab,
     var(--custom-color-surface) 70%,
     transparent
-  );
-  box-shadow: 0 2px 8px
+  ); */
+  background-color: var(--custom-color-surface);
+  box-shadow: 0 2px 4px
     color-mix(in oklab, var(--custom-color-outline) 70%, transparent);
 }

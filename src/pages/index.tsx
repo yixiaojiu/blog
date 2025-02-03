@@ -6,6 +6,8 @@ import { useConfigCustomFields } from '@site/src/lib/hooks/something'
 import IconComponents from '@site/src/components/IconComponents'
 import { ExternalLinkItem } from '@site/src/lib/types/config'
 import ArrowRight from '@site/src/svg/arrow-right.svg'
+import { usePluginData } from '@docusaurus/useGlobalData'
+import { useMemo } from 'react'
 
 const ExternalLink = ({ linkItem }: { linkItem: ExternalLinkItem }) => {
   const IconComponent = IconComponents[linkItem.type]
@@ -25,6 +27,21 @@ const ExternalLink = ({ linkItem }: { linkItem: ExternalLinkItem }) => {
 function HomeContent() {
   const { biography, externalLinks } = useConfigCustomFields()
   const { image } = useThemeConfig()
+
+  const pluginData = usePluginData(
+    'docusaurus-plugin-content-docs',
+    undefined,
+    {
+      failfast: true,
+    }
+  ) as any
+
+  const goLink = useMemo(() => {
+    const path = pluginData.path
+    const mainDocId = pluginData.versions[0].mainDocId
+    return `${path}/${mainDocId}`
+  }, [pluginData])
+
   return (
     <div className="grow-1 flex flex-col justify-center items-center">
       <div className="max-w-[720px] min-w-[500px] h-[250px] px-34 pt-25 pb-12 bg-surface/70 rounded-3xl border-4 border-surface flex flex-col justify-between items-center relative">
@@ -40,10 +57,17 @@ function HomeContent() {
           ))}
         </div>
       </div>
-      <button className="w-40 h-15 flex gap-1 justify-center items-center bg-primary cursor-pointer mt-8 text-surface rounded-2xl hover:bg-primary/80 transition-colors">
+      <a
+        style={{
+          color: 'var(--color-surface)',
+          textDecoration: 'none',
+        }}
+        className="w-40 h-15 flex gap-1 justify-center items-center bg-primary cursor-pointer mt-8 text-surface rounded-2xl hover:bg-primary/80 transition-colors"
+        href={goLink}
+      >
         <span>查看笔记</span>
         <ArrowRight className="w-6 h-6" />
-      </button>
+      </a>
     </div>
   )
 }
