@@ -10,11 +10,19 @@
 
 文件换行符问题
 
-## CSS Module
+## CSS
+
+### CSS Module
 
 [< Less >css modules中的使用](https://juejin.cn/post/7089664776682340382)
 
 在 css module 下修改组件库的底层样式，需要用 `:global` 包裹
+
+### scrollbar-width
+
+[MDN scrollbar-width](https://developer.mozilla.org/zh-CN/docs/Web/CSS/scrollbar-width)
+
+scrollbar-width 控制滚动条的宽度，或直接不显示滚动条
 
 ## 小知识
 
@@ -24,7 +32,7 @@
 
 [chrome for developers](https://developer.chrome.com/docs/web-platform/view-transitions)
 
-## Chrome Devtool 请求排序
+### Chrome Devtool 请求排序
 
 在 Name 标签上右键点击，选择最下面的 `Waterfall`，选择 `Start time`
 
@@ -35,3 +43,5 @@
 [corepack](https://nodejs.org/api/corepack.html)
 
 corepack 可以管理 pnpm 和 yarn 的版本，与 `package.json` 中的 `packageManager` 字段绑定
+
+[volta](https://volta.sh/) 可以对某一个项目锁定包管理工具版本
