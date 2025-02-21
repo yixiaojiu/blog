@@ -94,3 +94,7 @@ mac 输入法的问题
 这个模块比较吃资源，可能会照成 VS Code 卡死
 
 在设置中搜索 `show history graph`
+
+## 烦人的声音
+
+在设置中搜 Accessibility Support，然后关掉

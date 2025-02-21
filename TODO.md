@@ -1,6 +1,7 @@
 - 把 b 站的回到顶部按钮偷过来 https://space.bilibili.com/412686493/dynamic
 - 在每个 blog 顶部添加随机图片
 - [参考这个](https://github.com/kuizuo/blog/blob/main/src/pages/friends/index.tsx) 实现友链
+- hover 链接预览内容。实现思路：无头浏览器渲染链接并截图。
 
 ## 文档加密插件
 
@@ -19,6 +20,8 @@
 - [https://blog.tangbao.ltd](https://blog.tangbao.ltd) 抄一下底部波浪
 - [https://www.liveout.cn](https://www.liveout.cn)
 - [https://lin66.site](https://lin66.site) 抄一下首页
+- [StarKnightt/prasendev](https://github.com/StarKnightt/prasendev) 看着抄
+- [https://innei.in](https://innei.in) 看着抄
 
 colors [https://materialui.co/colors](https://materialui.co/colors)
 
