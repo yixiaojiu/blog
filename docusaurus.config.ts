@@ -1,4 +1,5 @@
 import { themes } from 'prism-react-renderer'
+import { themeNavbar } from './navbar'
 import tailwindcss from '@tailwindcss/postcss'
 import type { Config } from '@docusaurus/types'
 import type { Options } from '@docusaurus/preset-classic'
@@ -75,33 +76,7 @@ const config: Config = {
     image: 'img/avatar-transparent.png',
     navbar: {
       title: '翊小久的笔记',
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'bagu',
-          position: 'left',
-          label: '📙八股',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'note',
-          position: 'left',
-          label: '📃技术小记',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'mnote',
-          position: 'left',
-          label: '📝杂记',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'record',
-          position: 'left',
-          label: '🎫记录',
-        },
-        { to: '/blog', label: 'Blog', position: 'left' },
-      ],
+      items: [...themeNavbar, { to: '/blog', label: 'Blog', position: 'left' }],
     },
     prism: {
       theme: lightTheme,
