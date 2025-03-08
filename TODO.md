@@ -21,7 +21,7 @@
 - [https://www.liveout.cn](https://www.liveout.cn)
 - [https://lin66.site](https://lin66.site) 抄一下首页
 - [StarKnightt/prasendev](https://github.com/StarKnightt/prasendev) 看着抄
-- [https://innei.in](https://innei.in) 看着抄
+- [https://innei.in](https://innei.in) 看着抄。可以抄抄首页的颜色
 
 colors [https://materialui.co/colors](https://materialui.co/colors)
 

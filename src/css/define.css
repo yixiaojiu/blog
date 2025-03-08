@@ -4,7 +4,12 @@
  * work well for content-centric websites.
  */
 
-@import 'tailwindcss';
+/* @import 'tailwindcss'; */
+
+@layer theme, base, components, utilities;
+
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -28,7 +33,7 @@
   /* tailwind theme */
   --custom-color-primary: #af7ac5;
   --custom-color-secondary: #91c4ee;
-  --custom-color-background: #fff6e9;
+  --custom-color-background: #ffffff;
   --custom-color-surface: #fafafa;
   --custom-color-outline: #dadde1;
   --custom-color-light: #5e6687;

@@ -5,7 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { useState, useRef, useEffect, type ReactNode } from 'react'
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  type ReactNode,
+  useMemo,
+} from 'react'
 import clsx from 'clsx'
 import {
   isRegexpStringMatch,
@@ -19,6 +25,7 @@ import type {
   DesktopOrMobileNavBarItemProps,
   Props,
 } from '@theme/NavbarItem/DropdownNavbarItem'
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
 import styles from './styles.module.css'
 
 function isItemActive(
@@ -53,6 +60,16 @@ function DropdownNavbarItemDesktop({
 }: DesktopOrMobileNavBarItemProps) {
   const dropdownRef = useRef<HTMLDivElement>(null)
   const [showDropdown, setShowDropdown] = useState(false)
+
+  const navbarActive = ExecutionEnvironment.canUseDOM
+    ? location.pathname.split('/')[2] ===
+      ((items[0] as any).docId as string).split('/')[0]
+    : false
+
+  const navbarLinkTo = useMemo(() => {
+    const docId = (items[0] as any).docId as string
+    return `/docs/${docId}`
+  }, [])
 
   useEffect(() => {
     const handleClickOutside = (
@@ -93,16 +110,11 @@ function DropdownNavbarItemDesktop({
         // # hash permits to make the <a> tag focusable in case no link target
         // See https://github.com/facebook/docusaurus/pull/6003
         // There's probably a better solution though...
-        href={props.to ? undefined : '#'}
-        className={clsx('navbar__link', className)}
+        href={navbarLinkTo}
+        className={clsx('navbar__link', className, {
+          'navbar__link--active': navbarActive,
+        })}
         {...props}
-        onClick={props.to ? undefined : (e) => e.preventDefault()}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter') {
-            e.preventDefault()
-            setShowDropdown(!showDropdown)
-          }
-        }}
       >
         {props.children ?? props.label}
       </NavbarNavLink>

@@ -44,14 +44,6 @@ const recordDocIdMap: Record<string, string> = {
   追番列表: 'record/bangumi/index',
 }
 
-const items = (recordSiderbar as any[]).map((item) => ({
-  type: 'doc',
-  label: item.label,
-  docId: recordDocIdMap[item.label],
-}))
-
-console.log(items)
-
 export const themeNavbar: NavbarItem[] = [
   {
     type: 'dropdown',

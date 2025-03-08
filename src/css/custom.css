@@ -4,19 +4,94 @@ bilibili-bangumi {
   --bbc-primary-color: var(--bbc-custom-primary-color);
 }
 
-/* docusaurus container background */
-#__docusaurus {
-  background-color: var(--custom-color-background);
+.dropdown > .navbar__link:after {
+  display: none;
 }
 
-/* docusaurus navbar background */
-nav.navbar {
-  /* background-color: color-mix(
-    in oklab,
-    var(--custom-color-surface) 70%,
-    transparent
-  ); */
-  background-color: var(--custom-color-surface);
-  box-shadow: 0 2px 4px
-    color-mix(in oklab, var(--custom-color-outline) 70%, transparent);
+.navbar__link--active,
+.navbar__link:hover,
+.dropdown__link--active,
+.dropdown__link--active:hover,
+.menu__link--active,
+.menu__link--active,
+.menu__link--active:hover,
+.table-of-contents__link--active {
+  color: var(--custom-color-primary);
 }
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--custom-color-primary);
+}
+
+.breadcrumbs__item a:hover {
+  color: var(--custom-color-primary);
+}
+
+.navbar__brand:hover {
+  color: var(--custom-color-secondary);
+}
+
+/* --------markdown heading start-------- */
+
+.anchor a {
+  color: var(--custom-color-secondary);
+}
+
+.markdown h1 {
+  color: var(--custom-color-primary);
+  font-size: 25px;
+  text-align: center;
+}
+
+.markdown h2 {
+  font-size: 26px;
+}
+
+.markdown h2::before {
+  content: '';
+  display: inline-block;
+  background: var(--custom-color-secondary);
+  pointer-events: none;
+  border-radius: 15px;
+  width: 6px;
+  vertical-align: middle;
+  margin-right: 15px;
+  height: 20px;
+  transform: translateY(-2px);
+}
+
+.markdown h3 {
+  font-size: 22px;
+}
+
+.markdown h3::before {
+  content: '';
+  display: inline-block;
+  background: var(--custom-color-secondary);
+  opacity: 1;
+  pointer-events: none;
+  border-radius: 15px;
+  width: 6px;
+  vertical-align: middle;
+  margin-right: 15px;
+  height: 16px;
+  transform: translateY(-1px);
+}
+
+.markdown h4::before,
+.markdown h5::before,
+.markdown h6::before {
+  content: '';
+  display: inline-block;
+  background: var(--custom-color-secondary);
+  opacity: 1;
+  pointer-events: none;
+  border-radius: 15px;
+  width: 6px;
+  vertical-align: middle;
+  margin-right: 15px;
+  height: 14px;
+  transform: translateY(-1px);
+}
+
+/* --------markdown heading end-------- */

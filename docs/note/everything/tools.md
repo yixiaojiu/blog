@@ -26,6 +26,10 @@
 - [nvtop](https://github.com/Syllo/nvtop)：GPU 监控
 - htop
 
+## Android
+
+- [aves](https://github.com/deckerst/aves)：相册软件，功能比系统自带的强
+
 ## 命令替代品
 
 [Arch Wiki](https://wiki.archlinuxcn.org/wiki/%E6%A0%B8%E5%BF%83%E5%B7%A5%E5%85%B7)
