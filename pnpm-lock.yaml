@@ -11,6 +11,9 @@ importers:
       '@docusaurus/core':
         specifier: 3.7.0
         version: 3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
+      '@docusaurus/plugin-content-blog':
+        specifier: 3.7.0
+        version: 3.7.0(@docusaurus/plugin-content-docs@3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)
       '@docusaurus/plugin-content-docs':
         specifier: 3.7.0
         version: 3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3)

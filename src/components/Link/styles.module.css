@@ -1,0 +1,5 @@
+.link,
+.link:hover {
+  text-decoration: none;
+  color: unset;
+}

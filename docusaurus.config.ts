@@ -106,6 +106,7 @@ const config: Config = {
         href: 'https://www.xiaohongshu.com/user/profile/64570d3d0000000010027733',
       },
     ],
+    defaultBlogImage: '/img/blog-defalut-img.webp',
   } satisfies CustomFields,
 }
 

@@ -5,3 +5,7 @@
 根目录新增 `navbar.ts`，将 navbar 的类型改为 `dropdown`，复用 `sidebar.ts` 中的定义，完善 narbar 的 items。
 
 以后更新 `sidebar.ts` 时需要更新 `navbar.ts`
+
+## docusaurus
+
+`@docusaurus/router` 操作路由的，直接导入

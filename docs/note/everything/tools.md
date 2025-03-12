@@ -2,6 +2,7 @@
 
 - [scrcpy](https://github.com/Genymobile/scrcpy)：全平台安卓投屏工具
 - [flameshot](https://github.com/flameshot-org/flameshot)：支持 Hyprland 的截图工具
+- [potatovn.net](https://potatovn.net/)：Visual Novel 管理工具，支持云存档，同步 Bangumi
 
 ## Windows
 
@@ -48,6 +49,11 @@
 - [biome](https://github.com/biomejs/biome)：format 与 lint 工具
 - [oxc](https://github.com/oxc-project/oxc)：一整套 JS 处理的工具，
 - [fontmin](https://github.com/ecomfe/fontmin)：压缩字体
+
+## AI
+
+- [gitdiagram](https://gitdiagram.com/)：输入一个 github 仓库，输出一个架构图
+- [browser-use](https://browser-use.com/)：浏览器自动化操作工具
 
 ## 杂货
 

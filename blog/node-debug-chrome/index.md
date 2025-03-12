@@ -1,5 +1,6 @@
 ---
 date: 2024-01-19
+img: https://img.loliapi.cn/i/pc/img274.webp
 ---
 
 # 使用 Chrome Devtools 调试 Node 程序

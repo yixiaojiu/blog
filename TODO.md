@@ -26,3 +26,11 @@
 colors [https://materialui.co/colors](https://materialui.co/colors)
 
 [参考](https://kuizuo.cn/docs/docusaurus-guides)
+
+[HairyHeadWaves.vue](https://github.com/hairyf/valaxy-theme-hairy/blob/main/theme/components/parts/HairyHeadWaves.vue) 波浪实现参考
+
+[bikari.top/home](https://bikari.top/home) 博客页参考
+
+## 网站预览
+
+实现思路，可以让 AI 爬取并总结网页

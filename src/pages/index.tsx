@@ -2,6 +2,7 @@ import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import { useThemeConfig } from '@docusaurus/theme-common'
 import Head from '@docusaurus/Head'
+import Link from '@docusaurus/Link'
 import { useConfigCustomFields } from '@site/src/lib/hooks/something'
 import IconComponents from '@site/src/components/IconComponents'
 import { ExternalLinkItem } from '@site/src/lib/types/config'
@@ -57,7 +58,7 @@ function HomeContent() {
           ))}
         </div>
       </div>
-      <a
+      <Link
         style={{
           color: 'var(--color-surface)',
           textDecoration: 'none',
@@ -67,7 +68,7 @@ function HomeContent() {
       >
         <span>查看笔记</span>
         <ArrowRight className="w-6 h-6" />
-      </a>
+      </Link>
     </div>
   )
 }

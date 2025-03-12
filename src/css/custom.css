@@ -95,3 +95,11 @@ bilibili-bangumi {
 }
 
 /* --------markdown heading end-------- */
+
+.pagination-nav__link:hover {
+  border-color: var(--custom-color-secondary);
+}
+
+.pagination-nav__link .pagination-nav__label {
+  color: var(--custom-color-secondary);
+}
