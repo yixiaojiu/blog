@@ -1,5 +1,6 @@
 ---
 date: 2023-12-30
+img: https://img.loliapi.cn/i/pc/img52.webp
 ---
 
 # 2023 年终总结

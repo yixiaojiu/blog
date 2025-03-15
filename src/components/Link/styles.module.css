@@ -1,5 +1,29 @@
-.link,
-.link:hover {
+.link {
+  color: var(--color-secondary);
+
+  position: relative;
   text-decoration: none;
-  color: unset;
+}
+
+.link:hover {
+  color: color-mix(in oklab, var(--color-secondary) 80%, transparent);
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition:
+    width 0.3s ease,
+    left 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
 }

@@ -35,7 +35,7 @@
 }
 
 .sidebarItemLinkActive {
-  color: var(--ifm-color-primary) !important;
+  color: var(--custom-color-primary);
 }
 
 @media (max-width: 996px) {

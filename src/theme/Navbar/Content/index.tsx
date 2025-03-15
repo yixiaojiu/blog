@@ -50,7 +50,7 @@ function NavbarContentLayout({
   right: ReactNode
 }) {
   return (
-    <div className="navbar__inner relative px-10">
+    <div className="navbar__inner relative px-1 sm:px-10">
       <div className="navbar__items">{left}</div>
       <div className="navbar__items absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         {center}

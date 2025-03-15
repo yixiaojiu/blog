@@ -8,7 +8,7 @@ import IconComponents from '@site/src/components/IconComponents'
 import { ExternalLinkItem } from '@site/src/lib/types/config'
 import ArrowRight from '@site/src/svg/arrow-right.svg'
 import { usePluginData } from '@docusaurus/useGlobalData'
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 
 const ExternalLink = ({ linkItem }: { linkItem: ExternalLinkItem }) => {
   const IconComponent = IconComponents[linkItem.type]

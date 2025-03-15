@@ -27,3 +27,7 @@ LLM 充当 Agent 的大脑，可以对任务进行拆分，并通过工具（调
 ## Prompt 工程
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/zh)
+
+## MCP
+
+[modelcontextprotocol.io](https://modelcontextprotocol.io/introduction)
