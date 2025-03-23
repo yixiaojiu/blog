@@ -25,7 +25,6 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
 
   plugins: [
-    'docusaurus-plugin-medium-zoom',
     function tailwindcssPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
