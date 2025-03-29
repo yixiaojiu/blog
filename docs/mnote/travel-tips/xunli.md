@@ -375,3 +375,29 @@
 [🚩 池袋駅東口](https://maps.app.goo.gl/dmhmubHyjet3kyKf6)
 
 - 149 [anitabi](https://image.anitabi.cn/points/428735/idmkglyza_1713214485348.jpg) soyorin诞生地
+
+## 凉宫春日
+
+[巡礼指南 bilibili](https://www.bilibili.com/opus/882363248144285720)
+
+[Google Map](https://www.google.com/maps/d/viewer?mid=19w2XxFIa0Dtfw2nstGQD-eV3dD8&ll=34.749474965673734%2C135.3444180338935&z=12) 地图，用于查看上学路线的
+
+「西宫北口站」北边是咖啡店，点的饮料是蜜瓜苏打
+
+- 150 [anitabi](https://anitabi.cn/images/user/0/bangumi/485/points/kgooqc71u-1717518987766.jpg?plan=h360)
+- 151 [anitabi](https://anitabi.cn/images/points/485/kgnr26sbj_1729064612370.jpg?plan=h360)
+
+苦楽園口駅
+
+- 152 [anitabi](https://anitabi.cn/images/points/485/piqo3hl5b_1730139639129.jpg?plan=h360) 禁止事项椅
+
+「神原見晴らしの丘公園」 附近
+
+- 153 [bilibili](https://i1.hdslb.com/bfs/article/ed85b84c3e69e755a00587f3e10c8a5e1643140933.png@1192w.avif) 电车踏切
+- 154 [bilibili](https://i1.hdslb.com/bfs/article/142bbe1a71654e33f2f492fee0eeb88f1643140933.png@1192w.avif) 长门家
+
+甲陽園駅
+
+- 155 [anitabi](https://image.anitabi.cn/user/0/bangumi/1606/points/p52ppjg4e-1729068870393.jpg) 车站前
+- 156 [anitabi](https://anitabi.cn/images/user/0/bangumi/1606/points/p611wwhqb-1729143512078.jpg?plan=h360) 上学阶梯
+- 157 [anitabi](https://anitabi.cn/images/points/485/c494c225_1742908267711.jpg?plan=h360) 上学路

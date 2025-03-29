@@ -18,6 +18,7 @@
 - [Navicat 16 中文](https://www.imacso.com/navicat-premium.html)
 - `EasyPaste`：剪切板工具，AppStore 可下
 - `AmazonQ`: 命令行提示，`brew install --cask amazon-q`
+- [scrollreverser](https://pilotmoon.com/scrollreverser)：同步鼠标与数位板滚动的方向
 
 ## Linux
 
@@ -26,6 +27,7 @@
 - [tokei](https://github.com/XAMPPRocky/tokei)：代码统计
 - [nvtop](https://github.com/Syllo/nvtop)：GPU 监控
 - htop
+- [tldr](https://github.com/tldr-pages/tldr)：查看命令的使用示例
 
 ## Android
 
