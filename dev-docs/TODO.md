@@ -33,4 +33,8 @@ colors [https://materialui.co/colors](https://materialui.co/colors)
 
 ## 网站预览
 
-实现思路，可以让 AI 爬取并总结网页
+实现思路，可以让 AI 爬取并总结网页，网站预览可以参考飞书，展示一下网站的logo，标题与介绍
+
+## 组件拆分
+
+拆成组件库的时候不写依赖，方便用户直接copy代码

@@ -4,6 +4,11 @@ bilibili-bangumi {
   --bbc-primary-color: var(--bbc-custom-primary-color);
 }
 
+/* 覆盖 docsaurus 设置的 margin */
+p {
+  margin: 0;
+}
+
 .dropdown > .navbar__link:after {
   display: none;
 }
@@ -37,17 +42,17 @@ bilibili-bangumi {
   color: var(--custom-color-secondary);
 }
 
-.markdown h1 {
+.markdown header h1 {
   color: var(--custom-color-primary);
   font-size: 25px;
   text-align: center;
 }
 
-.markdown h2 {
+.markdown h2[class~='anchor'] {
   font-size: 26px;
 }
 
-.markdown h2::before {
+.markdown h2[class~='anchor']::before {
   content: '';
   display: inline-block;
   background: var(--custom-color-secondary);
@@ -60,11 +65,11 @@ bilibili-bangumi {
   transform: translateY(-2px);
 }
 
-.markdown h3 {
+.markdown h3[class~='anchor'] {
   font-size: 22px;
 }
 
-.markdown h3::before {
+.markdown h3[class~='anchor']::before {
   content: '';
   display: inline-block;
   background: var(--custom-color-secondary);
@@ -78,9 +83,9 @@ bilibili-bangumi {
   transform: translateY(-1px);
 }
 
-.markdown h4::before,
-.markdown h5::before,
-.markdown h6::before {
+.markdown h4[class~='anchor']::before,
+.markdown h5[class~='anchor']::before,
+.markdown h6[class~='anchor']::before {
   content: '';
   display: inline-block;
   background: var(--custom-color-secondary);

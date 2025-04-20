@@ -4,12 +4,13 @@
  * work well for content-centric websites.
  */
 
-/* @import 'tailwindcss'; */
-
-@layer theme, base, components, utilities;
+/* @layer theme, base, components, utilities;
 
 @import 'tailwindcss/theme.css' layer(theme);
-@import 'tailwindcss/utilities.css' layer(utilities);
+@import 'tailwindcss/utilities.css' layer(utilities); */
+
+@import 'tailwindcss/theme.css';
+@import 'tailwindcss/utilities.css';
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 

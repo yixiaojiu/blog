@@ -1,40 +1,47 @@
-import { mockData } from './mock'
-
-import { useState, useEffect } from 'react'
 import { ScoreList } from './ScoreList'
+import useSwr from 'swr'
+import { IBest50, IPlayer } from './type'
+import { Player } from './Player'
 
 export const MaiMaiBest50 = () => {
-  // 存储数据
-  const [data, setData] = useState(null)
-  // 标记是否正在加载
-  const [loading, setLoading] = useState(true)
-  // 存储错误信息
-  const [error, setError] = useState<string | null>(null)
-
-  useEffect(() => {
-    const fetchData = async () => {
+  const { data, isLoading, error } = useSwr(
+    '/maimai',
+    async () => {
       try {
-        const response = await fetch(
-          'https://api.yixiaojiu.top/api/maimai/best'
-        )
-        if (!response.ok) {
-          setError(`HTTP error! status: ${response.status}`)
+        const [playerResponse, scoreResponse] = await Promise.all([
+          fetch('https://api.yixiaojiu.top/api/maimai/player'),
+          fetch('https://api.yixiaojiu.top/api/maimai/best'),
+        ])
+        if (!playerResponse.ok || !scoreResponse.ok) {
+          throw new Error(
+            `HTTP error! status: ${playerResponse.status} ${scoreResponse.status}`
+          )
         }
-        const result = await response.json()
-        setData(result.data)
-      } catch (err) {
-        if (err instanceof Error) {
-          setError(err.message)
+
+        const playerData = await playerResponse.json()
+        const scoreData = await scoreResponse.json()
+
+        if (playerData.code !== 200 || scoreData.code !== 200) {
+          throw new Error(
+            `Server error! status: ${playerData.code} ${scoreData.code}`
+          )
         }
-      } finally {
-        setLoading(false)
+
+        return {
+          player: playerData.data as IPlayer,
+          score: scoreData.data as IBest50,
+        }
+      } catch {
+        throw new Error('Failed to fetch data. Please try again later.')
       }
+    },
+    {
+      // 禁用刷新
+      refreshInterval: 0,
     }
+  )
 
-    fetchData()
-  }, [])
-
-  if (loading) {
+  if (isLoading) {
     return <div>加载中...</div>
   }
 
@@ -43,11 +50,14 @@ export const MaiMaiBest50 = () => {
   }
 
   return (
-    <div className="max-w-[700px]">
-      <h3>Best35</h3>
-      {data && <ScoreList scores={data.standard} />}
-      <h3>Best15</h3>
-      {data && <ScoreList scores={data.dx} />}
+    <div className="@container/main w-full">
+      <div className="mx-auto max-w-[1200px]">
+        <Player player={data.player} />
+        <h3 className="text-center">Best35</h3>
+        {data && <ScoreList scores={data.score.standard} />}
+        <h3 className="mt-4 text-center">Best15</h3>
+        {data && <ScoreList scores={data.score.dx} />}
+      </div>
     </div>
   )
 }

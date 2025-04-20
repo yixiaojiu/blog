@@ -3,6 +3,7 @@
 - [scrcpy](https://github.com/Genymobile/scrcpy)：全平台安卓投屏工具
 - [flameshot](https://github.com/flameshot-org/flameshot)：支持 Hyprland 的截图工具
 - [potatovn.net](https://potatovn.net/)：Visual Novel 管理工具，支持云存档，同步 Bangumi
+- [orama](https://orama.com/)：类似 Algolia，感觉更新
 
 ## Windows
 
@@ -32,6 +33,7 @@
 ## Android
 
 - [aves](https://github.com/deckerst/aves)：相册软件，功能比系统自带的强
+- Moon+ Reader：电子书阅读软件，支持多种电子书格式与 webdav 同步。抗揍云 [https://yixiaojiu.lanzouw.com/ikMir2mgoudi](https://yixiaojiu.lanzouw.com/ikMir2mgoudi)。
 
 ## 命令替代品
 

@@ -10,7 +10,7 @@ interface ScoreListProps {
 
 export const ScoreList = ({ scores }: ScoreListProps) => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-5 @max-5xl/main:grid-cols-4 @max-2xl/main:grid-cols-3 @max-md/main:grid-cols-2 gap-4">
       {scores.map((score) => {
         return (
           <div
@@ -26,18 +26,18 @@ export const ScoreList = ({ scores }: ScoreListProps) => {
               style={{
                 backgroundColor: getTransparentColor(
                   maimaiDifficultyColor[2][score.level_index],
-                  0.95
+                  0.8
                 ),
               }}
             >
-              <div
+              <p
                 className={clsx(
                   styles.truncate,
                   'flex-1 font-medium text-white text-sm'
                 )}
               >
                 {score.song_name}
-              </div>
+              </p>
               {score.type === 'dx' && (
                 <div className="text-white bg-[#FD7E14] text-[10px] px-2 rounded-2xl font-bold py-[1px]">
                   DX
@@ -53,13 +53,13 @@ export const ScoreList = ({ scores }: ScoreListProps) => {
               style={{
                 backgroundColor: getTransparentColor(
                   maimaiDifficultyColor[2][score.level_index],
-                  0.7
+                  0.5
                 ),
               }}
               className="flex items-center justify-between px-3 py-1"
             >
               <div className="text-white">
-                <div>
+                <p>
                   <span className="text-2xl">
                     {parseInt(score.achievements.toString())}
                   </span>
@@ -71,14 +71,14 @@ export const ScoreList = ({ scores }: ScoreListProps) => {
                     )}
                     %
                   </span>
-                </div>
-                <div className="text-[12px]">
+                </p>
+                <p className="text-[12px]">
                   DX Rating: {parseInt(score.dx_rating.toString())}
-                </div>
+                </p>
               </div>
 
               <div className="text-black bg-white border border-[#DEE2E6] rounded-lg px-1 py-1">
-                {score.level}
+                {score.level_value}
               </div>
             </div>
           </div>

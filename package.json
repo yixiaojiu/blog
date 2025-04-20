@@ -26,7 +26,8 @@
     "prism-react-renderer": "2.4.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-medium-image-zoom": "^5.2.14"
+    "react-medium-image-zoom": "^5.2.14",
+    "swr": "^2.3.3"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
