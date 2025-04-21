@@ -4,7 +4,7 @@
 
 可用协议：SMB、NFS、DLNA、SFTP、WebDAV
 
-选 WebDAV
+选 WebDAV，[alist](https://github.com/AlistGo/alist)
 
 **一些软件：**
 
@@ -13,3 +13,9 @@
 - [nascab](https://www.nascab.cn/)：有图片备份与预览，支持 WebDav 服务器，但是不开源
 - [nextcloud](https://nextcloud.com/providers/)：功能似乎与 alist 类似
 - [immich](https://immich.app/)：图片与视频管理
+
+## 流媒体服务
+
+[emby](https://emby.media)
+
+有弹幕插件

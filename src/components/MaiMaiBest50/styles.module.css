@@ -3,3 +3,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.rating {
+  background: linear-gradient(45deg, lightblue 0%, #228be6 100%);
+  background-color: khaki;
+}
