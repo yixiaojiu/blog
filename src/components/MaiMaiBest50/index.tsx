@@ -52,9 +52,9 @@ export const MaiMaiBest50 = () => {
   return (
     <div className="@container/main w-full">
       <div className="mx-auto max-w-[1200px] @4xl/main:px-6">
-        <div className="mx-auto max-w-[800px] mb-3">
+        {/* <div className="mx-auto max-w-[800px] mb-3">
           <Player player={data.player} />
-        </div>
+        </div> */}
         <h3 className="text-center">Best35</h3>
         {data && <ScoreList scores={data.score.standard} />}
         <h3 className="mt-4 text-center">Best15</h3>
