@@ -23,6 +23,9 @@ importers:
       '@docusaurus/theme-common':
         specifier: 3.7.0
         version: 3.7.0(@docusaurus/plugin-content-docs@3.7.0(@mdx-js/react@3.1.0(@types/react@19.0.8)(react@19.0.0))(acorn@8.14.0)(eslint@9.22.0(jiti@2.4.2))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.7.3))(acorn@8.14.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@lottiefiles/dotlottie-react':
+        specifier: ^0.13.4
+        version: 0.13.4(react@19.0.0)
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@19.0.8)(react@19.0.0)
@@ -1289,6 +1292,14 @@ packages:
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
+
+  '@lottiefiles/dotlottie-react@0.13.4':
+    resolution: {integrity: sha512-QW3hSF1k95B56nswzs5iLY7FFGbwv/DkNDK3Kv1PyaoInAmj0+BE0496YTkWqRaYM2p0jKskjrZrLsHJVvfatg==}
+    peerDependencies:
+      react: ^17 || ^18 || ^19
+
+  '@lottiefiles/dotlottie-web@0.43.0':
+    resolution: {integrity: sha512-mIfb2aZj1xFY/NTtZ4tQPiOVz8MfWDkdUOCVpzCv3q8C8WRKxZUwPgIG8BdqhkujPksS9eYDXH/4f9qxyfNCwg==}
 
   '@mdx-js/mdx@3.1.0':
     resolution: {integrity: sha512-/QxEhPAvGwbQmy1Px8F899L5Uc2KZ6JtXwlCgJmjSTBedwOZkByYcBG4GceIGPXRDsmfxhHazuS+hlOShRLeDw==}
@@ -7540,6 +7551,13 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   '@leichtgewicht/ip-codec@2.0.5': {}
+
+  '@lottiefiles/dotlottie-react@0.13.4(react@19.0.0)':
+    dependencies:
+      '@lottiefiles/dotlottie-web': 0.43.0
+      react: 19.0.0
+
+  '@lottiefiles/dotlottie-web@0.43.0': {}
 
   '@mdx-js/mdx@3.1.0(acorn@8.14.0)':
     dependencies:

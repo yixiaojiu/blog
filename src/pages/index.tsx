@@ -58,17 +58,29 @@ function HomeContent() {
           ))}
         </div>
       </div>
-      <Link
-        style={{
-          color: 'var(--color-surface)',
-          textDecoration: 'none',
-        }}
-        className="w-40 h-15 flex gap-1 justify-center items-center bg-primary cursor-pointer mt-8 text-surface rounded-2xl hover:bg-primary/80 transition-colors"
-        href={goLink}
-      >
-        <span>查看笔记</span>
-        <ArrowRight className="w-6 h-6" />
-      </Link>
+      <div className="mt-8 flex gap-4">
+        <Link
+          style={{
+            color: 'var(--color-surface)',
+            textDecoration: 'none',
+          }}
+          className="w-40 h-15 flex gap-1 justify-center items-center bg-primary cursor-pointer  rounded-2xl hover:bg-primary/80 transition-colors"
+          href={goLink}
+        >
+          <span>查看笔记</span>
+          <ArrowRight className="w-6 h-6" />
+        </Link>
+        <Link
+          style={{
+            // color: 'var(--color-surface)',
+            textDecoration: 'none',
+          }}
+          className="w-40 h-15 flex justify-center items-center cursor-pointer  rounded-2xl text-blue-300 hover:text-blue-400 border-2 hover:border-blue-400 border-blue-300 transition-colors"
+          href="/docs/mnote/show-window/maimai"
+        >
+          查看橱窗
+        </Link>
+      </div>
     </div>
   )
 }
