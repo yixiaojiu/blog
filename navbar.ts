@@ -36,7 +36,7 @@ const mnoteDocIdMap: Record<string, string> = {
   音乐: 'mnote/music/everything',
   感想: 'mnote/thoughts/white-album2',
   赴日旅游攻略: 'mnote/travel-tips/everything',
-  杂货箱: 'mnote/everything/social',
+  杂货箱: 'mnote/everything/think',
   橱窗: 'mnote/show-window/maimai',
 }
 
