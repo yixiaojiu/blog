@@ -44,7 +44,7 @@ function HomeContent() {
   }, [pluginData])
 
   return (
-    <div className="grow-1 flex flex-col justify-center items-center">
+    <div className="h-[calc(100vh-60px)] flex flex-col justify-center items-center">
       <div className="max-w-[720px] min-w-[500px] h-[250px] px-34 pt-25 pb-12 bg-surface/70 rounded-3xl border-4 border-surface flex flex-col justify-between items-center relative">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-30 h-30 rounded-full bg-surface/70 border-4 border-surface overflow-hidden">
           <img src={image} className="w-full h-full" />

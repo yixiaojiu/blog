@@ -13,14 +13,14 @@ import type { Props } from '@theme/MDXComponents/Img'
 
 import styles from './styles.module.css'
 
-export default function MDXImg(props: Props): ReactNode {
+export default function MDXImg({ width, height, ...rest }: Props): ReactNode {
   return (
     <Zoom>
       <img
         decoding="async"
         loading="lazy"
-        {...props}
-        className={clsx(styles.img, props.className)}
+        {...rest}
+        className={clsx(styles.img, rest.className)}
       />
     </Zoom>
   )

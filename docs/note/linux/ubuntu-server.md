@@ -26,3 +26,25 @@ Name Servers: 114.114.114.114,8.8.8.8 域名服务器
 ```sh
 docker pull docker.1ms.run/xhofe/alist
 ```
+
+7. 给 docker pull 添加本地代理 [关于docker pull使用网络代理的配置](https://www.feiyiblog.com/2021/01/13/%E5%85%B3%E4%BA%8Edocker-pull%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E4%BB%A3%E7%90%86%E9%97%AE%E9%A2%98/)
+
+```sh
+mkdir /etc/systemd/system/docker.service.d
+vim /etc/systemd/system/docker.service.d/proxy.conf
+
+# proxy.conf
+[Service]
+Environment="HTTP_PROXY=http://127.0.0.1:7890"
+Environment="HTTPS_PROXY=http://127.0.0.1:7890"
+Environment="NO_PROXY=localhost,127.0.0.1"
+Environment="ALL_PROXY=socks5://127.0.0.1:7890"
+```
+
+使用本地代理，拉镜像的速度就起飞了。
+
+8. qbittorrent 一直显示下载错误，可能是因为下载的目录没有权限，把下载目录的所属用户改成当前登陆的用户和用户组。
+
+```sh
+sudo chown -R yixiaojiu:yixiaojiu qbittorrent
+```

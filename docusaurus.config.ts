@@ -10,7 +10,7 @@ const darkTheme = themes.dracula
 
 const config: Config = {
   title: '翊小久',
-  favicon: 'img/avatar-transparent.png',
+  favicon: 'img/avatar.webp',
   staticDirectories: ['static'],
 
   i18n: {
@@ -72,7 +72,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/avatar-transparent.png',
+    image: 'img/avatar.webp',
     navbar: {
       title: '翊小久的笔记',
       items: [...themeNavbar, { to: '/blog', label: 'Blog', position: 'left' }],

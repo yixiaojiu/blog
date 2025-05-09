@@ -38,3 +38,7 @@ colors [https://materialui.co/colors](https://materialui.co/colors)
 ## 组件拆分
 
 拆成组件库的时候不写依赖，方便用户直接copy代码
+
+## Bug
+
+图片展示
