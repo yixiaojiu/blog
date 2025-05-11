@@ -1,3 +1,6 @@
+/**
+ * 这个文件在 themeConfig.navbar 被用到，siderbars.ts 文件基本没动
+ */
 import {
   baguSiderbar,
   mnoteSiderbar,
@@ -34,15 +37,13 @@ const noteDocIdMap: Record<string, string> = {
 const mnoteDocIdMap: Record<string, string> = {
   摘抄: 'mnote/excerpt/everything',
   音乐: 'mnote/music/everything',
-  感想: 'mnote/thoughts/white-album2',
+  碎碎念: 'mnote/thoughts/white-album2',
   赴日旅游攻略: 'mnote/travel-tips/everything',
-  杂货箱: 'mnote/everything/think',
-  橱窗: 'mnote/show-window/maimai',
 }
 
 const recordDocIdMap: Record<string, string> = {
   年度报告: 'record/annual-report/2024',
-  追番列表: 'record/bangumi/index',
+  橱窗: 'record/show-window/bangumi',
 }
 
 export const themeNavbar: NavbarItem[] = [

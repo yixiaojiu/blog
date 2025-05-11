@@ -53,6 +53,8 @@ function HomeContent() {
             <img
               width={100}
               className="block rounded-full border border-gray-300"
+              decoding="async"
+              loading="lazy"
               src={image}
             />
             <h3 className="mb-0 mt-4">{nickname}</h3>
@@ -88,7 +90,7 @@ function HomeContent() {
                   textDecoration: 'none',
                 }}
                 className="px-4 py-2 text-sm flex justify-center items-center cursor-pointer  rounded-2xl text-blue-300 hover:text-blue-400 border-2 hover:border-blue-400 border-blue-300 transition-colors"
-                href="/docs/mnote/show-window/maimai"
+                href="/docs/record/show-window/bangumi"
               >
                 查看橱窗
               </Link>
@@ -97,6 +99,8 @@ function HomeContent() {
           <img
             src="/img/yuiju.webp"
             width={150}
+            decoding="async"
+            loading="lazy"
             className="block max-md:mt-10 max-md:mx-auto"
           />
         </div>

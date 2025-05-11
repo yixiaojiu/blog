@@ -13,6 +13,7 @@ import type { Props } from '@theme/MDXComponents/Img'
 
 import styles from './styles.module.css'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function MDXImg({ width, height, ...rest }: Props): ReactNode {
   return (
     <Zoom>

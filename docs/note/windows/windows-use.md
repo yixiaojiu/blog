@@ -18,6 +18,12 @@ Winget 安装路径 `%LOCALAPPDATA%/Microsoft/WinGet/Packages/`
 
 `%LOCALAPPDATA%/Microsoft/WinGet/Links/` 文件夹下有每个包的快捷键，这个路径会被添加到环境变量中
 
+:::note
+
+winget 安装太难了，换成 Scoop 吧
+
+:::
+
 ## SymLink
 
 软链接，类似快捷方式，文件占用似乎更小

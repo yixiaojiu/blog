@@ -14,6 +14,7 @@
 - [keyviz](https://github.com/mulaRahul/keyviz) 屏幕实时显示键盘
 - [jpegview](https://github.com/sylikc/jpegview) 图片查看器
 - [Lively Wallpaper](https://github.com/rocksdanister/lively) 壁纸引擎。别下最新版，GPU 占用过高，下载2.0.6.5
+  [Scoop](https://github.com/ScoopInstaller/Scoop) 包管理工具
 
 ## Mac
 

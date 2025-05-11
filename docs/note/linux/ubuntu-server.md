@@ -1,5 +1,7 @@
 # Ubuntu Server 踩坑记录
 
+## 踩坑
+
 安装设备：Redmi Book Pro 14 2022
 
 1. 红米笔记本的 BIOS 页面有密码，应该是之前安装系统的时候被强制设置了一次（逆天设计）。
@@ -48,3 +50,37 @@ Environment="ALL_PROXY=socks5://127.0.0.1:7890"
 ```sh
 sudo chown -R yixiaojiu:yixiaojiu qbittorrent
 ```
+
+## 运行的 docker
+
+docker run -d --restart=unless-stopped -v /home/yixiaojiu/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" docker.1ms.run/xhofe/alist
+
+docker run -d --name emby --volume /home/yixiaojiu/app-data/emby/config:/config --volume /home/yixiaojiu/alist/store:/mnt/share1 --device /dev/dri:/dev/dri --publish 8096:8096 --publish 8920:8920 --env UID=1000 --env GID=1000 --env GIDLIST=1000 -e http_proxy=http://192.168.31.10:7890 -e https_proxy=http://192.168.31.10:7890 -e no_proxy="localhost" --restart on-failure docker.1ms.run/emby/embyserver
+
+docker run -d \
+ --name=qbittorrent \
+ -e PUID=$(id -u) \
+ -e PGID=$(id -g) \
+ -e TZ=Etc/UTC \
+ -e WEBUI_PORT=8080 \
+ -e TORRENTING_PORT=6881 \
+ -p 8080:8080 \
+ -p 6881:6881 \
+ -p 6881:6881/udp \
+ -v /home/yixiaojiu/app-data/qbittorrent/appdata:/config \
+ -v /home/yixiaojiu/alist/store/qbittorrent:/downloads \
+ --restart unless-stopped \
+ lscr.io/linuxserver/qbittorrent
+
+docker run -d \
+ --name=AutoBangumi \
+ -v /home/yixiaojiu/app-data/AutoBangumi/config:/app/config \
+ -v /home/yixiaojiu/app-data/AutoBangumi/data:/app/data \
+ -p 7892:7892 \
+ -e TZ=Asia/Shanghai \
+ -e PUID=$(id -u) \
+ -e PGID=$(id -g) \
+ -e UMASK=022 \
+ --dns=8.8.8.8 \
+ --restart unless-stopped \
+ ghcr.io/estrellaxd/auto_bangumi:latest

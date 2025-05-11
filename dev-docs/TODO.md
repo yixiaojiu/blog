@@ -1,5 +1,4 @@
 - 把 b 站的回到顶部按钮偷过来 https://space.bilibili.com/412686493/dynamic
-- 在每个 blog 顶部添加随机图片
 - [参考这个](https://github.com/kuizuo/blog/blob/main/src/pages/friends/index.tsx) 实现友链
 - hover 链接预览内容。实现思路：无头浏览器渲染链接并截图。
 
@@ -31,14 +30,14 @@ colors [https://materialui.co/colors](https://materialui.co/colors)
 
 [bikari.top/home](https://bikari.top/home) 博客页参考
 
-## 网站预览
-
-实现思路，可以让 AI 爬取并总结网页，网站预览可以参考飞书，展示一下网站的logo，标题与介绍
-
 ## 组件拆分
 
 拆成组件库的时候不写依赖，方便用户直接copy代码
 
-## Bug
+## BangDream 信息展示
 
-图片展示
+id: 1007734059
+
+抓包页面 https://bestdori.com/tool/playersearch
+
+https://bestdori.com/api/player/cn/1007734059?mode=2 请求
