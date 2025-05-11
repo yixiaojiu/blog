@@ -74,7 +74,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/avatar.webp',
     navbar: {
-      title: '翊小久的笔记',
+      title: '首页',
       items: [...themeNavbar, { to: '/blog', label: 'Blog', position: 'left' }],
     },
     prism: {
@@ -90,7 +90,9 @@ const config: Config = {
   },
 
   customFields: {
-    biography: '「あああああああああああああああああああああ！」',
+    nickname: '翊小久',
+    uid: 'yixiaojiu',
+    biography: 'あああああああああああああああああああああ！',
     externalLinks: [
       {
         type: 'github',

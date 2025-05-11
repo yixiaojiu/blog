@@ -13,5 +13,5 @@ show_last_update: boolean
 ## docusaurus api
 
 - `@docusaurus/router` 操作路由的，直接导入
-- `import { useWindowSize } from '@docusaurus/theme-common'`
+- `import { useWindowSize } from '@docusaurus/theme-common'` 判断当前的尺寸是 desktop 还是 mobile
 - `import { useDoc } from '@docusaurus/plugin-content-docs/client'` 暴露了 doc 的一些信息：metadata, frontMatter, contentTitle, toc

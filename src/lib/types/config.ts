@@ -7,6 +7,14 @@ export type ExternalLinkItem = {
 
 export type CustomFields = {
   /**
+   * 昵称
+   */
+  nickname: string
+  /**
+   *
+   */
+  uid: string
+  /**
    * 个性签名
    */
   biography: string
