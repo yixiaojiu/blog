@@ -10,32 +10,17 @@ export const MaiMaiBest50 = () => {
   const { data, isLoading, error } = useSwr(
     '/maimai',
     async () => {
-      try {
-        const [playerResponse, scoreResponse] = await Promise.all([
-          fetch('https://api.yixiaojiu.top/api/maimai/player'),
-          fetch('https://api.yixiaojiu.top/api/maimai/best'),
-        ])
-        if (!playerResponse.ok || !scoreResponse.ok) {
-          throw new Error(
-            `HTTP error! status: ${playerResponse.status} ${scoreResponse.status}`
-          )
-        }
+      const res = await fetch('https://api.yixiaojiu.top/api/maimai/data')
 
-        const playerData = await playerResponse.json()
-        const scoreData = await scoreResponse.json()
+      const resData = await res.json()
 
-        if (playerData.code !== 200 || scoreData.code !== 200) {
-          throw new Error(
-            `Server error! status: ${playerData.code} ${scoreData.code}`
-          )
+      if (resData.code === 200) {
+        return resData.data as {
+          player: IPlayer
+          score: IBest50
         }
-
-        return {
-          player: playerData.data as IPlayer,
-          score: scoreData.data as IBest50,
-        }
-      } catch {
-        throw new Error('Failed to fetch data. Please try again later.')
+      } else {
+        throw new Error(resData.message)
       }
     },
     {

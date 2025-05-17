@@ -32,3 +32,7 @@
 ## 图片 Exif
 
 可交换图像文件格式（Exchangeable image file format），官方简称Exif，可以记录数码照片的拍摄数据和拍摄位置。Exif可以附加于JPEG、TIFF、RIFF等文件之中，为其增加有关数码相机拍摄信息的内容和索引图或图像处理软件的版本信息。
+
+## 剪切板
+
+[剪贴板 wiki](https://zh.wikipedia.org/wiki/%E5%89%AA%E8%B4%B4%E6%9D%BF)

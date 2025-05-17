@@ -32,6 +32,7 @@
 - [nvtop](https://github.com/Syllo/nvtop)：GPU 监控
 - htop
 - [tldr](https://github.com/tldr-pages/tldr)：查看命令的使用示例
+- [github.com/Slackadays/Clipboard](https://github.com/Slackadays/Clipboard)：兼容性很强的命令行 clipboard 工具
 
 ## Android
 

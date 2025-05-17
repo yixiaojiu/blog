@@ -36,8 +36,35 @@ colors [https://materialui.co/colors](https://materialui.co/colors)
 
 ## BangDream 信息展示
 
+邦邦机器人仓库 https://github.com/Yamamoto-2/tsugu-bangdream-bot 代码位置
+
 id: 1007734059
 
-抓包页面 https://bestdori.com/tool/playersearch
+抓包页面 https://bestdori.com/tool/playersearch/cn/1007734059
 
-https://bestdori.com/api/player/cn/1007734059?mode=2 请求
+### 请求
+
+https://bestdori.com/api/player/cn/1007734059?mode=2 玩家信息
+
+https://bestdori.com/api/degrees/all.3.json degrees 信息
+
+### 字段解析
+
+bandRankMap 乐队等级
+userProfileDegreeMap 两个牌子
+userMusicClearInfoMap 乐曲完成情况
+userCharacterRankMap 乐队成员等级
+
+### 代码解析
+
+backend/src/view/playerDetail.ts 图片绘制的入口
+
+backend/src/components/list/difficultyDetail.ts DifficultyDetailInList 歌曲完成情况的计算函数，没有图片，难度是绘制出来的
+
+乐队的图片 https://bestdori.com/assets/jp/band/logo/045_rip/logoL.png 045_rip 中的 045 是乐队 id 前面补0 满足长度为 3
+
+乐队成员的图片 https://bestdori.com/res/icon/chara_icon_1.png `chara_icon_${id}.png`
+
+## 关于页面
+
+介绍自己

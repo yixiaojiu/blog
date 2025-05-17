@@ -65,7 +65,6 @@ export default function NavbarContent(): ReactNode {
 
   const items = useNavbarItems()
   const [leftItems, rightItems] = splitNavbarItems(items)
-  console.log(items)
 
   const searchBarItem = items.find((item) => item.type === 'search')
 
