@@ -68,3 +68,7 @@ backend/src/components/list/difficultyDetail.ts DifficultyDetailInList 歌曲完
 ## 关于页面
 
 介绍自己
+
+## QQ 音乐听歌状态
+
+可以实时显示正在听歌的歌词，研究一下 QQ 音乐的开放平台
