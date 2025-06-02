@@ -72,3 +72,11 @@ backend/src/components/list/difficultyDetail.ts DifficultyDetailInList 歌曲完
 ## QQ 音乐听歌状态
 
 可以实时显示正在听歌的歌词，研究一下 QQ 音乐的开放平台
+
+## Steam 游戏库
+
+[Steam OpenAPI](https://partner.steamgames.com/doc/webapi_overview)
+
+[游戏库 API](https://partner.steamgames.com/doc/webapi/IPlayerService#GetOwnedGames)
+
+[玩家信息 API](https://partner.steamgames.com/doc/webapi/ISteamUser#GetPlayerSummaries)
