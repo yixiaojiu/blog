@@ -92,7 +92,7 @@ const config: Config = {
   customFields: {
     nickname: '翊小久',
     uid: 'yixiaojiu',
-    biography: 'あああああああああああああああああああああ！',
+    biography: '忘れたくない思い、ありますか？',
     externalLinks: [
       {
         type: 'github',

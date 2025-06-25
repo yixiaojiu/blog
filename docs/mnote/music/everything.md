@@ -4,3 +4,5 @@
 
 - 梦核
 - Lofi
+- Kawaii Base
+- Future Base

@@ -127,7 +127,11 @@ export const baguSiderbar: SidebarsConfig[string] = [
   {
     type: 'category',
     label: '杂货箱',
-    items: generateEverythingCategory(['vuera', 'design-patterns']),
+    items: generateEverythingCategory([
+      'vuera',
+      'design-patterns',
+      'system-design',
+    ]),
   },
   {
     type: 'category',
