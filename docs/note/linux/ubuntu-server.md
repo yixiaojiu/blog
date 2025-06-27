@@ -84,3 +84,5 @@ docker run -d \
  --dns=8.8.8.8 \
  --restart unless-stopped \
  ghcr.io/estrellaxd/auto_bangumi:latest
+
+docker run --restart unless-stopped -it -d --name ward -p 4000:4000 -e WARD_PORT=4000 -e WARD_THEME=light --cap-add SYS_PTRACE antonyleons/ward

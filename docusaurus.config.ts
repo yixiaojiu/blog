@@ -18,7 +18,7 @@ const config: Config = {
     locales: ['zh-CN'],
   },
 
-  url: 'https://note.yixiaojiu.top/',
+  url: 'https://note.yixiaojiu.top',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -52,8 +52,7 @@ const config: Config = {
           customCss: ['./src/css/custom.css', './src/css/define.css'],
         },
         gtag: {
-          trackingID: ['G-9VQBN5ZTSH', 'G-YSFLC9Y69J'],
-          anonymizeIP: true,
+          trackingID: ['G-YSFLC9Y69J'],
         },
         sitemap: {
           lastmod: 'date',

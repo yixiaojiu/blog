@@ -115,7 +115,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />"
+      description="翊小久的个人网站。主要用于记录学习笔记、个性展示和知识分享。"
     >
       <Head>
         <meta name="algolia-site-verification" content="420B8CF3AB03DCD2" />
