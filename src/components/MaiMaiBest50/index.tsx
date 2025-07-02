@@ -10,7 +10,7 @@ export const MaiMaiBest50 = () => {
   const { data, isLoading, error } = useSwr(
     '/maimai',
     async () => {
-      const res = await fetch('https://api.yixiaojiu.top/api/maimai/data')
+      const res = await fetch('https://api.yixiaojiu.top/api/edge/maimai/data')
 
       const resData = await res.json()
 
