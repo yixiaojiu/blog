@@ -19,10 +19,10 @@
 ## Mac
 
 - [Navicat 16 中文](https://www.imacso.com/navicat-premium.html)
-- `EasyPaste`：剪切板工具，AppStore 可下
 - `AmazonQ`: 命令行提示，`brew install --cask amazon-q`
 - [scrollreverser](https://pilotmoon.com/scrollreverser)：同步鼠标与数位板滚动的方向
 - [keycastr](https://github.com/keycastr/keycastr)：实时显示键盘
+- [https://www.better365.com](https://www.better365.com)
 
 ## Linux
 

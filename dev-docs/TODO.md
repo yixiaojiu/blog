@@ -55,6 +55,8 @@ userProfileDegreeMap 两个牌子
 userMusicClearInfoMap 乐曲完成情况
 userCharacterRankMap 乐队成员等级
 
+<!-- mainDeckUserSituations 卡组信息 -->
+
 ### 代码解析
 
 backend/src/view/playerDetail.ts 图片绘制的入口

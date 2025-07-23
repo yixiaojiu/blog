@@ -5,6 +5,7 @@
 - `command + 空格` 聚焦搜索
 - `command + back` 删除文件
 - `ctrl + command + f` 切换当前软件的全屏状态
+- `command + shfit + g` 访达搜索目录
 
 ## 将 mac 终端的语言设置成英文
 
