@@ -1,5 +1,11 @@
 # 邦邦
 
 import { BangDream } from '@yixiaojiu/kasumi'
+import { Loading } from '@site/src/components/Loading'
+import { ShowError } from '@site/src/components/ShowError'
 
-<BangDream api="https://api.yixiaojiu.top/api/edge/bangdream/data" />
+<BangDream
+  api="https://api.yixiaojiu.top/api/edge/bangdream/data"
+  LoadingComponet={Loading}
+  ErrorComponent={ShowError}
+/>

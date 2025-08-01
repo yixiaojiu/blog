@@ -1,0 +1,12 @@
+@keyframes loading {
+  10% {
+    transform: translateY(-0.5rem) scaleX(0.9);
+  }
+}
+
+.loading {
+  /* animation: loading 1s ease-in-out infinite; */
+  animation-name: loading;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
