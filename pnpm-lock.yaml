@@ -30,8 +30,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0(@types/react@19.0.8)(react@19.0.0)
       '@yixiaojiu/kasumi':
-        specifier: ^0.0.2
-        version: 0.0.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        specifier: ^0.0.3
+        version: 0.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       bilibili-bangumi-component:
         specifier: 0.3.1
         version: 0.3.1
@@ -1794,8 +1794,8 @@ packages:
   '@xtuc/long@4.2.2':
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
 
-  '@yixiaojiu/kasumi@0.0.2':
-    resolution: {integrity: sha512-IWZbS7/empAyL4yRb/tvy+2/SDpREoh4gskPgDz98E+iiHbK22Nrb+u3J/vw9VXRy1EE5hlKyRtKcTMCSehyAg==}
+  '@yixiaojiu/kasumi@0.0.3':
+    resolution: {integrity: sha512-OakIxU3cTX9/t7StOUGR8FgDt8zrr/3ru+WFM5wuZFGbrJ+8bXTcac3uEU8t21G6gb0qUThnHS4fGAvcUwL3Zg==}
     peerDependencies:
       react: '>=17'
       react-dom: '>=17'
@@ -8174,7 +8174,7 @@ snapshots:
 
   '@xtuc/long@4.2.2': {}
 
-  '@yixiaojiu/kasumi@0.0.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
+  '@yixiaojiu/kasumi@0.0.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       clsx: 2.0.0
       react: 19.0.0
