@@ -2,6 +2,7 @@
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    "esModuleInterop": true,
     "types": ["./index.d.ts"]
   }
 }

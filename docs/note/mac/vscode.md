@@ -69,6 +69,12 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
 ```
 
+### Cursor
+
+```sh
+defaults write "$(osascript -e 'id of app "Cursor"')" ApplePressAndHoldEnabled -bool false
+```
+
 ## terminal 字体
 
 使用 powerlevel10k 后，在 `font-family` 中新增 `MesloLGS NF` 字体
