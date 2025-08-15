@@ -34,6 +34,7 @@ const config: Config = {
         },
       }
     },
+    'docusaurus-plugin-llms',
   ],
 
   presets: [
