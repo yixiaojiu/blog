@@ -39,6 +39,7 @@ const mnoteDocIdMap: Record<string, string> = {
   音乐: 'mnote/music/everything',
   碎碎念: 'mnote/thoughts/white-album2',
   赴日旅游攻略: 'mnote/travel-tips/everything',
+  杂货箱: 'mnote/everything/yuiju',
 }
 
 const recordDocIdMap: Record<string, string> = {
@@ -84,7 +85,6 @@ export const themeNavbar: NavbarItem[] = [
       label: item.label,
       docId: recordDocIdMap[item.label],
     })),
-    // items: [],
     position: 'left',
     label: '🎫记录',
   },
