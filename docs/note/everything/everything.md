@@ -36,3 +36,7 @@
 ## 剪切板
 
 [剪贴板 wiki](https://zh.wikipedia.org/wiki/%E5%89%AA%E8%B4%B4%E6%9D%BF)
+
+## 乐视开启 adb 调试
+
+进入`信号源`菜单，按数字 "2580"

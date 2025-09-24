@@ -5,6 +5,7 @@
 - [potatovn.net](https://potatovn.net/)：Visual Novel 管理工具，支持云存档，同步 Bangumi
 - [orama](https://orama.com/)：类似 Algolia，感觉更新
 - github1s.com: 在 github 后加 `1s` 可打开网页版 VS Code 查看代码
+- [picui.cn](https://picui.cn/) 图床
 
 ## Windows
 
