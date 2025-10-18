@@ -42,6 +42,8 @@ LLM 充当 Agent 的大脑，可以对任务进行拆分，并通过工具（调
 
 [https://ai.mmh1.top/#/ai-tutorial](https://ai.mmh1.top/#/ai-tutorial)
 
+模型微调数据格式 Alpaca、ShareGPT [llamafactory 数据集说明](https://llamafactory.readthedocs.io/zh-cn/latest/getting_started/data_preparation.html#sharegpt)
+
 ### 训练参数
 
 - 学习率： 每次更新时参数调整的幅度
