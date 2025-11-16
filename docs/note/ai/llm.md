@@ -36,7 +36,7 @@ LLM 充当 Agent 的大脑，可以对任务进行拆分，并通过工具（调
 
 - [llmstxt](https://llmstxt.org/)：如何让 LLM 更好地理解网站，类似 robot.txt
   - [llmstxthub](https://llmstxthub.com/)
-- [poml](https://microsoft.github.io/poml/latest/)：编写结构化、可服用的 Prompt 工具
+- [poml](https://microsoft.github.io/poml/latest/)：编写结构化、可复用的 Prompt 工具
 
 ## LLama Factory 模型微调
 
