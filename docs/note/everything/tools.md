@@ -15,7 +15,8 @@
 - [keyviz](https://github.com/mulaRahul/keyviz) 屏幕实时显示键盘
 - [jpegview](https://github.com/sylikc/jpegview) 图片查看器
 - [Lively Wallpaper](https://github.com/rocksdanister/lively) 壁纸引擎。别下最新版，GPU 占用过高，下载2.0.6.5
-  [Scoop](https://github.com/ScoopInstaller/Scoop) 包管理工具
+- [Scoop](https://github.com/ScoopInstaller/Scoop) 包管理工具
+- [DroidCam](https://droidcam.app) 虚拟相机，让电脑可以使用手机的相机。
 
 ## Mac
 
@@ -25,6 +26,7 @@
 - [keycastr](https://github.com/keycastr/keycastr)：实时显示键盘
 - [https://www.better365.com](https://www.better365.com)
 - [https://iina.io](https://iina.io)：视频播放器，比系统自带的好用，可以加载字幕
+- [keka](https://www.keka.io/en/)：解压工具
 
 ## Linux
 
