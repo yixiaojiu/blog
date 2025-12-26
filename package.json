@@ -22,7 +22,7 @@
     "@lottiefiles/dotlottie-react": "^0.13.4",
     "@mdx-js/react": "3.1.0",
     "@yixiaojiu/kasumi": "0.0.5",
-    "bilibili-bangumi-component": "0.3.1",
+    "bilibili-bangumi-component": "0.4.0",
     "clsx": "2.1.1",
     "copy-text-to-clipboard": "3.2.0",
     "docusaurus-plugin-llms": "^0.1.5",

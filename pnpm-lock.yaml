@@ -33,8 +33,8 @@ importers:
         specifier: 0.0.5
         version: 0.0.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       bilibili-bangumi-component:
-        specifier: 0.3.1
-        version: 0.3.1
+        specifier: 0.4.0
+        version: 0.4.0
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -2097,8 +2097,8 @@ packages:
   big.js@5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
 
-  bilibili-bangumi-component@0.3.1:
-    resolution: {integrity: sha512-RrXCmOKvKeVDXk+VR4oBLvbe20N6Hzjk2dp6SXNle4mlo8ywvERj1pvCQBT7svEkLW9wRw0wNUssuA1PBDdHdA==}
+  bilibili-bangumi-component@0.4.0:
+    resolution: {integrity: sha512-Sf9HOywQuLZ+iNy9ov0at6fAJ2GNcdtX1nVreFtbTvcLEALmbVAU2Xqav8EH+MGA6dZ9l7cd99+gSzRcLp9Yeg==}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -8605,7 +8605,7 @@ snapshots:
 
   big.js@5.2.2: {}
 
-  bilibili-bangumi-component@0.3.1: {}
+  bilibili-bangumi-component@0.4.0: {}
 
   binary-extensions@2.3.0: {}
 
