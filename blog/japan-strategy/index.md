@@ -1,6 +1,6 @@
 ---
 date: 2025-01-22
-img: https://img.loliapi.cn/i/pc/img689.webp
+img: https://eo-img.544521.xyz/i/pc/img689.webp
 ---
 
 # 赴日旅游攻略

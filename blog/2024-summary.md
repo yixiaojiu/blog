@@ -1,6 +1,6 @@
 ---
 date: 2024-12-20
-img: https://img.loliapi.cn/i/pc/img54.webp
+img: https://eo-img.544521.xyz/i/pc/img54.webp
 ---
 
 # 2024 年终总结

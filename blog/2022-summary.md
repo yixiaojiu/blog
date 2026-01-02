@@ -1,6 +1,6 @@
 ---
 date: 2022-12-25
-img: https://img.loliapi.cn/i/pc/img552.webp
+img: https://eo-img.544521.xyz/i/pc/img552.webp
 ---
 
 # 2022 年终总结
