@@ -75,7 +75,11 @@ const config: Config = {
     image: 'img/avatar.webp',
     navbar: {
       title: '首页',
-      items: [...themeNavbar, { to: '/blog', label: 'Blog', position: 'left' }],
+      items: [
+        ...themeNavbar,
+        { to: '/docs/okr', label: '🎯OKR', position: 'left' },
+        { to: '/blog', label: 'Blog', position: 'left' },
+      ],
     },
     prism: {
       theme: lightTheme,
