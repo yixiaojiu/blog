@@ -1,4 +1,4 @@
-export type ExternalLinkType = 'github' | 'bilibili' | 'rednote'
+export type ExternalLinkType = 'github' | 'bilibili' | 'rednote' | 'twitter'
 
 export type ExternalLinkItem = {
   type: ExternalLinkType

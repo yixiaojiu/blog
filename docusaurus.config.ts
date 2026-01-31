@@ -110,6 +110,10 @@ const config: Config = {
         type: 'rednote',
         href: 'https://www.xiaohongshu.com/user/profile/64570d3d0000000010027733',
       },
+      {
+        type: 'twitter',
+        href: 'https://x.com/yi_xiao_jiu',
+      },
     ],
     defaultBlogImage: '/img/blog-defalut-img.webp',
   } satisfies CustomFields,
