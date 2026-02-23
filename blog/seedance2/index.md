@@ -1,5 +1,7 @@
 # Seedance2 日式动画经验分享
 
+[这篇文章的视频教程](https://www.bilibili.com/video/BV1n3fzBsEAk)
+
 ## 推荐视频
 
 [b站 【闪客】](https://www.bilibili.com/video/BV1buFdz9EYb) 讲述了多模态模型的原理与能力边界，对写提示词有帮助。
