@@ -4,6 +4,8 @@
 
 ## 推荐视频
 
+[b站 细节修改让seedance2输出质量爆炸提升](https://www.bilibili.com/video/BV1GMZoB4EDG) 讲解了 Seedance2 的注意力机制，与应用技巧。
+
 [b站 【闪客】](https://www.bilibili.com/video/BV1buFdz9EYb) 讲述了多模态模型的原理与能力边界，对写提示词有帮助。
 
 [b站 从零到一，多段连贯动画生成拼接教学](https://www.bilibili.com/video/BV14WZLBNE8D) 介绍了一些日式动画提示词技巧，以及使用 Seedance2 制作动画的 SOP。
