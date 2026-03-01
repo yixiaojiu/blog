@@ -1,3 +1,8 @@
+---
+date: 2026-03-01
+img: https://eo-img.mint.ac.cn/i/pc/img480.webp
+---
+
 # Nano Banana 插画提示词经验分享
 
 :::info

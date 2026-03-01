@@ -1,3 +1,8 @@
+---
+date: 2026-03-01
+img: https://esa-img.20240828.xyz/i/pc/img654.webp
+---
+
 # Seedance2 日式动画经验分享
 
 [这篇文章的视频教程](https://www.bilibili.com/video/BV1n3fzBsEAk)
