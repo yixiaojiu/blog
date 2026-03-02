@@ -5,6 +5,8 @@ img: https://eo-img.mint.ac.cn/i/pc/img480.webp
 
 # Nano Banana 插画提示词经验分享
 
+[b站 视频版](https://www.bilibili.com/video/BV1e3PnzgEzr)
+
 :::info
 
 免责声明：**本文都是个人经验，没有理论支撑，而且并非最佳实践。**
