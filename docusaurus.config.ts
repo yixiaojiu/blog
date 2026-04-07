@@ -77,8 +77,8 @@ const config: Config = {
       title: '首页',
       items: [
         ...themeNavbar,
-        { to: '/about-me', label: '关于我', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/about-me', label: '关于我', position: 'left' },
       ],
     },
     prism: {
