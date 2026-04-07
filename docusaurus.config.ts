@@ -77,7 +77,7 @@ const config: Config = {
       title: '首页',
       items: [
         ...themeNavbar,
-        { to: '/docs/okr', label: '🎯OKR', position: 'left' },
+        { to: '/about-me', label: '关于我', position: 'left' },
         { to: '/blog', label: 'Blog', position: 'left' },
       ],
     },
