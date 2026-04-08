@@ -78,7 +78,7 @@ const config: Config = {
       items: [
         ...themeNavbar,
         { to: '/blog', label: 'Blog', position: 'left' },
-        { to: '/about-me', label: '关于我', position: 'left' },
+        { to: '/docs/about-me', label: '关于我', position: 'left' },
       ],
     },
     prism: {
