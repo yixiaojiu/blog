@@ -112,6 +112,26 @@ tccutil reset Microphone com.googlecode.iterm2
 - 输出设备是当前正在使用的耳机或音箱。
 - Moonlight 自己的音频设置没有关闭。
 
+## 声音卡顿
+
+如果 Windows 端能听到声音，但音乐播放听起来一卡一卡的，不一定是音频码率太低。Sunshine 的音频通常使用 Opus 编码，如果日志里已经出现类似下面的内容，音频码率本身一般是够用的：
+
+```text
+Info: Opus initialized: 48 kHz, 2 channels, 512 kbps (total), LOWDELAY
+```
+
+这种卡顿更可能是视频串流占用了太多网络带宽，导致音频包也跟着抖动。
+
+可以先在 Sunshine 配置里限制最大视频码率：
+
+```text
+max_bitrate = 55000
+```
+
+这里的单位是 Kbps，`55000` 大约是 `55 Mbps`。
+
+然后在 Windows 的 Moonlight 里，把请求码率也调低一些。调整后如果声音明显变顺，说明问题主要在网络带宽或抖动，不是 `BlackHole 2ch` 或 Opus 音频编码本身。
+
 ## 常见日志
 
 ### opening microphone '' failed
