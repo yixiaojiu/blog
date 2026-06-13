@@ -7,6 +7,8 @@ img: https://eo-img.mint.ac.cn/i/pc/img19.webp
 
 > 这是一个融合了AI聊天与AI陪伴的项目，介绍了相关的技术实现
 
+仓库地址：[yixiaojiu/yuiju](https://github.com/yixiaojiu/yuiju)
+
 <!--truncate-->
 
 ## 项目简介
