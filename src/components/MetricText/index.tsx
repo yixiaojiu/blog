@@ -16,7 +16,5 @@ export default function MetricText({
   children,
   type = 'success',
 }: MetricTextProps) {
-  return (
-    <span className={`font-semibold ${typeClassName[type]}`}>{children}</span>
-  )
+  return <span className={`${typeClassName[type]}`}>{children}</span>
 }
