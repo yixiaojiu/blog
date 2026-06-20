@@ -45,7 +45,7 @@ const mnoteDocIdMap: Record<string, string> = {
 const recordDocIdMap: Record<string, string> = {
   年度报告: 'record/annual-report/2024',
   橱窗: 'record/show-window/bangumi',
-  OKR: 'record/okr/okr',
+  OKR: 'record/okr/okr-2026',
 }
 
 export const themeNavbar: NavbarItem[] = [

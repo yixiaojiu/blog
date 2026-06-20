@@ -40,6 +40,8 @@
   --custom-color-light: #5e6687;
   --custom-color-normal: #424242;
   --custom-color-bold: #32325d;
+  --custom-color-success: #5fbf87;
+  --custom-color-warning: #d9a441;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -67,6 +69,8 @@
   --custom-color-light: #bcaaa4;
   --custom-color-normal: #eeeeee;
   --custom-color-bold: #f5f5f5;
+  --custom-color-success: #8bdca9;
+  --custom-color-warning: #f0c86a;
 }
 
 :root {
@@ -82,4 +86,6 @@
   --color-light: var(--custom-color-light);
   --color-normal: var(--custom-color-normal);
   --color-bold: var(--custom-color-bold);
+  --color-success: var(--custom-color-success);
+  --color-warning: var(--custom-color-warning);
 }
