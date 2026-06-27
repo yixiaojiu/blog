@@ -3,3 +3,4 @@ dist
 .docusaurus
 scripts/images
 scripts/xunli/images
+temp/
