@@ -1,6 +1,6 @@
 ---
 date: 2026-06-14
-img: https://eo-img.mint.ac.cn/i/pc/img19.webp
+img: https://eo-img.544521.xyz/i/pc/img76.webp
 ---
 
 # Yuiju 技术实现介绍
