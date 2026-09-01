@@ -5,6 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
+  { ignores: ['dist/**', '.docusaurus/**'] },
   { files: ['src/**/*.{js,jsx}', 'docs/**/*.{js,jsx}'] },
   { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
