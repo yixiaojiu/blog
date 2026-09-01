@@ -1,6 +1,6 @@
 ---
 date: 2026-09-02
-img: /img/blog/aiyoku-collett.jpg
+img: /img/blog/aiyoku-collett.webp
 ---
 
 # 《秽翼的尤斯蒂娅》编剧设计拆解：让世界、人物与主题一同坠落
