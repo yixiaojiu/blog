@@ -1,4 +1,4 @@
-import ImagePreview from '@site/src/components/ImagePreview'
+import { ImagePreviewGroup } from '@site/src/components/ImagePreview'
 
 # About Me
 
@@ -9,19 +9,19 @@ import ImagePreview from '@site/src/components/ImagePreview'
 养了一个 OC，她的名字叫「雨澤悠乃」（悠酱）。她真的好可爱（嗯嗯
 
 <div className="flex items-center justify-center gap-4">
-  <ImagePreview
-    decoding="async"
-    loading="lazy"
-    src="/img/yuiju.webp"
-    alt="悠酱立绘"
-    style={{ height: 200, width: 'auto' }}
-  />
-  <ImagePreview
-    decoding="async"
-    loading="lazy"
-    src="/img/yuiju-drooping-eyes.webp"
-    alt="悠酱下垂眼立绘"
-    style={{ height: 200, width: 'auto' }}
+  <ImagePreviewGroup
+    images={[
+      {
+        src: '/img/yuiju.webp',
+        alt: '悠酱立绘',
+        style: { height: 200, width: 'auto' },
+      },
+      {
+        src: '/img/yuiju-drooping-eyes.webp',
+        alt: '悠酱下垂眼立绘',
+        style: { height: 200, width: 'auto' },
+      },
+    ]}
   />
 </div>
 

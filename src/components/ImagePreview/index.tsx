@@ -1,8 +1,9 @@
-import { useState, type ComponentProps } from 'react'
+import { useMemo, useState } from 'react'
 import clsx from 'clsx'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import styles from './styles.module.css'
+import type { ImagePreviewProps, PreviewImage } from './type'
 
 export function ImageLightbox({
   index,
@@ -10,7 +11,7 @@ export function ImageLightbox({
   onClose,
 }: {
   index: number
-  slides: { src: string; alt: string }[]
+  slides: PreviewImage[]
   onClose: () => void
 }) {
   return (
@@ -38,39 +39,45 @@ export function ImageLightbox({
   )
 }
 
-export default function ImagePreview({
-  src,
-  alt,
-  className,
-  ...rest
-}: ComponentProps<'img'> & { src: string; alt: string }) {
+export function ImagePreviewGroup({ images }: { images: ImagePreviewProps[] }) {
   const [index, setIndex] = useState(-1)
+  const slides = useMemo(
+    () => images.map(({ src, alt }) => ({ src, alt })),
+    [images]
+  )
 
   return (
     <>
-      <img
-        decoding="async"
-        loading="lazy"
-        {...rest}
-        src={src}
-        alt={alt}
-        className={clsx(styles.image, className)}
-        role="button"
-        tabIndex={0}
-        aria-label={`放大图片：${alt}`}
-        onClick={() => setIndex(0)}
-        onKeyDown={(event) => {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault()
-            setIndex(0)
-          }
-        }}
-      />
+      {images.map(({ src, alt, className, ...rest }, imageIndex) => (
+        <img
+          key={src}
+          decoding="async"
+          loading="lazy"
+          {...rest}
+          src={src}
+          alt={alt}
+          className={clsx(styles.image, className)}
+          role="button"
+          tabIndex={0}
+          aria-label={`放大图片：${alt}`}
+          onClick={() => setIndex(imageIndex)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault()
+              setIndex(imageIndex)
+            }
+          }}
+        />
+      ))}
       <ImageLightbox
         index={index}
-        slides={[{ src, alt }]}
+        slides={slides}
         onClose={() => setIndex(-1)}
       />
     </>
   )
+}
+
+export default function ImagePreview(props: ImagePreviewProps) {
+  return <ImagePreviewGroup images={[props]} />
 }

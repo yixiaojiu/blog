@@ -1,15 +1,9 @@
 import { useMemo, useState } from 'react'
 import { ImageLightbox } from '../ImagePreview'
+import type { DressingMonth } from './type'
 import styles from './styles.module.css'
 
-export default function Dressing({
-  months,
-}: {
-  months: {
-    month: string
-    photos: { src: string; alt: string }[][]
-  }[]
-}) {
+export default function Dressing({ months }: { months: DressingMonth[] }) {
   const [index, setIndex] = useState(-1)
   const slides = useMemo(
     () => months.flatMap(({ photos }) => photos.flat()),

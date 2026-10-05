@@ -1,3 +1,4 @@
+import type { DressingMonth } from '@site/src/components/Dressing/type'
 import photo20261006_002016 from './images/2026-10-06_00-20-16.webp'
 import photo20261006_002434 from './images/2026-10-06_00-24-34.webp'
 import photo20261005_004323 from './images/2026-10-05_00-43-23.webp'
@@ -23,10 +24,7 @@ import photo20260223_133752 from './images/2026-02-23_13-37-52.webp'
 import photo20260223_134138 from './images/2026-02-23_13-41-38.webp'
 
 // month 使用 YYYY-MM；月份和拍摄日倒序，每个子数组对应同一天，照片按数组顺序展示，宽度不足时行内换行。
-export const months: {
-  month: string
-  photos: { src: string; alt: string }[][]
-}[] = [
+export const months: DressingMonth[] = [
   {
     month: '2026-10',
     photos: [
