@@ -5,10 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, { type ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import clsx from 'clsx'
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import ImagePreview from '@site/src/components/ImagePreview'
 import type { Props } from '@theme/MDXComponents/Img'
 
 import styles from './styles.module.css'
@@ -16,13 +15,11 @@ import styles from './styles.module.css'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function MDXImg({ width, height, ...rest }: Props): ReactNode {
   return (
-    <Zoom>
-      <img
-        decoding="async"
-        loading="lazy"
-        {...rest}
-        className={clsx(styles.img, rest.className)}
-      />
-    </Zoom>
+    <ImagePreview
+      {...rest}
+      src={rest.src}
+      alt={rest.alt}
+      className={clsx(styles.img, rest.className)}
+    />
   )
 }

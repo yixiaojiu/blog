@@ -1,0 +1,130 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  column-gap: 24px;
+}
+
+.list > .entry {
+  margin-top: 0;
+}
+
+.timeline {
+  position: relative;
+  padding: 0 20px 56px 0;
+  border-right: 1px solid var(--custom-color-outline);
+}
+
+.timeline::after {
+  position: absolute;
+  top: 8px;
+  right: -5px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--custom-color-secondary);
+  content: '';
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.year {
+  color: var(--custom-color-light);
+  font-size: 12px;
+}
+
+.month {
+  color: var(--custom-color-secondary);
+  font-size: 20px;
+}
+
+.photos {
+  display: grid;
+  align-content: start;
+  gap: 64px;
+  min-width: 0;
+  padding-bottom: 56px;
+}
+
+.entry + .entry .photos {
+  padding-top: 40px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  gap: 16px;
+}
+
+.photoFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.photoFrame:focus-visible {
+  outline: 2px solid var(--custom-color-primary);
+  outline-offset: 4px;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .entry {
+    grid-template-columns: 64px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .timeline {
+    padding-right: 12px;
+    padding-bottom: 40px;
+  }
+
+  .month {
+    font-size: 18px;
+  }
+
+  .photos {
+    gap: 48px;
+    padding-bottom: 40px;
+  }
+
+  .entry + .entry .photos {
+    padding-top: 32px;
+  }
+
+  .row {
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 12px;
+  }
+
+  .photoFrame {
+    width: 120px;
+    height: 120px;
+  }
+}

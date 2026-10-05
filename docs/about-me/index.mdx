@@ -1,4 +1,4 @@
-import Zoom from 'react-medium-image-zoom'
+import ImagePreview from '@site/src/components/ImagePreview'
 
 # About Me
 
@@ -6,12 +6,23 @@ import Zoom from 'react-medium-image-zoom'
 
 25 届毕业生，本职工作是前端切图仔（我的专业是处理污水的，嘻嘻）
 
-养了一个 OC，她的名字叫 ゆいじゅ（悠酱），全名还没想好。她真的好可爱（嗯嗯
+养了一个 OC，她的名字叫「雨澤悠乃」（悠酱）。她真的好可爱（嗯嗯
 
-<div className="flex justify-center">
-  <Zoom>
-    <img decoding="async" loading="lazy" src="/img/yuiju.webp" width={80} />
-  </Zoom>
+<div className="flex items-center justify-center gap-4">
+  <ImagePreview
+    decoding="async"
+    loading="lazy"
+    src="/img/yuiju.webp"
+    alt="悠酱立绘"
+    style={{ height: 200, width: 'auto' }}
+  />
+  <ImagePreview
+    decoding="async"
+    loading="lazy"
+    src="/img/yuiju-drooping-eyes.webp"
+    alt="悠酱下垂眼立绘"
+    style={{ height: 200, width: 'auto' }}
+  />
 </div>
 
 ## 我做过什么
@@ -37,6 +48,8 @@ import Zoom from 'react-medium-image-zoom'
 ## 喜欢什么
 
 喜欢 ACGN，主要涉及动画、小说，漫画和游戏了解比较少。最喜欢的动画公司是「京阿尼」，最喜欢的小说是「文学少女」。可以视监一下 [追番列表](/docs/record/show-window/bangumi)。有了解过日本宅文化发展史，喜欢观察这类文化现象背后的历史与社会变化。
+
+喜欢「日式萌系女装」，看看 [小裙子记录](/docs/record/show-window/dressing)
 
 玩过一些音游，目前是佛系玩家，不会去刻意练习铺面了。可以视监一下 [舞萌 b50](/docs/record/show-window/maimai)、[Bangdream](/docs/record/show-window/bangdream)
 

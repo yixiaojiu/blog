@@ -1,4 +1,4 @@
-import Zoom from 'react-medium-image-zoom'
+import ImagePreview from '@site/src/components/ImagePreview'
 
 # 2024 年度报告
 
@@ -6,43 +6,37 @@ import Zoom from 'react-medium-image-zoom'
 
 import bilibili from './images/2024-bilibili.jpg'
 
-<Zoom>
-  <img
-    width="240px"
-    src={bilibili}
-    className="mx-auto block"
-    alt="2024-bilibili"
-    decoding="async"
-    loading="lazy"
-  />
-</Zoom>
+<ImagePreview
+  width="240px"
+  src={bilibili}
+  className="mx-auto block"
+  alt="2024-bilibili"
+  decoding="async"
+  loading="lazy"
+/>
 
 ## Steam
 
 [2024 年 Steam 回顾](https://s.team/y24/gndmnpdf?l=schinese)
 
-<Zoom>
-  <img
-    width="300px"
-    src="https://shared.cloudflare.steamstatic.com/social_sharing/replay2024/a4d8e127ce50fa0f48c34f91c7be0120576735b6.png"
-    className="mx-auto block"
-    alt="2024-steam"
-    decoding="async"
-    loading="lazy"
-  />
-</Zoom>
+<ImagePreview
+  width="300px"
+  src="https://shared.cloudflare.steamstatic.com/social_sharing/replay2024/a4d8e127ce50fa0f48c34f91c7be0120576735b6.png"
+  className="mx-auto block"
+  alt="2024-steam"
+  decoding="async"
+  loading="lazy"
+/>
 
 ## QQ音乐
 
 import QQmusic from './images/2024-QQmusic.jpg'
 
-<Zoom>
-  <img
-    width="240px"
-    src={QQmusic}
-    alt="2024-QQmusic"
-    className="mx-auto block"
-    decoding="async"
-    loading="lazy"
-  />
-</Zoom>
+<ImagePreview
+  width="240px"
+  src={QQmusic}
+  alt="2024-QQmusic"
+  className="mx-auto block"
+  decoding="async"
+  loading="lazy"
+/>
