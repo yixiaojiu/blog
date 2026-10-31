@@ -1,0 +1,327 @@
+/*
+ * 技术分享 PPT 样式。
+ * 舞台固定 1600×900，由 index.tsx 计算缩放比例整体等比缩放，
+ * 因此这里的所有尺寸都按 1600×900 设计稿直接写像素值。
+ */
+
+.viewport {
+  --ink: #18181b;
+  --muted: #71717a;
+  --faint: #a1a1aa;
+  --line: #d4d4d8;
+  --soft-bg: #fafafa;
+  --accent: #e2562b;
+  --accent-bg: #fdf1ec;
+
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  background: #f4f4f5;
+  color: var(--ink);
+  font-family: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    system-ui, sans-serif;
+}
+
+.stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 1600px;
+  height: 900px;
+  padding: 64px 80px 48px;
+  background: #fff;
+  transform-origin: center;
+}
+
+/* ---------- 页面文字 ---------- */
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* 标题下方剩余空间里垂直居中 */
+.diagram {
+  display: block;
+  width: 1440px;
+  height: 530px;
+  margin: auto 0;
+  overflow: visible;
+}
+
+/* ---------- 总览页（封面） ---------- */
+
+.cover {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  height: 100%;
+}
+
+.coverTitle {
+  flex: none;
+  margin: 0;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.coverTitle::after {
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 32px;
+  content: '';
+  background: var(--accent);
+}
+
+.coverCards {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ---------- 卡片（总览 / 思考共用） ---------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+}
+
+.cardThumb {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 28px;
+  overflow: visible;
+}
+
+.cardIndex {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 思考卡片缩略图里的引号 */
+.thumbQuote {
+  font-family: Georgia, serif;
+  font-size: 140px;
+  font-weight: 700;
+  fill: var(--accent);
+}
+
+.cardTitle {
+  margin: 8px 0 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.cardText {
+  margin: 8px 0 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ---------- 思考页 ---------- */
+
+.thoughts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: auto 0;
+}
+
+.thoughts .card {
+  height: 520px;
+}
+
+.keyword {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.statement {
+  margin: 28px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.points {
+  padding: 24px 0 0;
+  margin: auto 0 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.points li {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.points li + li {
+  margin-top: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* 与架构图里的事件 Chip 同一套配色 */
+.tag {
+  padding: 4px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-radius: 999px;
+}
+
+.pageNumber {
+  position: absolute;
+  right: 80px;
+  bottom: 20px;
+  font-size: 13px;
+  color: var(--faint);
+  letter-spacing: 0.1em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- SVG 图元 ---------- */
+
+.box {
+  stroke-width: 1.5;
+}
+
+.box_plain {
+  fill: #fff;
+  stroke: var(--ink);
+}
+
+.box_accent {
+  fill: var(--accent-bg);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.box_soft {
+  fill: var(--soft-bg);
+  stroke: var(--faint);
+  stroke-dasharray: 5 4;
+}
+
+.boxTitle {
+  font-size: 17px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+
+.boxLine {
+  font-size: 13.5px;
+  fill: var(--muted);
+}
+
+.edge {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.edge_ink {
+  stroke: var(--ink);
+}
+
+.edge_muted {
+  stroke: var(--faint);
+}
+
+.edge_accent {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.edgeDashed {
+  stroke-dasharray: 5 4;
+}
+
+.arrow_ink {
+  fill: var(--ink);
+}
+
+.arrow_muted {
+  fill: var(--faint);
+}
+
+.arrow_accent {
+  fill: var(--accent);
+}
+
+.label_muted {
+  font-size: 13.5px;
+  fill: var(--muted);
+}
+
+.label_strong {
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+
+.label_accent {
+  font-size: 14px;
+  font-weight: 600;
+  fill: var(--accent);
+}
+
+.label_code {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  font-size: 13px;
+  fill: var(--ink);
+}
+
+.zoneRule {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+/* 时间线上的事件标签（Coopanion 页） */
+.chip {
+  fill: var(--accent-bg);
+}
+
+.chipText {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--accent);
+}
+
+.timelineAxis {
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.timelineDot {
+  fill: #fff;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
