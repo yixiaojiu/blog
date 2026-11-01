@@ -14,11 +14,11 @@
     "pre-commit": "lint-staged --allow-empty && pnpm build"
   },
   "dependencies": {
-    "@docusaurus/core": "3.7.0",
-    "@docusaurus/plugin-content-blog": "3.7.0",
-    "@docusaurus/plugin-content-docs": "3.7.0",
-    "@docusaurus/preset-classic": "3.7.0",
-    "@docusaurus/theme-common": "3.7.0",
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/plugin-content-blog": "3.10.2",
+    "@docusaurus/plugin-content-docs": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/theme-common": "3.10.2",
     "@lottiefiles/dotlottie-react": "^0.13.4",
     "@mdx-js/react": "3.1.0",
     "@yixiaojiu/kasumi": "0.0.5",
@@ -34,10 +34,10 @@
     "yet-another-react-lightbox": "^3.32.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/theme-classic": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/theme-classic": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
     "@eslint/js": "^9.22.0",
     "@tailwindcss/postcss": "^4.1.4",
     "@types/node": "22.10.10",

@@ -38,7 +38,9 @@ export default function DesktopContent() {
         if (list.length) {
           setComicList(list)
         }
-      } catch {}
+      } catch {
+        // 获取失败时保留现有漫画列表。
+      }
     })()
   }, [])
 

@@ -5,13 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  type ReactNode,
-  useMemo,
-} from 'react'
+import React, { useState, useRef, useEffect, type ReactNode } from 'react'
 import clsx from 'clsx'
 import {
   isRegexpStringMatch,
@@ -55,7 +49,7 @@ function DropdownNavbarItemDesktop({
   items,
   position,
   className,
-  onClick,
+  onClick, // eslint-disable-line @typescript-eslint/no-unused-vars -- 桌面导航不向链接传递此回调
   ...props
 }: DesktopOrMobileNavBarItemProps) {
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -66,10 +60,7 @@ function DropdownNavbarItemDesktop({
       ((items[0] as any).docId as string).split('/')[0]
     : false
 
-  const navbarLinkTo = useMemo(() => {
-    const docId = (items[0] as any).docId as string
-    return `/docs/${docId}`
-  }, [])
+  const navbarLinkTo = `/docs/${(items[0] as any).docId as string}`
 
   useEffect(() => {
     const handleClickOutside = (
@@ -135,7 +126,7 @@ function DropdownNavbarItemDesktop({
 function DropdownNavbarItemMobile({
   items,
   className,
-  position, // Need to destructure position from props so that it doesn't get passed on.
+  position, // eslint-disable-line @typescript-eslint/no-unused-vars -- 移动导航不向链接传递位置
   onClick,
   ...props
 }: DesktopOrMobileNavBarItemProps) {

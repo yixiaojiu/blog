@@ -39,10 +39,11 @@ const Information = ({ metadata }: { metadata: PropBlogPostMetadata }) => {
   }, [metadata.title, windowSize])
 
   const attributes = useMemo(() => {
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
+      timeZone: 'Asia/Shanghai',
     }
 
     const list = [
@@ -53,8 +54,7 @@ const Information = ({ metadata }: { metadata: PropBlogPostMetadata }) => {
       {
         Icon: IconPen,
         label: new Date(metadata.date)
-          // @ts-expect-error
-          .toLocaleString(undefined, options)
+          .toLocaleDateString('zh-CN', options)
           .replace(/\//g, '-'),
       },
     ]
@@ -63,8 +63,7 @@ const Information = ({ metadata }: { metadata: PropBlogPostMetadata }) => {
       list.push({
         Icon: IconClockRotateLeft,
         label: new Date(metadata.lastUpdatedAt)
-          // @ts-expect-error
-          .toLocaleString(undefined, options)
+          .toLocaleDateString('zh-CN', options)
           .replace(/\//g, '-'),
       })
     }

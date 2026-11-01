@@ -5,6 +5,8 @@ img: /img/blog/rainy-cafe-short-story.webp
 
 > 后面打算用 AI 写一篇轻小说，这是一个与雨有关的故事，先写一篇小短文试试水
 
+<!--truncate-->
+
 # 今天只是听雨
 
 下午三点过后，天色就慢慢暗了下来。

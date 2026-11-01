@@ -4,5 +4,6 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "types": ["./index.d.ts"]
-  }
+  },
+  "exclude": ["build", "node_modules", "bower_components", "jspm_packages"]
 }
