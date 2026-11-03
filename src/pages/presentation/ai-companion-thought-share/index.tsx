@@ -1,6 +1,7 @@
 import Head from '@docusaurus/Head'
 import { useEffect, useRef, useState } from 'react'
 import CoopanionSlide from './_components/CoopanionSlide'
+import CoverSlide from './_components/CoverSlide'
 import MaiBotSlide from './_components/MaiBotSlide'
 import OverviewSlide from './_components/OverviewSlide'
 import ThoughtsSlide from './_components/ThoughtsSlide'
@@ -10,7 +11,13 @@ import styles from './styles.module.css'
 const STAGE_WIDTH = 1600
 const STAGE_HEIGHT = 900
 
-const slides = [OverviewSlide, MaiBotSlide, CoopanionSlide, ThoughtsSlide]
+const slides = [
+  CoverSlide,
+  OverviewSlide,
+  MaiBotSlide,
+  CoopanionSlide,
+  ThoughtsSlide,
+]
 
 /**
  * AI 陪伴技术分享 PPT。
