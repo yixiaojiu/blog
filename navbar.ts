@@ -40,7 +40,7 @@ const mnoteDocIdMap: Record<string, string> = {
   碎碎念: 'mnote/thoughts/white-album2',
   赴日旅游攻略: 'mnote/travel-tips/everything',
   文字稿: 'mnote/speech/ai-companion',
-  杂货箱: 'mnote/everything/yuiju',
+  杂货箱: 'mnote/everything/makeup',
 }
 
 const recordDocIdMap: Record<string, string> = {
